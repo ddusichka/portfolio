@@ -3,7 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const iconStyle: string =
-  "rounded-full bg-[#fffff2] shadow-lg shawdow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500";
+  "shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500";
 
 const Icons = () => {
   return (
