@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Link href="/projects">Projects</Link>
+    <main className="h-screen flex-col items-center justify-between p-24">
+      <p className="text-3xl text-black">Hi, I'm Dessy!</p>
     </main>
   );
 }
