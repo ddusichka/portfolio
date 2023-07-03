@@ -7,6 +7,7 @@ import Icons from "./Icons";
 
 const styles = {
   sidebar: "md:hidden",
+  name: "text-white text-md sm:text-xl ml-4",
   sidebar_li:
     "py-4 text-[#fffff2] text-lg hover:text-xl border-b-2 border-[#C9ABD9BF]",
   sidebar_title: "text-[#fffff2] w-full sm:w-[80%]",
@@ -33,8 +34,10 @@ const Sidebar = ({
       >
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center">
-            <Image src="/logo.png" alt="logo" height={50} width={50} />
-            <p className="text-white text-xl ml-4">Dessy Dusichka</p>
+            <div className="w-[35px] h-[35px] sm:w-[50px] sm:h-[50px] relative">
+              <Image src="/logo.png" alt="logo" fill />
+            </div>
+            <p className={styles.name}>Dessy Dusichka</p>
           </div>
           <div className={styles.sidebar_icon} onClick={handleNav}>
             <AiOutlineClose color="white" />
