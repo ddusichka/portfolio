@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
-import PageList from "../PageList";
+import PageList from "../data/PageList";
 import Icons from "./Icons";
 
 const styles = {
@@ -23,7 +23,9 @@ const Sidebar = ({
 }) => {
   return (
     <div
-      className={isOpen ? "fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+      className={
+        isOpen ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+      }
     >
       <div
         className={
@@ -48,7 +50,11 @@ const Sidebar = ({
           <ul>
             {PageList.map((page) => (
               <Link href={"/../" + page} key={page}>
-                <li className={styles.sidebar_li} key={page}>
+                <li
+                  className={styles.sidebar_li}
+                  key={page}
+                  onClick={handleNav}
+                >
                   {page}
                 </li>
               </Link>

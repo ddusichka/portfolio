@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import PageList from "../PageList";
+import PageList from "../data/PageList";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 
 const styles = {
-  main: "fixed w-full h-20 shadow-xl z-[100]",
+  main: "w-full h-20 shadow-xl z-[100]",
   name: "text-[#fffff2] text-2xl ml-4",
   flex: "flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#81559B]",
   ul: "hidden md:flex",

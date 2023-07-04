@@ -19,10 +19,11 @@
 body {
   color: rgb(var(--foreground-rgb));
   font-family: "Nunito";
-  background: linear-gradient(
+  background: #e0c4ee;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
