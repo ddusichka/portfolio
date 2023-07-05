@@ -2,28 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   font-family: "Nunito";
   background: #e0c4ee;
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.bg-offwhite {
+  background: #fffff2;
+}
+
+.text-offwhite {
+  color: #fffff2;
+}
+
+.main-button {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 12px;
+  background-color: #81559b;
+  color: #fffff2;
+  padding: 3px 10px;
+}
+
+.outline-button {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 12px;
+  padding: 3px 10px;
 }
