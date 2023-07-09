@@ -1,6 +1,71 @@
 import Blueport from "../components/Blueport";
 
 const content = {
+  projects: [
+    {
+      name: "Chatterbox",
+      path: "chatterbox",
+      dates: "January - March 2023",
+      url: "",
+      description:
+        "A channel-based, real-time messaging app built with React and Firebase.",
+      coverPhoto: "/chatterbox.png",
+      skills: ["Firebase", "React", "HTML/CSS/JS"],
+      details: "" /* Probably it's own React component? */,
+    },
+    {
+      name: "Jeopardy",
+      path: "jeopardy",
+      dates: "April 2023",
+      url: "",
+      description:
+        "An online multiplayer Jeopardy game that allows players to buzz in.",
+      coverPhoto: "/chatterbox.png",
+      skills: [],
+      details: "" /* Probably it's own React component? */,
+    },
+    {
+      name: "Image Processor",
+      path: "image-processor",
+      dates: "June 2022",
+      url: "",
+      description: "An image processing application built with Java.",
+      coverPhoto: "/chatterbox.png",
+      skills: [],
+      details: "" /* Probably it's own React component? */,
+    },
+    {
+      name: "Marble Solitaire",
+      path: "marble-solitaire",
+      dates: "May 2022",
+      url: "",
+      description:
+        "A marble solitaire game built with Java and the MVC design paradigm.",
+      coverPhoto: "/chatterbox.png",
+      skills: [],
+      details: "" /* Probably it's own React component? */,
+    },
+    {
+      name: "Maze Animator",
+      path: "maze-animator",
+      dates: "???",
+      url: "",
+      description: "A maze animation game showing BFS and DFS.",
+      coverPhoto: "/chatterbox.png",
+      skills: [],
+      details: "" /* Probably it's own React component? */,
+    },
+    {
+      name: "Seam Carver",
+      path: "seam-carver",
+      dates: "???",
+      url: "",
+      description: "A seam carver application.",
+      coverPhoto: "/chatterbox.png",
+      skills: [],
+      details: "" /* Probably it's own React component? */,
+    },
+  ],
   experience: [
     {
       position: "Software Development Co-op",
