@@ -45,25 +45,26 @@ const ExperienceCard = (experience: {
           </div>
         </div>
 
-        <div className="EXPERIENCE-CARD-TIME-PLACE flex flex-row flex-wrap gap-6 tablet:pr-10">
+        <div className="EXPERIENCE-CARD-TIME-PLACE flex flex-row flex-wrap gap-6">
           <div className="flex text-black laptop:text-18 gap-2 tablet:gap-3 items-center">
             <div>{experience.location}</div>
             <div className="bg-gray-300 w-px h-4 laptop:h-5 "></div>
             <div>{experience.date}</div>
+            <div className="EXPAND-ICON pr-8 pt-7 tablet:pt-0">
+              {open ? <CloseIcon /> : <ExpandIcon />}
+            </div>
           </div>
         </div>
 
-        <div className="EXPAND-ICON absolute flex w-full justify-end pr-8 pt-7 tablet:pt-0">
+        {/* <div className="EXPAND-ICON relative flex w-full justify-end pr-8 pt-7 tablet:pt-0">
           {open ? <CloseIcon /> : <ExpandIcon />}
-        </div>
+        </div> */}
       </div>
 
       {/* DROPDOWN-CONTENT */}
       <div
         className={
-          open
-            ? "overflow-hidden max-h-96 transition-[max-height] duration-150 ease-in"
-            : "overflow-hidden max-h-0 transition-[all]"
+          open ? "experience-details-open" : "experience-details-closed"
         }
       >
         <div className="EXPERIENCE-DETAILS pt-4 mt-2 border-t border-grey">

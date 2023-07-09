@@ -5,7 +5,15 @@
 body {
   color: rgb(var(--foreground-rgb));
   font-family: "Nunito";
-  background: #e0c4ee;
+  background-color: #81559b;
+  /* background-image: linear-gradient(to top, #81559b 0%, #e0c4ee 100%); */
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    135deg,
+    #e0c4ee 0%,
+    #81559b 100%,
+    #e0c4ee 100%
+  );
 }
 
 h5 {
@@ -33,4 +41,15 @@ h5 {
   border: 1px solid rgb(206, 206, 206);
   border-radius: 12px;
   padding: 3px 10px;
+}
+
+.experience-details-open {
+  transition: max-height 300ms ease-in;
+  overflow: hidden;
+}
+
+.experience-details-closed {
+  max-height: 0;
+  transition: max-height 300ms ease-in;
+  overflow: hidden;
 }
