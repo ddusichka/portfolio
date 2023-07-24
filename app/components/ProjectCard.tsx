@@ -26,7 +26,10 @@ const ProjectCard = (
         <p>{proj.shortDescription}</p>
         <div className="flex mt-3">
           {proj.skills.map((skill, index) => (
-            <div className="bg-[#B21654] text-white mr-5 rounded-lg px-3">
+            <div
+              className="bg-[#B21654] text-white mr-5 rounded-lg px-3"
+              key={index}
+            >
               {skill}
             </div>
           ))}

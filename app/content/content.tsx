@@ -62,8 +62,8 @@ const content = {
             I was inspired to make this Jeopardy app when one of my clubs,
             Biology Club, decided to host a bio-themed Jeopardy night. Having
             previously worked with Jeopardy Powerpoint templates or existing
-            websites that didn't also offer buzzing and scoring, I decided to
-            create my own version to meet our needs.
+            websites that didn&apos;t also offer buzzing and scoring, I decided
+            to create my own version to meet our needs.
           </p>
           <p>
             The first version of this app came after I built Chatterbox, at
