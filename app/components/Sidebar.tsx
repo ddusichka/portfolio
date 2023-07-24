@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
-import PageList from "../content/PageList";
 import Icons from "./Icons";
+import content from "../content/content";
 
 const Sidebar = ({
   isOpen,
@@ -41,7 +41,7 @@ const Sidebar = ({
 
         <div className="py-4 flex flex-col">
           <ul>
-            {PageList.map((page) => (
+            {content.pages.map((page) => (
               <Link href={"/../" + page} key={page}>
                 <li
                   className="py-4 text-offwhite text-lg hover:text-xl border-b-2 border-[#C9ABD9BF]"
