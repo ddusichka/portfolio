@@ -81,9 +81,9 @@ const content = {
           </p>
           <p>
             I also would use this app to get better at backend development.
-            Currently, the front-end directly interacts with Firebase, and I'd
-            be interested in replacing that with a new API that handles these
-            requests.
+            Currently, the front-end directly interacts with Firebase, and
+            I&apos;d be interested in replacing that with a new API that handles
+            these requests.
           </p>
         </>
       ),
@@ -235,7 +235,7 @@ const content = {
               Building each Retool app required... JavaScript is the language of
               Retool, so I quickly picked it up. Additionally, each app required
               the development or refinement of SQL Server procedures and/or
-              tables, as well as gRPC endpoints. Thus, I gained a lot of{" "}
+              tables, as well as gRPC endpoints. Thus, I gained a lot of
               <b>backend experience</b> through each app.
             </p>
             <p>

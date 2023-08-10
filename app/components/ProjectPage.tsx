@@ -63,7 +63,7 @@ const ProjectPage = (proj: {
 
         <div className="mt-4">
           {proj.photos.map((photo) => {
-            return <img src={photo} alt={proj.name} />;
+            return <img src={photo} alt={proj.name} key={photo} />;
           })}
         </div>
 
