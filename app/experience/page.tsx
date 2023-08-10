@@ -7,7 +7,7 @@ export default function Experience() {
     <div className="flex justify-center my-4 laptop:my-8">
       <div className="w-[90%] laptop:w-[75%]">
         <div className="flex justify-between">
-          <h1 className="font-bold text-2xl">Experience</h1>
+          <h1>Experience</h1>
           <button className="main-button">
             <Link
               href="https://docs.google.com/document/d/1yJ2O1Hyh2k3NJzMocFL1oOv3mLyq74pcyVgblmbMN-0/edit"

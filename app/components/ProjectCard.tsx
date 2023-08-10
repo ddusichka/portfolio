@@ -24,16 +24,6 @@ const ProjectCard = (
         <Image src={proj.coverPhoto} alt="project" width={300} height={200} />
         <h1 className="text-lg mt-2">{proj.name}</h1>
         <p>{proj.shortDescription}</p>
-        <div className="flex mt-3">
-          {proj.skills.map((skill, index) => (
-            <div
-              className="bg-[#B21654] text-white mr-5 rounded-lg px-3"
-              key={index}
-            >
-              {skill}
-            </div>
-          ))}
-        </div>
       </div>
     </Link>
   );

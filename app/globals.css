@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 body {
   color: rgb(var(--foreground-rgb));
   font-family: "Nunito";
@@ -41,13 +43,13 @@ h5 {
   border-radius: 12px;
   background-color: #81559b;
   color: #fffff2;
-  padding: 3px 10px;
+  padding: 3px 15px;
 }
 
 .outline-button {
   border: 1px solid rgb(50, 50, 50);
   border-radius: 12px;
-  padding: 3px 10px;
+  padding: 3px 15px;
 }
 
 .experience-details-open {
@@ -59,4 +61,33 @@ h5 {
   max-height: 0;
   transition: max-height 300ms ease-in;
   overflow: hidden;
+}
+
+.rotating-word {
+  overflow: hidden;
+  position: relative;
+  animation: typingEffect 1s steps(100, end), blinkingCursor 0.5s infinite;
+}
+
+/* Define the styles for the emoji class */
+.emoji {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
+}
+
+/* Define the @keyframes for the blinkingCursor animation */
+@keyframes blinkingCursor {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #000;
+  }
 }

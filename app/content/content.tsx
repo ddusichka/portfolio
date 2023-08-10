@@ -6,39 +6,84 @@ const content = {
     {
       name: "Chatterbox",
       path: "chatterbox",
-      dates: "January - March 2023",
+      emoji: "💬",
+      dates: "January - May 2023",
       deployed: true,
       url: "https://chatterbox-io.netlify.app/",
-      github: "https://github.com/ddusichka/chatterbox",
+      github: "https://github.com/ddusichka/message-board",
       shortDescription:
         "A channel-based, real-time messaging app built with React and Firebase.",
       longDescription:
-        "Chatterbox is a real-time messaging application, similar to Slack, that allows users to communicate via channels. Users can log in via Google, email and password, or anonymously. Bad words are filtered out of messages. This app was built using React and uses Firebase for data storage and user authentication.",
-      coverPhoto: "/chatterbox.png",
+        "Introducing Chatterbox – a real-time messaging app similar to Slack, built with React and powered by Firebase. Connect effortlessly through channels by signing in anonymously, with Google, or with email and password. Our user-friendly interface filters out inappropriate language, maintaining a professional tone.",
+      coverPhoto: "/chatterboxCover.png",
+      photos: ["/chatterbox.png"],
       skills: ["Firebase", "React", "HTML/CSS/JS"],
       details: (
         <>
           <p>
-            I started developing chatterbox as part of the application process
-            for a software club on campus. The only requirements were to support
-            real-time editing from multiple users across different devices.
+            I started developing Chatterbox as part of the application process
+            for a software development club on campus. The only real requirement
+            was to allow users to post messages in real-time across multiple
+            devices.
           </p>
           <p>
             This was my first complex React project and my first time using
-            Firebase and was pretty daunting at first. However, I quickly
-            learned both and was able to get this functionality working. As
-            bonus features, I added filtering of bad words using a library and
+            Firebase and was pretty daunting at first. However, I got the hang
+            of both and was able to create a message board that anyone could
+            post to. As a bonus, I added bad word filtering using a library and
             incorporated user authentication via Firebase. I decided to support
             logging in with Google, email and password, and anonymous sign-in. I
-            deployed this as a Netlify website (my first time doing this),
-            submitted the project, and was accepted as a software developer!
+            deployed this as my first Netlify website, submitted the project,
+            and was accepted as a software developer!
           </p>
           <p>
-            After getting the basic functionality down, I was proud of this
-            project and decided to keep expanding it. I created a list of
-            features that would fit in nicely, prioritized them, and got to
-            work. Namely, I wanted to add channel-specific messaging and improve
-            the front-end layout by adding a sidebar.
+            I was proud of this project and decided to keep expanding it so I
+            could sharpen my React skills. I created a list of features that
+            would fit in nicely, prioritized them, and got to work. The biggest
+            overhaul was the addition of channels to organize messages by topic.
+            I restructured the way I organized messages in Firebase and enabled
+            users to create their own channels. This required the front-end to
+            look different, and I decided to add a sidebar. This was pretty
+            challenging with my limited CSS skills, but I was able to create a
+            layout I liked! I also added user profile updating capabilities to
+            the app.
+          </p>
+          <div className="mt-4">
+            <div className="flex justify-between gap-4 ">
+              <div>
+                <img src={"/chatterboxLogin.png"} alt="Login" />
+                <p className="text-center text-gray-600">Login options</p>
+              </div>
+              <div>
+                <img src={"/chatterboxChannels.png"} alt="Channels" />
+                <p className="text-center text-gray-600">
+                  Sidebar with channel specificity
+                </p>
+              </div>
+
+              <div>
+                <img src={"/chatterboxNewChannel.png"} alt="New Channel" />
+                <p className="text-center text-gray-600">
+                  Channel creation page
+                </p>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+      future: (
+        <>
+          <p>
+            If I get a chance to revisit this project, I would love to add
+            message editing and deleting. The ability to select channels to join
+            and exclude others is another feature I want, along with the ability
+            to create private channels. Direct messaging would also be cool.
+          </p>
+          <p>
+            I also would use this app to get better at backend development.
+            Currently, the front-end directly interacts with Firebase, and I'd
+            be interested in replacing that with a new API that handles these
+            requests.
           </p>
         </>
       ),
@@ -46,15 +91,19 @@ const content = {
     {
       name: "Jeopardy",
       path: "jeopardy",
+      emoji: "💬",
+
       dates: "April 2023",
       deployed: false,
       url: "",
-      github: "",
+      github: "https://github.com/ddusichka/jeopardy-v1",
       shortDescription:
         "A real-time, multiplayer Jeopardy game that allows players to buzz in.",
       longDescription:
         "This is a multiplayer Jeopardy game that allows players to buzz in via their own devices and play in real-time. It was built using React and Firebase. It allows multiple teams to compete, log in via their mobile devices, and buzz in to answer questions. It also keeps track of scoring.",
       coverPhoto: "/chatterbox.png",
+      photos: ["/chatterbox.png"],
+
       skills: ["Firebase", "React", "HTML/CSS/JS"],
       details: (
         <div>
@@ -75,10 +124,13 @@ const content = {
           </p>
         </div>
       ),
+      future: null,
     },
     {
       name: "Image Processor",
       path: "image-processor",
+      emoji: "💬",
+
       dates: "June 2022",
       deployed: false,
       url: "",
@@ -86,26 +138,34 @@ const content = {
       shortDescription: "An image processing application built with Java.",
       longDescription: "",
       coverPhoto: "/chatterbox.png",
+      photos: ["/chatterbox.png"],
+
       skills: ["Java", "Java Swing"],
       details: "",
+      future: null,
     },
     {
       name: "Marble Solitaire",
       path: "marble-solitaire",
+      emoji: "💬",
+
       dates: "May 2022",
       deployed: false,
       url: "",
-      github: "",
+      github: "https://github.com/ddusichka/Marble-Solitaire",
       shortDescription:
         "A marble solitaire game built with Java and the MVC design paradigm.",
       longDescription: "",
       coverPhoto: "/chatterbox.png",
+      photos: [],
       skills: ["Java"],
       details: "",
+      future: null,
     },
     {
       name: "Maze Animator",
       path: "maze-animator",
+      emoji: "💬",
       dates: "???",
       deployed: false,
       url: "",
@@ -113,21 +173,28 @@ const content = {
       shortDescription: "A maze animation game showing BFS and DFS.",
       longDescription: "",
       coverPhoto: "/chatterbox.png",
+      photos: ["/chatterbox.png"],
+
       skills: ["Java"],
       details: "",
+      future: null,
     },
     {
       name: "Seam Carver",
       path: "seam-carver",
+      emoji: "💬",
       dates: "???",
       deployed: false,
       url: "",
-      github: "",
+      github: "https://github.com/ddusichka/Seam-Carving",
       shortDescription: "A seam carver application.",
       longDescription: "",
       coverPhoto: "/chatterbox.png",
+      photos: ["/chatterbox.png"],
+
       skills: ["Java"],
       details: "" /* Probably it's own React component? */,
+      future: null,
     },
   ],
   experience: [
@@ -139,12 +206,48 @@ const content = {
       linkText: "blueport.com",
       linkURL: "https://www.blueport.com/",
       bullets: [
-        "Developing and refining C# microservice endpoints utilizing Postgres databases for e-commerce sites",
-        "Creating SQL Server tables and procedures to effectively manage store and catalog data",
-        "Developing 7 internal and client-facing web applications using SQL, JavaScript, and API endpoints in Retool",
+        "Developing and refining C# microservice endpoints to power e-commerce sites",
+        "Creating tables and procedures in SQL Server and Postgres to effectively manage e-commerce data",
+        "Spearheading the company's tooling initiative by launching Retool development",
+        "Developing 8 internal and client-facing Retool applications using SQL and JavaScript",
+        "Documenting tool development processes, giving demos, and offering support to other developers",
       ],
       showMore: true,
-      details: <Blueport />,
+      details: (
+        <div>
+          <div className="mt-4 flex-col space-y-4">
+            <h1 className="font-bold text-md tablet:text-lg">Details</h1>
+            <p>
+              For my first co-op experience at Northeastern, I worked at
+              <b> Blueport</b>, a company that provides an omni-channel
+              e-commerce platform for furniture retailers. As the only{" "}
+              <b>Software Development Co-op</b> at a small company, my role had
+              a lot of variety and gave me a broad range of software experience.
+            </p>
+            <p>
+              When I started, Blueport had recently purchased a <b>Retool </b>
+              subscription — Retool is a low-code platform for building UIs.
+              However, few apps were being built. My role was to learn how to
+              use the software and begin building tools to save developer time
+              and put power in the hands of retailers (our clients).
+            </p>
+            <p>
+              Building each Retool app required... JavaScript is the language of
+              Retool, so I quickly picked it up. Additionally, each app required
+              the development or refinement of SQL Server procedures and/or
+              tables, as well as gRPC endpoints. Thus, I gained a lot of{" "}
+              <b>backend experience</b> through each app.
+            </p>
+            <p>
+              Some of the non-technical skills I gained include technical
+              writing, presenting, and teaching. I made documentation a
+              priority, so I wrote a wiki page for every tool I developed and
+              also created general how-to wiki pages that I thought would be
+              useful to others.
+            </p>
+          </div>
+        </div>
+      ),
     },
     {
       position: "Writer and Editor",
@@ -190,7 +293,7 @@ const content = {
       location: "Boston, MA",
       date: "Jan 2022 - May 2022",
       linkText: "",
-      linkURL: "",
+      linkURL: "https://neu.campuslabs.com/engage/organization/ecoscholars",
       bullets: [],
       showMore: false,
     },
