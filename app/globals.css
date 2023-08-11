@@ -44,6 +44,14 @@ h5 {
   padding: 3px 15px;
 }
 
+.secondary-button {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 12px;
+  background-color: #ac3a4a;
+  color: #fffff2;
+  padding: 3px 15px;
+}
+
 .outline-button {
   border: 1px solid rgb(50, 50, 50);
   border-radius: 12px;

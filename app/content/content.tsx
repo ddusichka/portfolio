@@ -15,7 +15,7 @@ const content = {
         "A channel-based, real-time messaging app built with React and Firebase.",
       longDescription:
         "Introducing Chatterbox – a real-time messaging app similar to Slack, built with React and powered by Firebase. Connect effortlessly through channels by signing in anonymously, with Google, or with email and password. Our user-friendly interface filters out inappropriate language, maintaining a professional tone.",
-      coverPhoto: "/chatterboxCover.png",
+      coverPhoto: "/chatterbox.png",
       photos: ["/chatterbox.png"],
       skills: ["Firebase", "React", "HTML/CSS/JS"],
       details: (
@@ -49,7 +49,7 @@ const content = {
             the app.
           </p>
           <div className="mt-4">
-            <div className="flex justify-between gap-4 ">
+            <div className="laptop:flex laptop:justify-between laptop:gap-4 ">
               <div>
                 <img src={"/chatterboxLogin.png"} alt="Login" />
                 <p className="text-center text-gray-600">Login options</p>
@@ -91,7 +91,7 @@ const content = {
     {
       name: "Jeopardy",
       path: "jeopardy",
-      emoji: "💬",
+      emoji: "❓",
 
       dates: "April 2023",
       deployed: false,
@@ -101,12 +101,12 @@ const content = {
         "A real-time, multiplayer Jeopardy game that allows players to buzz in.",
       longDescription:
         "This is a multiplayer Jeopardy game that allows players to buzz in via their own devices and play in real-time. It was built using React and Firebase. It allows multiple teams to compete, log in via their mobile devices, and buzz in to answer questions. It also keeps track of scoring.",
-      coverPhoto: "/chatterbox.png",
-      photos: ["/chatterbox.png"],
+      coverPhoto: "/jeopardyCover.png",
+      photos: ["/jeopardy.png"],
 
       skills: ["Firebase", "React", "HTML/CSS/JS"],
       details: (
-        <div>
+        <>
           <p>
             I was inspired to make this Jeopardy app when one of my clubs,
             Biology Club, decided to host a bio-themed Jeopardy night. Having
@@ -122,14 +122,51 @@ const content = {
             project and wanted to build a separate backend instead of having my
             front-end directly communicate with Firebase.
           </p>
-        </div>
+          <div className="mt-4">
+            <div className="laptop:flex laptop:justify-between laptop:gap-4 ">
+              <div>
+                <img src={"/jeopardyQuestion.png"} alt="Login" />
+                <p className="text-center text-gray-600">Login options</p>
+              </div>
+              <div>
+                <img src={"/jeopardyBuzzer.png"} alt="Channels" />
+                <p className="text-center text-gray-600">
+                  Sidebar with channel specificity
+                </p>
+              </div>
+              <div>
+                <img src={"/jeopardyScoring.png"} alt="Channels" />
+                <p className="text-center text-gray-600">
+                  Scoring functionality
+                </p>
+              </div>
+            </div>
+          </div>
+        </>
       ),
-      future: null,
+      future: (
+        <>
+          <p>
+            In a future version of this project, I would definitely want to
+            create the concept of a "game code" so that multiple games can be
+            played independently. Currently, questions are hard-coded and are
+            biology themed. I&apos;d love to give hosts the ability to create
+            their own questions or perhaps choose from a pre-determined set of
+            genres. Fetching actual old Jeopardy games could be cool too.
+          </p>
+          <p>
+            I also would revamp this app to use a proper backend. Currently, the
+            front-end directly interacts with Firebase, and I&apos;d be
+            interested in replacing that with a new API that handles these
+            requests.
+          </p>
+        </>
+      ),
     },
     {
       name: "Image Processor",
       path: "image-processor",
-      emoji: "💬",
+      emoji: "📸",
 
       dates: "June 2022",
       deployed: false,
@@ -137,8 +174,8 @@ const content = {
       github: "https://github.com/ddusichka/Image-Processor",
       shortDescription: "An image processing application built with Java.",
       longDescription: "",
-      coverPhoto: "/chatterbox.png",
-      photos: ["/chatterbox.png"],
+      coverPhoto: "/ImageProcessor.gif",
+      photos: ["/ImageProcessor.gif"],
 
       skills: ["Java", "Java Swing"],
       details: "",
@@ -165,32 +202,40 @@ const content = {
     {
       name: "Maze Animator",
       path: "maze-animator",
-      emoji: "💬",
-      dates: "???",
+      emoji: "🧩",
+      dates: "April 2022",
       deployed: false,
       url: "",
       github: "https://github.com/ddusichka/Maze-Animator",
       shortDescription: "A maze animation game showing BFS and DFS.",
-      longDescription: "",
-      coverPhoto: "/chatterbox.png",
-      photos: ["/chatterbox.png"],
+      longDescription:
+        "This program generates random mazes for the user to solve manually. The user can also see solutions found via BFS (breadth-first search) or DFS (depth-first search) algorithms.",
+      coverPhoto: "/maze.png",
+      photos: ["/maze.png"],
 
       skills: ["Java"],
-      details: "",
+      details: (
+        <>
+          <p>
+            Mazes! This game allows users to traverse randomly generated mazes.
+          </p>
+        </>
+      ),
       future: null,
     },
     {
       name: "Seam Carver",
       path: "seam-carver",
-      emoji: "💬",
-      dates: "???",
+      emoji: "⚡️",
+      dates: "March 2022",
       deployed: false,
       url: "",
       github: "https://github.com/ddusichka/Seam-Carving",
       shortDescription: "A seam carver application.",
-      longDescription: "",
+      longDescription:
+        "Intelligently shrinks photos by removing the visually 'least interesting' seam. Uses content-aware image resizing algorithm to compress the image to its most important details. Created for Accelerated Fundamentals of Computer Science 2.",
       coverPhoto: "/chatterbox.png",
-      photos: ["/chatterbox.png"],
+      photos: ["/SeamCarving.gif"],
 
       skills: ["Java"],
       details: "" /* Probably it's own React component? */,
