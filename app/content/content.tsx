@@ -148,7 +148,7 @@ const content = {
         <>
           <p>
             In a future version of this project, I would definitely want to
-            create the concept of a "game code" so that multiple games can be
+            create the concept of a game code so that multiple games can be
             played independently. Currently, questions are hard-coded and are
             biology themed. I&apos;d love to give hosts the ability to create
             their own questions or perhaps choose from a pre-determined set of
