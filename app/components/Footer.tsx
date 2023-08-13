@@ -3,10 +3,20 @@ import Icons from "./Icons";
 
 const Footer = () => {
   return (
-    <div className="ml-4 flex-col flex items-center bg-[#fffff2]">
-      <p className="mt-2">© 2023 | Designed and coded by Dessy Dusichka</p>
-      <div className="ml-6 flex gap-4">
-        <Icons colorString="black" />
+    <div className="ml-4">
+      <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-400" />
+      <div className="flex">
+        <p>
+          © 2023 | Designed and built by
+          <a href="mailto:ddusichka@gmail.com" target="_blank">
+            <span className="ml-1 font-bold text-[#81559b]">
+              Dessy Dusichka
+            </span>
+          </a>
+        </p>
+        <div className="ml-6 mt-1 flex gap-4">
+          <Icons color="black" size="1em" />
+        </div>
       </div>
     </div>
   );

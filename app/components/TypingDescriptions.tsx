@@ -34,7 +34,7 @@ const TypingEffect = () => {
     return () => {
       clearInterval(typingIntervalId);
     };
-  }, [displayedDescriptionIndex, descriptions]);
+  }, [displayedDescriptionIndex]);
 
   useEffect(() => {
     if (typingCompleted) {
