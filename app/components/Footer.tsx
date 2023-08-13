@@ -4,11 +4,11 @@ import Icons from "./Icons";
 const Footer = () => {
   return (
     <div className="ml-4">
-      <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-400" />
+      <hr className="h-px my-2 bg-gray-400 border-0" />
       <div className="flex">
         <p>
           © 2023 | Designed and built by
-          <a href="mailto:ddusichka@gmail.com" target="_blank">
+          <a href="mailto:dusichka.d@northeastern.edu" target="_blank">
             <span className="ml-1 font-bold text-[#81559b]">
               Dessy Dusichka
             </span>

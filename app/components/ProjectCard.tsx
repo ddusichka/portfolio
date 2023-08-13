@@ -20,7 +20,7 @@ const ProjectCard = (
 ) => {
   return (
     <Link href={`/projects/${proj.path}`} key={key}>
-      <div className="flex flex-col bg-gray-100 rounded-lg p-4 h-full">
+      <div className="flex flex-col bg-offwhite rounded-lg p-4 h-full">
         <Image src={proj.coverPhoto} alt="project" width={300} height={200} />
         <h1 className="text-lg mt-2">{proj.name}</h1>
         <p>{proj.shortDescription}</p>

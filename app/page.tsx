@@ -29,12 +29,14 @@ export default function Home() {
             })}
           </div>
           <Link href="/experience">
-            <button className="outline-button mt-4">See all experiences</button>
+            <button className="outline-button mt-4 float-right">
+              See all experiences
+            </button>
           </Link>
         </div>
 
         <div>
-          <h2 className="mt-8 text-xl">Featured Projects</h2>
+          <h2 className="mt-10 text-xl">Featured Projects</h2>
           <div className="mt-2 grid grid-rows-3 gap-4 laptop:grid-rows-1 laptop:grid-cols-3 laptop:gap-8">
             {content.projects.map((proj, index) => {
               if (proj.featured) {
@@ -43,7 +45,9 @@ export default function Home() {
             })}
           </div>
           <Link href="/projects">
-            <button className="outline-button mt-4">See all projects</button>
+            <button className="outline-button mt-4 float-right">
+              See all projects
+            </button>
           </Link>
         </div>
 

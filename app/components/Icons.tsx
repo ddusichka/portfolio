@@ -17,7 +17,7 @@ const Icons = ({ color, size }: { color: string; size: string }) => {
           <FaGithub color={color} size={size} />
         </div>
       </a>
-      <a href="mailto:ddusichka@gmail.com" target="_blank">
+      <a href="mailto:dusichka.d@northeastern.edu" target="_blank">
         <div className={iconStyle}>
           <AiOutlineMail color={color} size={size} />
         </div>
