@@ -125,13 +125,13 @@ const content = {
             <div className="laptop:flex laptop:justify-between laptop:gap-4 ">
               <div>
                 <img src={"/jeopardyQuestion.png"} alt="Login" />
-                <p className="text-center text-gray-600">Login options</p>
+                <p className="text-center text-gray-600">
+                  Question and answer popup
+                </p>
               </div>
               <div>
                 <img src={"/jeopardyBuzzer.png"} alt="Channels" />
-                <p className="text-center text-gray-600">
-                  Sidebar with channel specificity
-                </p>
+                <p className="text-center text-gray-600">Team buzzer</p>
               </div>
               <div>
                 <img src={"/jeopardyScoring.png"} alt="Channels" />
@@ -232,15 +232,65 @@ const content = {
       featured: false,
       url: "",
       github: "https://github.com/ddusichka/Seam-Carving",
-      shortDescription: "A seam carver application.",
+      shortDescription: "An image compression application.",
       longDescription:
-        "Intelligently shrinks photos by removing the visually 'least interesting' seam. Uses content-aware image resizing algorithm to compress the image to its most important details. Created for Accelerated Fundamentals of Computer Science 2.",
+        "Intelligently shrinks photos by removing the visually 'least interesting' seam. Uses content-aware image resizing algorithm to compress the image to its most important details; unlike cropping, entire parts of the image aren't lost. Created for Accelerated Fundamentals of Computer Science 2.",
       coverPhoto: "/seamCarving.png",
       photos: ["/SeamCarving.gif"],
 
       skills: ["Java"],
-      details: "" /* Probably it's own React component? */,
-      future: null,
+      details: (
+        <>
+          <p>
+            I created this as a class project — the goal was to get practice
+            implementing a complex algorithm and creating an interactive user
+            interface. This project was daunting at first but taught me a lot
+            about image compression and was very satisfying to complete.
+          </p>
+          <p>
+            The first version of this project only removed seams without giving
+            the user any controls. My partners and I revised it to display the
+            seam being removed in red and give the user the ability to pause the
+            animation. The user can also choose to remove only horizontal or
+            only vertical seams by typing "h" or "v" respectively.
+          </p>
+          <div className="mt-4">
+            <div className="laptop:flex laptop:justify-around laptop:gap-4 ">
+              <div>
+                <img src={"/seamHorizontal.gif"} alt="Login" />
+                <p className="text-center text-gray-600">
+                  Removing horizontal seams
+                </p>
+              </div>
+              <div>
+                <img src={"/seamVertical.gif"} alt="Channels" />
+                <p className="text-center text-gray-600">
+                  Removing vertical seams
+                </p>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+      future: (
+        <>
+          <p>
+            If I ever have a chance to revisit this project, there's a good
+            amount I would change. First, the code itself is all in one large
+            file that is pretty hard to understand so I'd start by putting each
+            class in its own file. Additionally, there's some redundancy — we
+            have some pairs of functions that handle vertical and horizontal
+            seams separately, but these should be abstracted into one.
+          </p>
+          <p>
+            Functionality wise, it would be cool to add the ability to add seams
+            back in. I also think the ability to export a modified photo would
+            be cool. Ideally, I'd like to combine this functionality with my
+            Image Processor project since it's a useful image manipulation
+            technique.
+          </p>
+        </>
+      ),
     },
   ],
   experience: [
@@ -344,9 +394,13 @@ const content = {
       location: "Boston, MA",
       image: "/ecoscholars.png",
       date: "Jan 2022 - May 2022",
-      linkText: "",
+      linkText: "Boston EcoScholars",
       linkURL: "https://neu.campuslabs.com/engage/organization/ecoscholars",
-      bullets: [],
+      bullets: [
+        "Prepared interactive lessons on environmental science and climate change for K-5 students",
+        "Taught these lessons to after-school classes of up to 15 students in the greater Boston area",
+        "Anticipated the needs of students to resolve conflicts and challenges and foster effective learning",
+      ],
       showMore: false,
     },
     // {
