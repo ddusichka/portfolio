@@ -252,7 +252,8 @@ const content = {
             the user any controls. My partners and I revised it to display the
             seam being removed in red and give the user the ability to pause the
             animation. The user can also choose to remove only horizontal or
-            only vertical seams by typing "h" or "v" respectively.
+            only vertical seams by typing &quot;h&quot; or &quot;v&quot;
+            respectively.
           </p>
           <div className="mt-4">
             <div className="laptop:flex laptop:justify-around laptop:gap-4 ">
@@ -275,19 +276,20 @@ const content = {
       future: (
         <>
           <p>
-            If I ever have a chance to revisit this project, there's a good
+            If I ever have a chance to revisit this project, there&apos;s a good
             amount I would change. First, the code itself is all in one large
-            file that is pretty hard to understand so I'd start by putting each
-            class in its own file. Additionally, there's some redundancy — we
-            have some pairs of functions that handle vertical and horizontal
-            seams separately, but these should be abstracted into one.
+            file that is pretty hard to understand so I&apos;d start by putting
+            each class in its own file. Additionally, there&apos;s some
+            redundancy — we have some pairs of functions that handle vertical
+            and horizontal seams separately, but these should be abstracted into
+            one.
           </p>
           <p>
             Functionality wise, it would be cool to add the ability to add seams
             back in. I also think the ability to export a modified photo would
-            be cool. Ideally, I'd like to combine this functionality with my
-            Image Processor project since it's a useful image manipulation
-            technique.
+            be cool. Ideally, I&apos;d like to combine this functionality with
+            my Image Processor project since it&apos;s a useful image
+            manipulation technique.
           </p>
         </>
       ),
