@@ -9,10 +9,7 @@ export default function Experience() {
         <div className="flex justify-between">
           <h1>Experience</h1>
           <button className="secondary-button text-xl">
-            <Link
-              href="https://docs.google.com/document/d/1yJ2O1Hyh2k3NJzMocFL1oOv3mLyq74pcyVgblmbMN-0/edit"
-              target="_blank"
-            >
+            <Link href="/Dessy_Dusichka_Resume.pdf" target="_blank">
               Resume
             </Link>
           </button>
