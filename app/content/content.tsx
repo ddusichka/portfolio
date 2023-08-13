@@ -1,5 +1,3 @@
-import Blueport from "../components/Blueport";
-
 const content = {
   pages: ["about", "experience", "projects"],
   projects: [
@@ -9,6 +7,7 @@ const content = {
       emoji: "💬",
       dates: "January - May 2023",
       deployed: true,
+      featured: true,
       url: "https://chatterbox-io.netlify.app/",
       github: "https://github.com/ddusichka/message-board",
       shortDescription:
@@ -92,9 +91,9 @@ const content = {
       name: "Jeopardy",
       path: "jeopardy",
       emoji: "❓",
-
       dates: "April 2023",
       deployed: false,
+      featured: true,
       url: "",
       github: "https://github.com/ddusichka/jeopardy-v1",
       shortDescription:
@@ -167,9 +166,9 @@ const content = {
       name: "Image Processor",
       path: "image-processor",
       emoji: "📸",
-
       dates: "June 2022",
       deployed: false,
+      featured: true,
       url: "",
       github: "https://github.com/ddusichka/Image-Processor",
       shortDescription: "An image processing application built with Java.",
@@ -185,9 +184,9 @@ const content = {
       name: "Marble Solitaire",
       path: "marble-solitaire",
       emoji: "💬",
-
       dates: "May 2022",
       deployed: false,
+      featured: false,
       url: "",
       github: "https://github.com/ddusichka/Marble-Solitaire",
       shortDescription:
@@ -205,6 +204,7 @@ const content = {
       emoji: "🧩",
       dates: "April 2022",
       deployed: false,
+      featured: false,
       url: "",
       github: "https://github.com/ddusichka/Maze-Animator",
       shortDescription: "A maze animation game showing BFS and DFS.",
@@ -229,12 +229,13 @@ const content = {
       emoji: "⚡️",
       dates: "March 2022",
       deployed: false,
+      featured: false,
       url: "",
       github: "https://github.com/ddusichka/Seam-Carving",
       shortDescription: "A seam carver application.",
       longDescription:
         "Intelligently shrinks photos by removing the visually 'least interesting' seam. Uses content-aware image resizing algorithm to compress the image to its most important details. Created for Accelerated Fundamentals of Computer Science 2.",
-      coverPhoto: "/chatterbox.png",
+      coverPhoto: "/seamCarving.png",
       photos: ["/SeamCarving.gif"],
 
       skills: ["Java"],
@@ -247,7 +248,8 @@ const content = {
       position: "Software Development Co-op",
       company: "Blueport",
       location: "Boston, MA",
-      date: "Jan 2023 - June 2023",
+      image: "/blueport.png",
+      date: "Jan 2023 - Present",
       linkText: "blueport.com",
       linkURL: "https://www.blueport.com/",
       bullets: [
@@ -298,6 +300,7 @@ const content = {
       position: "Writer and Editor",
       company: "NU Sci Magazine",
       location: "Boston, MA",
+      image: "/nusci.png",
       date: "Jan 2022 - Present",
       linkText: "nuscimagazine.com",
       linkURL: "https://nuscimagazine.com/",
@@ -311,11 +314,13 @@ const content = {
       position: "Software Developer",
       company: "Code4Community",
       location: "Boston, MA",
+      image: "/c4c.png",
       date: "Mar 2023 - Present",
       linkText: "c4cneu.com",
       linkURL: "https://www.c4cneu.com/",
       bullets: [
         "Developing code for a letter of recommendation web application for the Abdul Latif Jameel Poverty Action Lab",
+        "Completing tickets, participating in code reviews, and collaborating with project managers and designers",
       ],
       showMore: false,
     },
@@ -323,7 +328,8 @@ const content = {
       position: "Discrete Structures TA",
       company: "Khoury College",
       location: "Boston, MA",
-      date: "Aug 2022 - December 2022",
+      image: "/khoury.png",
+      date: "Aug 2022 - Dec 2022",
       linkText: "CS 1800 Course Page",
       linkURL: "https://course.ccs.neu.edu/cs1800f22/",
       bullets: [
@@ -336,6 +342,7 @@ const content = {
       position: "Curriculum Developer and Volunteer Teacher",
       company: "Boston EcoScholars",
       location: "Boston, MA",
+      image: "/ecoscholars.png",
       date: "Jan 2022 - May 2022",
       linkText: "",
       linkURL: "https://neu.campuslabs.com/engage/organization/ecoscholars",

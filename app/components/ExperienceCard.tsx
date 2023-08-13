@@ -11,6 +11,7 @@ const ExperienceCard = (experience: {
   position: string;
   company: string;
   location: string;
+  image: string;
   date: string;
   linkText: string;
   linkURL: string;
@@ -49,16 +50,14 @@ const ExperienceCard = (experience: {
           <div className="flex text-black laptop:text-18 gap-2 tablet:gap-3 items-center">
             <div>{experience.location}</div>
             <div className="bg-gray-300 w-px h-4 laptop:h-5 "></div>
-            <div>{experience.date}</div>
-            <div className="EXPAND-ICON pr-8 pt-7 tablet:pt-0">
-              {open ? <CloseIcon /> : <ExpandIcon />}
+            <div className="flex">
+              {experience.date}
+              <div className="EXPAND-ICON ml-4 mt-1 pr-8 tablet:pt-0">
+                {open ? <CloseIcon /> : <ExpandIcon />}
+              </div>
             </div>
           </div>
         </div>
-
-        {/* <div className="EXPAND-ICON relative flex w-full justify-end pr-8 pt-7 tablet:pt-0">
-          {open ? <CloseIcon /> : <ExpandIcon />}
-        </div> */}
       </div>
 
       {/* DROPDOWN-CONTENT */}
@@ -68,11 +67,19 @@ const ExperienceCard = (experience: {
         }
       >
         <div className="EXPERIENCE-DETAILS pt-4 mt-2 border-t border-grey">
-          <ul className="list-disc pl-4 marker:text-grey">
-            {experience.bullets.map((bullet, index) => {
-              return <li key={index}>{bullet}</li>;
-            })}
-          </ul>
+          <div className="flex">
+            <ul className="list-disc ml-2 pl-4 marker:text-grey">
+              {experience.bullets.map((bullet, index) => {
+                return (
+                  <li className="pr-4" key={index}>
+                    <p className="ml-2">{bullet}</p>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* <img src={experience.image} alt={experience.company} /> */}
+          </div>
 
           {seeMore && experience.details}
 

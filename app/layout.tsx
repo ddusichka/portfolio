@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Nunito } from "next/font/google";
@@ -22,8 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <Header />
-        <main>{children}</main>
+        <div className="grid grid-rows-[auto,1fr,auto] min-h-screen">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

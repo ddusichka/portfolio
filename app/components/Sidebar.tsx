@@ -56,7 +56,7 @@ const Sidebar = ({
 
           <div className="pt-20">
             <div className="flex items-center justify-around my-4 w-full">
-              <Icons />
+              <Icons colorString="white" />
             </div>
           </div>
         </div>
