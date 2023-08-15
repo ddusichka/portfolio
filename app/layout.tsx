@@ -25,7 +25,11 @@ export default function RootLayout({
       <body className={nunito.className}>
         <div className="grid grid-rows-[auto,1fr,auto] min-h-screen">
           <Header />
-          <main className="flex-grow">{children}</main>
+          <div className="flex justify-center my-4 laptop:my-8">
+            <div className="w-[90%] laptop:w-[75%]">
+              <main className="flex-grow">{children}</main>
+            </div>
+          </div>
           <Footer />
         </div>
       </body>
