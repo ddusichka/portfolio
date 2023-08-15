@@ -211,7 +211,7 @@ const content = {
       longDescription:
         "This program generates random mazes for the user to solve manually. The user can also see solutions found via BFS (breadth-first search) or DFS (depth-first search) algorithms.",
       coverPhoto: "/maze.png",
-      photos: ["/maze.png"],
+      photos: ["/mazeAnimation.gif"],
 
       skills: ["Java"],
       details: (

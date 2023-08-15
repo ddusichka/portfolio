@@ -14,9 +14,9 @@ const ExperienceSnapshot = (experience: {
   details?: React.ReactNode;
 }) => {
   return (
-    <div className="EXPERIENCE-CARD flex bg-offwhite rounded-lg drop-shadow-md py-3 px-4">
-      <div className="flex-1">
-        <div className="font-bold text-md tablet:text-xl pr-4 items-end">
+    <div className="EXPERIENCE-SNAPSHOT flex bg-offwhite rounded-lg drop-shadow-md py-3 px-4">
+      <div className="flex-1 flex flex-col justify-center">
+        <div className="font-bold text-md tablet:text-xl pr-4">
           <p className="whitespace-normal">
             {experience.position}{" "}
             <span className="text-black font-normal pr-1">at</span>
