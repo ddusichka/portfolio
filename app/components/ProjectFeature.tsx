@@ -34,7 +34,9 @@ const ProjectFeature: React.FC<ProjectProps> = ({
           <p className="text-xl my-2">{description}</p>
           <div className="flex gap-2">
             {skills.map((s) => (
-              <p className="bg-slate-200 px-4 rounded-md">{s}</p>
+              <p className="bg-slate-200 px-4 rounded-md" key={s}>
+                {s}
+              </p>
             ))}
           </div>
           <div className="mt-auto">
