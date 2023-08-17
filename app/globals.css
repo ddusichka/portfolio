@@ -70,8 +70,6 @@ h5 {
 }
 
 .rotating-word {
-  overflow: hidden;
-  position: relative;
   animation: typingEffect 1s steps(100, end), blinkingCursor 0.5s infinite;
 }
 
