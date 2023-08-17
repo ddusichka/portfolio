@@ -13,7 +13,7 @@ export default function Home() {
         <div className="relative">
           <img src={"/edit.png"} alt="Banner" className="w-full" />
 
-          <div className="absolute top-0 left-0 tablet:mt-16 text-2xl p-4 laptop:p-8">
+          <div className="absolute top-0 left-0 tablet:mt-16 text-2xl py-4 px-2 laptop:p-8">
             <h1 className="text-lg tablet:text-6xl mb-4 tablet:mb-6">
               {"Hi, I'm Dessy!"}
             </h1>
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-3xl">Right now</h2>
+        <h2 className="text-lg tablet:text-3xl">Right now</h2>
         <div className="mt-2 grid grid-rows-3 gap-4 laptop:grid-rows-1 laptop:grid-cols-3 laptop:gap-8">
           {content.experience.map((exp, index) => {
             if (exp.date.includes("Present")) {
@@ -42,7 +42,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-3xl ">Featured projects</h2>
+        <h2 className="text-lg tablet:text-3xl">Featured projects</h2>
         <div className="mt-2 grid gap-4 laptop:gap-8">
           {content.projects.map((proj, index) => {
             if (proj.featured) {
