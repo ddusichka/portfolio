@@ -22,12 +22,12 @@ const ProjectFeature: React.FC<ProjectProps> = ({
   return (
     <Link href={`/projects/${path}`}>
       <div
-        className={`flex bg-offwhite rounded-lg drop-shadow-md p-4 h-full ${
-          index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-        } gap-4`}
+        className={`flex flex-col tablet:flex-row bg-offwhite rounded-lg drop-shadow-md p-4 ${
+          index % 2 === 0 ? "tablet:flex-row" : "tablet:flex-row-reverse"
+        } gap-4 flex-1`}
       >
         <div className="flex-none">
-          <Image src={coverPhoto} alt="project" width={500} height={500} />
+          <Image src={coverPhoto} alt="project" width={500} height={400} />
         </div>
         <div className="flex-1 ml-4 text-lg">
           <h1 className="text-3xl my-2">{name}</h1>
@@ -39,8 +39,8 @@ const ProjectFeature: React.FC<ProjectProps> = ({
               </p>
             ))}
           </div>
-          <div className="mt-auto">
-            <button className="main-button mt-10">View project</button>
+          <div className="my-4 laptop:mt-16">
+            <button className="main-button">View project</button>
           </div>
         </div>
       </div>
