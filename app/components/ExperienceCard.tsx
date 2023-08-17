@@ -33,7 +33,7 @@ const ExperienceCard = (experience: {
   return (
     <div className="EXPERIENCE-CARD flex-col bg-offwhite rounded-lg drop-shadow-md py-3 px-4 ">
       <div
-        className="EXPERIENCE-CARD-HEADER cursor-pointer flex tablet:flex-row tablet:flex-wrap mobile:flex-col tablet:items-center mobile:items-start justify-between"
+        className="EXPERIENCE-CARD-HEADER cursor-pointer flex tablet:flex-row tablet:flex-wrap mobile:flex-col tablet:items-center items-start justify-between"
         onClick={toggleOpen}
       >
         <div className="EXPERIENCE-CARD-POSITION flex flex-wrap pr-4 items-end">
@@ -46,16 +46,12 @@ const ExperienceCard = (experience: {
           </div>
         </div>
 
-        <div className="EXPERIENCE-CARD-TIME-PLACE flex flex-row flex-wrap gap-6">
-          <div className="flex text-black laptop:text-18 gap-2 tablet:gap-3 items-center">
-            <div>{experience.location}</div>
-            <div className="bg-gray-300 w-px h-4 laptop:h-5 "></div>
-            <div className="flex">
-              {experience.date}
-              <div className="EXPAND-ICON ml-4 mt-1 pr-8 tablet:pt-0">
-                {open ? <CloseIcon /> : <ExpandIcon />}
-              </div>
-            </div>
+        <div className="EXPERIENCE-CARD-TIME-PLACE flex justify-between gap-4 items-center w-full tablet:w-auto">
+          <p>{experience.location}</p>
+          <div className="laptop:bg-gray-300 laptop:w-px laptop:h-5"></div>
+          <div>{experience.date}</div>
+          <div className=" mt-1 tablet:mt-0">
+            {open ? <CloseIcon /> : <ExpandIcon />}
           </div>
         </div>
       </div>

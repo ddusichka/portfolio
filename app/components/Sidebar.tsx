@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
@@ -14,6 +14,7 @@ const Sidebar = ({
 }) => {
   return (
     <div
+      id="sidebar"
       className={
         isOpen
           ? "tablet:hidden fixed left-0 top-0 w-full h-screen bg-black/70 z-[100]"

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import content from "../content/content";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 
@@ -12,6 +12,21 @@ const Header: React.FC = () => {
   const handleNav = () => {
     setNav((oldNav) => !oldNav);
   };
+
+  // Close the sidebar when clicking outside of it
+  useEffect(() => {
+    const closeSidebarOnClickOutside = (even: MouseEvent) => {
+      if (nav) {
+        setNav(false);
+      }
+    };
+
+    document.addEventListener("click", closeSidebarOnClickOutside);
+
+    return () => {
+      document.removeEventListener("click", closeSidebarOnClickOutside);
+    };
+  }, [nav]);
 
   return (
     <div className="HEADER w-full h-20 shadow-xl z-[100]">

@@ -16,7 +16,7 @@ export default function Home() {
       <br />
 
       <div className="SKILLS text-lg">
-        <h3 className="text-[#ac3a4a] text-xl">Skills</h3>
+        <h3 className="text-[#ac3a4a] text-xl">⚙️ Skills</h3>
         <ul>
           <li>
             <strong>Languages:</strong> Java, JavaScript, Python, C#, SQL,
@@ -35,7 +35,7 @@ export default function Home() {
       <br />
 
       <div className="flex flex-col gap-4">
-        <h3 className="text-[#ac3a4a] text-xl">Academic Interests</h3>
+        <h3 className="text-[#ac3a4a] text-xl">📚 Academic Interests</h3>
         <p>
           I couldn&apos;t choose between computer science and biology, so I
           stuck with both! I think the natural world is fascinating and
