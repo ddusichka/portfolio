@@ -1,5 +1,5 @@
 import Icons from "../components/Icons";
-import Skill from "../components/Skill";
+import Skill from "../components/About/Skill";
 import content from "../content/content";
 
 export default function Home() {
@@ -16,9 +16,9 @@ export default function Home() {
           meaningful projects.
         </p>
         <p>
-          On campus, I&apos;m a developer for Code4Community, Northeastern's
-          charitable software collective, and I also love to write and edit for
-          the university&apos;s science magazine, NU Sci.
+          On campus, I&apos;m a developer for Code4Community,
+          Northeastern&apos;s charitable software collective, and I also love to
+          write and edit for the university&apos;s science magazine, NU Sci.
         </p>
       </div>
 

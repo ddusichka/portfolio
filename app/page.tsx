@@ -1,10 +1,8 @@
-import Image from "next/image";
 import content from "./content/content";
-import TypingEffect from "./components/TypingDescriptions";
-import ExperienceSnapshot from "./components/ExperienceSnapshot";
+import TypingEffect from "./components/Home/TypingDescriptions";
+import ExperienceSnapshot from "./components/Home/ExperienceSnapshot";
 import Link from "next/link";
-import ProjectCard from "./components/ProjectCard";
-import ProjectFeature from "./components/ProjectFeature";
+import ProjectFeature from "./components/Home/ProjectFeature";
 
 export default function Home() {
   return (
