@@ -16,7 +16,7 @@ const ExperienceSnapshot = (experience: {
   return (
     <div className="EXPERIENCE-SNAPSHOT flex bg-offwhite rounded-lg drop-shadow-md py-3 px-4">
       <div className="flex-1 flex flex-col justify-center">
-        <div className="font-bold text-md tablet:text-xl pr-4">
+        <div className="font-bold text-lg tablet:text-xl pr-4">
           <p className="whitespace-normal">
             {experience.position}{" "}
             <span className="text-black font-normal pr-1">at</span>

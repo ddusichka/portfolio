@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="ml-4">
       <hr className="h-px my-2 bg-gray-400 border-0" />
-      <div className="flex justify-between tablet:justify-normal text-sm">
+      <div className="flex justify-between tablet:justify-normal text-lg pb-2">
         <p>
           © 2023 | Built by
           <a href="mailto:dusichka.d@northeastern.edu" target="_blank">

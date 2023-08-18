@@ -9,24 +9,21 @@ import ProjectFeature from "./components/ProjectFeature";
 export default function Home() {
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex justify-between">
-        <div className="relative">
-          <img src={"/edit.png"} alt="Banner" className="w-full" />
-
-          <div className="absolute top-0 left-0 tablet:mt-16 text-2xl py-4 px-2 laptop:p-8">
-            <h1 className="text-lg tablet:text-6xl mb-4 tablet:mb-6">
-              {"Hi, I'm Dessy!"}
-            </h1>
-            <h3 className="text-lg tablet:text-4xl">
-              student, developer, and{" "}
-            </h3>
-            <TypingEffect />
-          </div>
+      <div className="flex flex-col tablet:flex-row">
+        <div className="w-full tablet:w-1/2 tablet:mt-16 text-2xl py-4 laptop:py-8 pr-4">
+          <h1 className="text-4xl tablet:text-6xl mb-4 tablet:mb-6">
+            {"Hi, I'm Dessy!"}
+          </h1>
+          <h3 className="text-3xl tablet:text-4xl">student, developer, and </h3>
+          <TypingEffect />
+        </div>
+        <div className="w-full tablet:w-1/2 flex items-end justify-end">
+          <img src={"/Layer1.png"} alt="Banner" className="max-w-full" />
         </div>
       </div>
 
       <div>
-        <h2 className="text-lg tablet:text-3xl">Right now</h2>
+        <h2 className="text-2xl tablet:text-3xl">Right now</h2>
         <div className="mt-2 grid grid-rows-3 gap-4 laptop:grid-rows-1 laptop:grid-cols-3 laptop:gap-8">
           {content.experience.map((exp, index) => {
             if (exp.date.includes("Present")) {
@@ -42,7 +39,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-lg tablet:text-3xl">Featured projects</h2>
+        <h2 className="text-2xl tablet:text-3xl">Featured projects</h2>
         <div className="mt-2 grid gap-4 laptop:gap-8">
           {content.projects.map((proj, index) => {
             if (proj.featured) {
