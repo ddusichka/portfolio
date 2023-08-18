@@ -1,5 +1,23 @@
 const content = {
   pages: ["about", "experience", "projects"],
+  skills: [
+    { skill: "Java", image: "java.png" },
+    { skill: "JavaScript", image: "javascript.png" },
+    { skill: "SQL", image: "sql.png" },
+    { skill: "C#", image: "csharp.png" },
+    { skill: "TypeScript", image: "typescript.png" },
+    { skill: "Python", image: "python.png" },
+    { skill: "HTML/CSS", image: "htmlcss.png" },
+  ],
+  frameworks: [
+    { skill: "React", image: "react.png" },
+    { skill: "Next.js", image: "nextjs.png" },
+    { skill: "Firebase", image: "firebase.png" },
+    { skill: "MongoDB", image: "mongo.png" },
+    { skill: "Express", image: "express.png" },
+    { skill: "Git", image: "git.png" },
+    { skill: "Docker", image: "docker.png" },
+  ],
   projects: [
     {
       name: "Chatterbox",
