@@ -14,8 +14,8 @@ const content = {
         "A channel-based, real-time messaging app built with React and Firebase.",
       longDescription:
         "Introducing Chatterbox – a real-time messaging app similar to Slack, built with React and powered by Firebase. Connect effortlessly through channels by signing in anonymously, with Google, or with email and password. Our user-friendly interface filters out inappropriate language, maintaining a professional tone.",
+      cardPhoto: "/chatterbox.png",
       coverPhoto: "/chatterbox.png",
-      photos: ["/chatterbox.png"],
       skills: ["Firebase", "React", "HTML/CSS/JS"],
       details: (
         <>
@@ -97,11 +97,11 @@ const content = {
       url: "",
       github: "https://github.com/ddusichka/jeopardy-v1",
       shortDescription:
-        "A real-time, multiplayer Jeopardy game that allows players to buzz in.",
+        "A real-time, multiplayer Jeopardy game allowing teams to buzz in remotely.",
       longDescription:
         "This is a multiplayer Jeopardy game that allows players to buzz in via their own devices and play in real-time. It was built using React and Firebase. It allows multiple teams to compete, log in via their mobile devices, and buzz in to answer questions. It also keeps track of scoring.",
-      coverPhoto: "/jeopardyCover.png",
-      photos: ["/jeopardy.png"],
+      cardPhoto: "/jeopardyCover.png",
+      coverPhoto: "/jeopardy.png",
 
       skills: ["Firebase", "React", "HTML/CSS/JS"],
       details: (
@@ -173,9 +173,8 @@ const content = {
       github: "https://github.com/ddusichka/Image-Processor",
       shortDescription: "An image processing application built with Java.",
       longDescription: "",
+      cardPhoto: "/ImageProcessor.gif",
       coverPhoto: "/ImageProcessor.gif",
-      photos: ["/ImageProcessor.gif"],
-
       skills: ["Java", "Java Swing"],
       details: "",
       future: null,
@@ -183,7 +182,7 @@ const content = {
     {
       name: "Marble Solitaire",
       path: "marble-solitaire",
-      emoji: "💬",
+      emoji: "🃏",
       dates: "May 2022",
       deployed: false,
       featured: false,
@@ -191,11 +190,20 @@ const content = {
       github: "https://github.com/ddusichka/Marble-Solitaire",
       shortDescription:
         "A marble solitaire game built with Java and the MVC design paradigm.",
-      longDescription: "",
-      coverPhoto: "/chatterbox.png",
-      photos: [],
-      skills: ["Java"],
-      details: "",
+      longDescription: `The Marble Solitaire project is an implementation of the classic board game also known as 'Peg Solitaire' 
+      dating back to the 17th century. In this single-player game, the player moves marbles on a board, aiming to make valid moves to clear the board except for a single marble.\n\n
+       Valid moves consist of jumping a marble orthogonally over an adjacent marble into an empty hole two positions away,
+        resulting in the removal of the jumped marble.`,
+      cardPhoto: "/marbleSolitaire.png",
+      coverPhoto: "/vid.gif",
+      skills: ["Java", "Java Swing"],
+      details: (
+        <>
+          <p>
+            Mazes! This game allows users to traverse randomly generated mazes.
+          </p>
+        </>
+      ),
       future: null,
     },
     {
@@ -210,8 +218,8 @@ const content = {
       shortDescription: "A maze animation game showing BFS and DFS.",
       longDescription:
         "This program generates random mazes for the user to solve manually. The user can also see solutions found via BFS (breadth-first search) or DFS (depth-first search) algorithms.",
-      coverPhoto: "/maze.png",
-      photos: ["/mazeAnimation.gif"],
+      cardPhoto: "/maze.png",
+      coverPhoto: "/mazeAnimation.gif",
 
       skills: ["Java"],
       details: (
@@ -235,8 +243,8 @@ const content = {
       shortDescription: "An image compression application.",
       longDescription:
         "Intelligently shrinks photos by removing the visually 'least interesting' seam. Uses content-aware image resizing algorithm to compress the image to its most important details; unlike cropping, entire parts of the image aren't lost. Created for Accelerated Fundamentals of Computer Science 2.",
-      coverPhoto: "/seamCarving.png",
-      photos: ["/SeamCarving.gif"],
+      cardPhoto: "/seamCarving.png",
+      coverPhoto: "/SeamCarving.gif",
 
       skills: ["Java"],
       details: (

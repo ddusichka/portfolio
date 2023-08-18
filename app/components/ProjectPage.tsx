@@ -12,8 +12,8 @@ const ProjectPage = (proj: {
   github: string;
   shortDescription: string;
   longDescription: string;
+  cardPhoto: string;
   coverPhoto: string;
-  photos: string[];
   skills: string[];
   details: React.ReactNode;
   future: React.ReactNode;
@@ -31,14 +31,14 @@ const ProjectPage = (proj: {
       <p className="text-lg my-2">{proj.longDescription}</p>
 
       <div className="mt-2 laptop:flex gap-4 justify-between">
-        <div className="flex mt-2">
-          {proj.skills.map((skill, index) => (
-            <div
-              className="text-[#AC3A4A] font-bold text-lg mr-6 rounded-lg"
-              key={index}
+        <div className="flex mt-2 gap-2">
+          {proj.skills.map((s) => (
+            <p
+              className="bg-[#ac3a4a] text-white py-1 px-2 laptop:px-4 rounded-md"
+              key={s}
             >
-              {skill}
-            </div>
+              {s}
+            </p>
           ))}
         </div>
         <div className="mt-4 laptop:mt-0">
@@ -54,12 +54,8 @@ const ProjectPage = (proj: {
           </a>
         </div>
       </div>
-      {/* Buttons to visit project */}
-
       <div className="mt-4">
-        {proj.photos.map((photo) => {
-          return <img src={photo} alt={proj.name} key={photo} />;
-        })}
+        <img src={proj.coverPhoto} alt={proj.name} />
       </div>
 
       <div className="mt-4 text-lg">
