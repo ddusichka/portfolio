@@ -219,8 +219,41 @@ const content = {
       details: (
         <>
           <p>
-            Mazes! This game allows users to traverse randomly generated mazes.
+            This app was developed for CS 3000: Object-Oriented Design as a solo
+            project meant to illustrate the Model-View-Controller paradigm. The
+            first version of this app used only one board shape (known as
+            English solitaire). The game was also only playable via the command
+            line where the board state was drawn out using text.
           </p>
+          <p>
+            Future versions implemented new board shapes, including a Triangular
+            and a European version. Following the MVC design pattern enabled me
+            to create new models without affecting the rest of the code. Another
+            addition was the graphical interface. This was developed using Java
+            Swing. Just like how different classes implementing the Model
+            interface were interchangeable, it was similarly easy to swap
+            between Views.
+          </p>
+          <div className="mt-4">
+            <div className="laptop:flex laptop:justify-between laptop:gap-4 ">
+              <div>
+                <img src={"/textSolitaire.png"} alt="Login" />
+                <p className="text-center text-gray-600">Text-based gameplay</p>
+              </div>
+              <div>
+                <img src={"/triangleSolitaire.png"} alt="Channels" />
+                <p className="text-center text-gray-600">
+                  Triangle solitaire board
+                </p>
+              </div>
+              <div>
+                <img src={"/europeanSolitaire.png"} alt="Channels" />
+                <p className="text-center text-gray-600">
+                  European solitaire board
+                </p>
+              </div>
+            </div>
+          </div>
         </>
       ),
       future: null,
