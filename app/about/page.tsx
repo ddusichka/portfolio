@@ -25,8 +25,22 @@ export default function Home() {
       <br />
 
       <div className="SKILLS text-lg">
-        <h3 className="text-2xl  mb-4">Languages and Frameworks</h3>
-        <div className="flex justify-between gap-8">
+        <h3 className="text-2xl mb-4">Languages and Frameworks</h3>
+
+        {/* Mobile Layout */}
+        <div className="flex flex-row flex-wrap justify-between gap-2 tablet:hidden">
+          {content.skills.concat(content.frameworks).map((s, index) => (
+            <div className="flex flex-col items-center space-y-4" key={index}>
+              <Skill skill={s.skill} image={s.image} />
+            </div>
+          ))}
+          <div className="flex flex-col items-center space-y-4 w-1/4">
+            {/* Spacer element */}
+          </div>
+        </div>
+
+        {/* Laptop Layout */}
+        <div className="hidden tablet:flex justify-between gap-8">
           {content.skills.map((s, index) => (
             <div className="flex flex-col items-center space-y-4" key={index}>
               <Skill skill={s.skill} image={s.image} />
@@ -43,7 +57,7 @@ export default function Home() {
 
       <br />
 
-      <h3 className="text-2xl mb-2">Connect with me</h3>
+      <h3 className="text-2xl mb-4">Connect with me</h3>
       <div className="flex gap-8">
         <Icons color="purple" size="3em" />
       </div>
@@ -51,7 +65,7 @@ export default function Home() {
       <br />
       <br />
 
-      <div className="flex justify-between gap-4">
+      <div className="flex flex-col tablet:flex-row justify-between gap-4">
         <div className="flex flex-col items-center">
           <img src="london.jpeg" alt="London" className="object-cover w-full" />
           <p className="text-center text-gray-600">Me in London, July 2022</p>

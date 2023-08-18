@@ -14,7 +14,7 @@ const Footer = () => {
             </span>
           </a>
         </p>
-        <div className="ml-6 mr-4 mt-0.5 laptop:mt-1 flex gap-2 laptop:gap-4 justify-center">
+        <div className="ml-2 tablet:ml-6 mr-4 mt-1 flex gap-2 laptop:gap-4 justify-center">
           <Icons color="black" size="1em" />
         </div>
       </div>
