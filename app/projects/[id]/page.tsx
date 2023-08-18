@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectPage from "@/app/components/ProjectPage";
+import ProjectPage from "@/app/components/Projects/ProjectPage";
 import content from "@/app/content/content";
 
 const Project = ({ params }: { params: { id: string } }) => {

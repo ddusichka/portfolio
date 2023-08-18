@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ExperienceCard from "../components/ExperienceCard";
+import ExperienceCard from "../components/Experience/ExperienceCard";
 import content from "../content/content";
 
 export default function Experience() {
