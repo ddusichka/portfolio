@@ -16,9 +16,9 @@ export default function Home() {
           meaningful projects.
         </p>
         <p>
-          On campus, I’m a developer for Code4Community, Northeastern's
+          On campus, I&apos;m a developer for Code4Community, Northeastern's
           charitable software collective, and I also love to write and edit for
-          the university's science magazine, NU Sci.
+          the university&apos;s science magazine, NU Sci.
         </p>
       </div>
 
