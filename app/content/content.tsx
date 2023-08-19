@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const content = {
   pages: ["about", "experience", "projects"],
   skills: [
@@ -20,6 +22,99 @@ const content = {
     { skill: "Docker", image: "docker.png" },
   ],
   projects: [
+    {
+      name: "Concert Match",
+      path: "concert-match",
+      emoji: "💬",
+      dates: "July 2023 - Present",
+      deployed: false,
+      featured: true,
+      url: "",
+      github: "",
+      shortDescription:
+        "A concert-finding web application for friends to find Ticketmaster events.",
+      longDescription:
+        "A concert-finding web application for friends to find events from the Ticketmaster API. Users can swipe right on concerts that they would attend and left on ones they're not so interested in. Mutual matches will be identified so friends can keep track of what they're interested in (and can budget accordingly)!",
+      cardPhoto: "/concerts.png",
+      coverPhoto: "/concerts.png",
+      skills: ["MongoDB", "Express", "React"],
+      details: (
+        <>
+          <p>
+            My friends and I love going to concerts, and I wanted to make a more
+            fun way to decide which ones we should go to. I also wanted to build
+            my first app with separate well-designed front-end and back-end. I
+            decided to challenge myself with this app by using MongoDB and
+            Express for the first time.
+          </p>
+          <p>
+            <strong>This app is still in progress</strong> but currently
+            supports user login and authentication, as well as swiping
+            functionality for individual users to track what they&apos;re
+            interested in. The next step is adding in group functionality, which
+            I hope to complete by the end of August 2023.
+          </p>
+        </>
+      ),
+      future: (
+        <>
+          <p>
+            While there are still functionalities I need to get the base version
+            of this app completed, there are also some things I&apos;m thinking
+            of for a version 2 of this app. First, I think it would be cool to
+            integrate with Spotify&apos;s API and prioritize concerts with
+            artists that a user actually listens to. I also would like to dip my
+            toes into the field of AI and machine learning and develop an
+            algorithm to provide a better recommendation order.
+          </p>
+        </>
+      ),
+    },
+    {
+      name: "Portfolio",
+      path: "portfolio",
+      emoji: "💼",
+      dates: "June 2023 - August 2023",
+      deployed: true,
+      featured: false,
+      url: "/dessydusichka.com",
+      github: "",
+      shortDescription:
+        "A React portfolio highlighting my experience and projects.",
+      longDescription:
+        "This site you're on right now is a platform to showcase my work. This is my first project using Next.js and my first project that emphasizes mobile-friendly design.",
+      cardPhoto: "/portfolio.png",
+      coverPhoto: "",
+      skills: ["Next.js", "React", "Tailwind"],
+      details: (
+        <>
+          <p>
+            I wanted a platform to showcase my projects and also wanted to learn
+            TypeScript, so I combined both goals to create this site. I decided
+            to also use Next.js for the first time, in comparison to traditional
+            React, and learned about routing and layouts.
+          </p>
+          <p>
+            A big challenge while developing this site was making sure it
+            remained mobile-friendly. While I expect most users to be viewing
+            from a computer, I still wanted to account for mobile users.
+            However, I&apos;m still learning the ins and outs of CSS so this was
+            pretty challenging at times, but ultimately I&apos;m happy with how
+            it turned out!
+          </p>
+        </>
+      ),
+      future: (
+        <>
+          <p>
+            In a future version, I&apos;d like to enhance the design of this
+            site and add some more creative pops. I would also like to highlight
+            some of the articles I&apos;ve written for NU Sci on a new Articles
+            page, and I&apos;ll continue to update the content.
+          </p>
+        </>
+      ),
+    },
     {
       name: "Chatterbox",
       path: "chatterbox",
@@ -130,15 +225,9 @@ const content = {
             Biology Club, decided to host a bio-themed Jeopardy night. Having
             previously worked with Jeopardy Powerpoint templates or existing
             websites that didn&apos;t also offer buzzing and scoring, I decided
-            to create my own version to meet our needs.
-          </p>
-          <p>
-            The first version of this app came after I built Chatterbox, at
-            which point I felt comfortable with React and Firebase. I also
-            wanted to build this quickly in time for my club to use it, so I
-            stuck to familiar frameworks. However, I later revisited this
-            project and wanted to build a separate backend instead of having my
-            front-end directly communicate with Firebase.
+            to create my own version to meet our needs. I was proud of the fact
+            that people could actually buzz in, and successfully using this app
+            at our club meeting was a very exciting feeling.
           </p>
           <div className="mt-4">
             <div className="laptop:flex laptop:justify-between laptop:gap-4 ">
@@ -187,16 +276,55 @@ const content = {
       emoji: "📸",
       dates: "June 2022",
       deployed: false,
-      featured: true,
+      featured: false,
       url: "",
       github: "https://github.com/ddusichka/Image-Processor",
-      shortDescription: "An image processing application built with Java.",
-      longDescription: "",
-      cardPhoto: "/ImageProcessor.gif",
+      shortDescription:
+        "Image processor that can blur, sharpen, flip, and filter user-uploaded images.",
+      longDescription:
+        "Image processor capable of blurring, sharpening, flipping, and applying various color filters to user-uploaded images. User selects a file from their computer, applies various edits, and can save the resulting image. This was created for Northeastern University's CS3000: Object-Oriented Design.",
+      cardPhoto: "/imageProcessor.png",
       coverPhoto: "/ImageProcessor.gif",
-      skills: ["Java", "Java Swing"],
-      details: "",
-      future: null,
+      skills: ["Java", "Java Swing", "MVC"],
+      details: (
+        <>
+          <p>
+            This is a pair-programmed project implemented using the Model, View,
+            Controller design paradigm. It was developed iteratively, so only a
+            few features were assigned at first but the goal was to keep our
+            code adaptable to future needs. We accomplished this using the
+            Command design pattern.
+          </p>
+          <p>
+            This was my first project involving file input and output and also
+            taught me a lot about image manipulation techniques. One aspect of
+            the project was the ability to support multiple image types
+            including .jpg, .png, .bmp, and .ppm files.
+          </p>
+          <p>
+            This project also began with just a command-line interface, so users
+            would upload files and execute text-based editing commands. This was
+            functional but obviously not the best user experience since the user
+            couldn&apos;t actually see what they were editing. The final
+            iteration of this assignment was to develop a GUI using Java Swing.
+            This was definitely one of the trickiest parts, but very rewarding
+            since we could actually see the adjustments we were making to images
+            in real-time.
+          </p>
+        </>
+      ),
+      future: (
+        <p>
+          In a future version of this project, I would love to redesign the GUI
+          to look more modern, likely using a different framework. I would also
+          love to integrate additional editing abilities - one that I think
+          would be super cool is image compression like what I developed in my{" "}
+          <Link className="text-[#ac3a4a]" href="/projects/seam-carver">
+            Seam Carving application
+          </Link>
+          .
+        </p>
+      ),
     },
     {
       name: "Marble Solitaire",
@@ -269,7 +397,7 @@ const content = {
       github: "https://github.com/ddusichka/Maze-Animator",
       shortDescription: "A maze animation game showing BFS and DFS.",
       longDescription:
-        "This program generates random mazes for the user to solve manually. The user can also see solutions found via BFS (breadth-first search) or DFS (depth-first search) algorithms.",
+        "This program generates random mazes for the user to solve manually. The user can also see solutions found via BFS (breadth-first search) or DFS (depth-first search) algorithms. This project was developed for Accelerated Fundamentals of Computer Science 2.",
       cardPhoto: "/maze.png",
       coverPhoto: "/mazeAnimation.gif",
 
@@ -277,7 +405,25 @@ const content = {
       details: (
         <>
           <p>
-            Mazes! This game allows users to traverse randomly generated mazes.
+            This project was meant to teach us about graphs and relevant
+            algorithms. Specifically, we used the concept of a minimum spanning
+            tree to create the mazes, and then solved them using breadth-first
+            and depth-first search.
+          </p>
+          <p>
+            The program launches and animates the construction of a random maze
+            (Kruskal&apos;s algorithm is used to create a minimum spanning
+            tree). After this, the user is able to navigate through the maze via
+            arrow keys, or can watch BFS/DFS solutions via keyboard shortcuts.
+            Statistics are kept to show which solution is optimal.
+          </p>
+          <p>
+            The user can control the shape of the generated maze, if they wish,
+            by specifying if the maze should have mostly horizontal or mostly
+            vertical edges. The color scheme of the board can also be changed to
+            see vertices based on either their distance from the start or
+            distance from the end, where red signifies being close to the
+            specified point and blue represents being far.
           </p>
         </>
       ),
@@ -348,8 +494,11 @@ const content = {
             Functionality wise, it would be cool to add the ability to add seams
             back in. I also think the ability to export a modified photo would
             be cool. Ideally, I&apos;d like to combine this functionality with
-            my Image Processor project since it&apos;s a useful image
-            manipulation technique.
+            my{" "}
+            <Link className="text-[#ac3a4a]" href="/projects/image-processor">
+              {"Image Processor project "}
+            </Link>
+            since it&apos;s a useful image manipulation technique.
           </p>
         </>
       ),

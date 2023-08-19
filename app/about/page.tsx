@@ -10,10 +10,10 @@ export default function Home() {
         <p>
           Hi! I&apos;m Dessy, a 3rd year student studying computer science and
           biology at Northeastern University in Boston. I&apos;m currently
-          working as a software development intern and am passionate about
-          developing efficient and user-friendly applications. I&apos;m always
-          looking to grow and expand my software toolkit and contribute to
-          meaningful projects.
+          working as a software development intern at Blueport and especially
+          enjoy backend development. I&apos;m passionate about developing
+          efficient and user-friendly applications and am always looking to
+          expand my software toolkit and contribute to meaningful projects.
         </p>
         <p>
           On campus, I&apos;m a developer for Code4Community,

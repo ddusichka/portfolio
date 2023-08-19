@@ -54,9 +54,11 @@ const ProjectPage = (proj: {
           </a>
         </div>
       </div>
-      <div className="mt-4">
-        <img src={proj.coverPhoto} alt={proj.name} />
-      </div>
+      {proj.coverPhoto != "" && (
+        <div className="mt-4">
+          <img src={proj.coverPhoto} alt={proj.name} />
+        </div>
+      )}
 
       <div className="mt-4 text-lg">
         <h5 className="mb-2">👩🏻‍💻 Development</h5>

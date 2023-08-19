@@ -5,6 +5,7 @@ import Link from "next/link";
 import ProjectFeature from "./components/Home/ProjectFeature";
 
 export default function Home() {
+  let featuredCounter = 0;
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col tablet:flex-row">
@@ -41,6 +42,7 @@ export default function Home() {
         <div className="mt-2 grid gap-4 laptop:gap-8">
           {content.projects.map((proj, index) => {
             if (proj.featured) {
+              featuredCounter++;
               return (
                 <div className="flex-1" key={index}>
                   <ProjectFeature
@@ -49,7 +51,7 @@ export default function Home() {
                     description={proj.shortDescription}
                     coverPhoto={proj.coverPhoto}
                     skills={proj.skills}
-                    index={index}
+                    index={featuredCounter}
                   />
                 </div>
               );
