@@ -544,42 +544,8 @@ const content = {
         "Developing 8 internal and client-facing Retool applications using SQL and JavaScript",
         "Documenting tool development processes, giving demos, and offering support to other developers",
       ],
-      showMore: true,
-      details: (
-        <div>
-          <div className="mt-4 flex-col space-y-4">
-            <h1 className="font-bold text-md tablet:text-lg">Details</h1>
-            <p>
-              For my first co-op experience at Northeastern, I worked at
-              <b> Blueport</b>, a company that provides an omni-channel
-              e-commerce platform for furniture retailers. As the only{" "}
-              <b>Software Development Co-op</b> at a small company, my role had
-              a lot of variety and gave me a broad range of software experience.
-            </p>
-            <p>
-              When I started, Blueport had recently purchased a <b>Retool </b>
-              subscription — Retool is a low-code platform for building UIs.
-              However, few apps were being built. My role was to learn how to
-              use the software and begin building tools to save developer time
-              and put power in the hands of retailers (our clients).
-            </p>
-            <p>
-              Building each Retool app required... JavaScript is the language of
-              Retool, so I quickly picked it up. Additionally, each app required
-              the development or refinement of SQL Server procedures and/or
-              tables, as well as gRPC endpoints. Thus, I gained a lot of
-              <b>backend experience</b> through each app.
-            </p>
-            <p>
-              Some of the non-technical skills I gained include technical
-              writing, presenting, and teaching. I made documentation a
-              priority, so I wrote a wiki page for every tool I developed and
-              also created general how-to wiki pages that I thought would be
-              useful to others.
-            </p>
-          </div>
-        </div>
-      ),
+      showMore: false,
+      details: null,
     },
     {
       position: "Writer and Editor",
@@ -593,7 +559,7 @@ const content = {
         "Writing 2 articles per semester on STEM topics for publication in Northeastern’s science magazine",
         "Editing 8 articles per semester and providing constructive feedback to writers",
       ],
-      showMore: true,
+      showMore: false,
     },
     {
       position: "Software Developer",
@@ -621,10 +587,10 @@ const content = {
         "Hosting 4+ office hours weekly, answering student questions, and explaining topics in discrete mathematics",
         "Grading homework assignments and exams, providing encouraging feedback for improvement",
       ],
-      showMore: true,
+      showMore: false,
     },
     {
-      position: "Curriculum Developer and Volunteer Teacher",
+      position: "Volunteer Teacher",
       company: "Boston EcoScholars",
       location: "Boston, MA",
       image: "/ecoscholars.png",

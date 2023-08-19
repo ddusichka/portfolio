@@ -31,32 +31,35 @@ const ExperienceCard = (experience: {
   };
 
   return (
-    <div className="EXPERIENCE-CARD flex-col bg-offwhite rounded-lg drop-shadow-md py-3 px-4 ">
+    <div className="flex-col bg-offwhite rounded-lg drop-shadow-md py-3 px-4 ">
       <div
-        className="EXPERIENCE-CARD-HEADER cursor-pointer flex tablet:flex-row tablet:flex-wrap mobile:flex-col tablet:items-center items-start justify-between"
+        className="cursor-pointer flex tablet:flex-row tablet:flex-wrap mobile:flex-col tablet:items-center items-start justify-between"
         onClick={toggleOpen}
       >
-        <div className="EXPERIENCE-CARD-POSITION flex flex-wrap pr-4 items-end">
-          <div className="font-bold text-md tablet:text-lg pr-1">
-            {experience.position}
-          </div>
-          <div className="text-[#B21654] font-bold text-md tablet:text-lg">
-            <span className="text-black font-normal pr-1">at</span>
-            {experience.company}
+        <div className="flex-1 flex flex-col justify-center">
+          <div className="font-bold text-md tablet:text-lg pr-2">
+            <p className="whitespace-normal">
+              {experience.position}{" "}
+              <span className="text-black font-normal pr-1">at</span>
+              <span className="text-[#B21654] font-bold text-md tablet:text-xl">
+                {experience.company}
+              </span>
+            </p>
           </div>
         </div>
 
-        <div className="EXPERIENCE-CARD-TIME-PLACE flex justify-between gap-4 items-center w-full tablet:w-auto">
-          <p>{experience.location}</p>
-          <div className="laptop:bg-gray-300 laptop:w-px laptop:h-5"></div>
-          <div>{experience.date}</div>
-          <div className=" mt-1 tablet:mt-0">
+        <div className="flex justify-between gap-4 items-center w-full tablet:w-auto">
+          <div className="flex gap-2">
+            <p>{experience.location}</p>
+            <div className="bg-gray-300 w-px h-5"></div>
+            <div>{experience.date}</div>
+          </div>
+          <div className="mt-1 tablet:mt-0">
             {open ? <CloseIcon /> : <ExpandIcon />}
           </div>
         </div>
       </div>
 
-      {/* DROPDOWN-CONTENT */}
       <div
         className={
           open ? "experience-details-open" : "experience-details-closed"
@@ -73,8 +76,6 @@ const ExperienceCard = (experience: {
                 );
               })}
             </ul>
-
-            {/* <img src={experience.image} alt={experience.company} /> */}
           </div>
 
           {seeMore && experience.details}

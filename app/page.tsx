@@ -56,27 +56,6 @@ export default function Home() {
                 </div>
               );
             }
-            <div className="mt-2 grid gap-4 laptop:gap-8">
-              {content.projects.map((proj, index) => {
-                if (proj.featured) {
-                  return (
-                    <div className="flex-1" key={index}>
-                      {" "}
-                      {/* Added flex-1 class */}
-                      <ProjectFeature
-                        name={proj.name}
-                        path={proj.path}
-                        description={proj.shortDescription}
-                        coverPhoto={proj.coverPhoto}
-                        skills={proj.skills}
-                        index={index}
-                      />
-                    </div>
-                  );
-                }
-                return null;
-              })}
-            </div>;
           })}
         </div>
 
@@ -86,15 +65,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
-      {/* <div>
-          <Image
-            src="/succulent.png"
-            alt="succulent"
-            width={100}
-            height={100}
-          />
-        </div> */}
     </div>
   );
 }
