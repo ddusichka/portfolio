@@ -1,8 +1,8 @@
 import content from "./content/content";
 import TypingEffect from "./components/Home/TypingDescriptions";
-import ExperienceSnapshot from "./components/Home/ExperienceSnapshot";
+import ExperienceSnapshot from "./components/Experience/ExperienceSnapshot";
 import Link from "next/link";
-import ProjectFeature from "./components/Home/ProjectFeature";
+import ProjectFeature from "./components/Projects/ProjectFeature";
 
 export default function Home() {
   let featuredCounter = 0;
@@ -49,7 +49,7 @@ export default function Home() {
                     name={proj.name}
                     path={proj.path}
                     description={proj.shortDescription}
-                    coverPhoto={proj.coverPhoto}
+                    coverPhoto={proj.cardPhoto}
                     skills={proj.skills}
                     index={featuredCounter}
                   />

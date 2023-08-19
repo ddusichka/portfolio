@@ -9,7 +9,7 @@ export default function Projects() {
         A list of my completed and in-progress projects — click on any card to
         learn more.
       </p>
-      <div className="laptop:grid laptop:grid-cols-3 laptop:gap-6 my-5">
+      <div className="grid grid-cols-1 gap-4 laptop:grid-cols-3 laptop:gap-6 my-5">
         {content.projects.map((proj, index) => (
           <ProjectCard {...proj} key={index} />
         ))}

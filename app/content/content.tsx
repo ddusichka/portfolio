@@ -127,10 +127,10 @@ const content = {
       shortDescription:
         "A channel-based, real-time messaging app built with React and Firebase.",
       longDescription:
-        "Introducing Chatterbox – a real-time messaging app similar to Slack, built with React and powered by Firebase. Connect effortlessly through channels by signing in anonymously, with Google, or with email and password. Our user-friendly interface filters out inappropriate language, maintaining a professional tone.",
+        "Chatterbox is a real-time messaging app similar to Slack, built with React and powered by Firebase. Users can connect effortlessly through channels by signing in anonymously, with Google, or with email and password. The user-friendly interface filters out inappropriate language, maintaining a positive environment.",
       cardPhoto: "/chatterbox.png",
       coverPhoto: "/chatterbox.png",
-      skills: ["Firebase", "React", "HTML/CSS/JS"],
+      skills: ["React", "Firebase", "HTML/CSS/JS"],
       details: (
         <>
           <p>
@@ -395,7 +395,8 @@ const content = {
       featured: false,
       url: "",
       github: "https://github.com/ddusichka/Maze-Animator",
-      shortDescription: "A maze animation game showing BFS and DFS.",
+      shortDescription:
+        "A maze animation game that illustrates breadth-first and depth-first search.",
       longDescription:
         "This program generates random mazes for the user to solve manually. The user can also see solutions found via BFS (breadth-first search) or DFS (depth-first search) algorithms. This project was developed for Accelerated Fundamentals of Computer Science 2.",
       cardPhoto: "/maze.png",
@@ -460,7 +461,8 @@ const content = {
       featured: false,
       url: "",
       github: "https://github.com/ddusichka/Seam-Carving",
-      shortDescription: "An image compression application.",
+      shortDescription:
+        "An image compression application that uses content-aware image resizing.",
       longDescription:
         "Intelligently shrinks photos by removing the visually 'least interesting' seam. Uses content-aware image resizing algorithm to compress the image to its most important details; unlike cropping, entire parts of the image aren't lost. Created for Accelerated Fundamentals of Computer Science 2.",
       cardPhoto: "/seamCarving.png",

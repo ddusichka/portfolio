@@ -34,7 +34,7 @@ const ProjectPage = (proj: {
         <div className="flex mt-2 gap-2">
           {proj.skills.map((s) => (
             <p
-              className="bg-[#ac3a4a] text-white py-1 px-2 laptop:px-4 rounded-md"
+              className="bg-slate-400 text-white py-1 px-2 laptop:px-4 rounded-md"
               key={s}
             >
               {s}

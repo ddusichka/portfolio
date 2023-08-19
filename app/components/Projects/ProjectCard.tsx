@@ -25,6 +25,13 @@ const ProjectCard = (
         <Image src={proj.cardPhoto} alt="project" width={300} height={200} />
         <h1 className="text-lg mt-2">{proj.name}</h1>
         <p>{proj.shortDescription}</p>
+        <div className="flex gap-2 mt-2">
+          {proj.skills.map((s) => (
+            <p className="bg-slate-200 px-2 laptop:px-4 rounded-md" key={s}>
+              {s}
+            </p>
+          ))}
+        </div>
       </div>
     </Link>
   );
