@@ -36,7 +36,7 @@ const content = {
       longDescription:
         "A concert-finding web application for friends to find events from the Ticketmaster API. Users can swipe right on concerts that they would attend and left on ones they're not so interested in. Mutual matches will be identified so friends can keep track of what they're interested in (and can budget accordingly)!",
       cardPhoto: "/concerts.png",
-      coverPhoto: "/concerts.png",
+      coverPhoto: "/concertMatch.gif",
       skills: ["MongoDB", "Express", "React"],
       details: (
         <>
@@ -425,6 +425,28 @@ const content = {
             distance from the end, where red signifies being close to the
             specified point and blue represents being far.
           </p>
+          <div className="mt-4">
+            <div className="laptop:flex laptop:justify-around laptop:gap-12">
+              <div>
+                <img src={"/horizontalMaze.png"} alt="Horizontal Maze" />
+                <p className="text-center text-gray-600">
+                  Horizontal-biased maze
+                </p>
+              </div>
+              <div>
+                <img src={"/verticalMaze.png"} alt="Vertical Maze" />
+                <p className="text-center text-gray-600">
+                  Vertical-biased maze
+                </p>
+              </div>
+              <div>
+                <img src={"/coloredMaze.png"} alt="Vertical Maze" />
+                <p className="text-center text-gray-600">
+                  Maze colored by distance from start
+                </p>
+              </div>
+            </div>
+          </div>
         </>
       ),
       future: null,

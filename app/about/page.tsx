@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <div>
       <div className="ABOUT text-lg flex flex-col gap-2">
-        <h1 className="mb-2">About Me</h1>
+        <h1 className="my-2">About Me</h1>
         <p>
           Hi! I&apos;m Dessy, a 3rd year student studying computer science and
           biology at Northeastern University in Boston. I&apos;m currently
           working as a software development intern at Blueport and especially
-          enjoy backend development. I&apos;m passionate about developing
+          enjoy backend development. I&apos;m passionate about engineering
           efficient and user-friendly applications and am always looking to
           expand my software toolkit and contribute to meaningful projects.
         </p>

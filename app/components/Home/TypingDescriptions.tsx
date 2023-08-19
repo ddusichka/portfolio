@@ -5,7 +5,7 @@ const TypingEffect = () => {
   const descriptions = [
     { text: "crocheter", emoji: "🧶" },
     { text: "cat mom", emoji: "🐈‍⬛" },
-    { text: "tennis novice", emoji: "🎾" },
+    { text: "tennis player", emoji: "🎾" },
     { text: "writer", emoji: "🖊️" },
     { text: "trader joe's enthusiast", emoji: "🛒" },
     { text: "bookworm", emoji: "📚" },
