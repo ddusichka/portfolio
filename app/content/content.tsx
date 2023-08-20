@@ -96,11 +96,9 @@ const content = {
           </p>
           <p>
             A big challenge while developing this site was making sure it
-            remained mobile-friendly. While I expect most users to be viewing
-            from a computer, I still wanted to account for mobile users.
-            However, I&apos;m still learning the ins and outs of CSS so this was
-            pretty challenging at times, but ultimately I&apos;m happy with how
-            it turned out!
+            remained mobile-friendly. I&apos;m still learning the ins and outs
+            of CSS so this was pretty challenging at times, but ultimately
+            I&apos;m happy with this first iteration!
           </p>
         </>
       ),
