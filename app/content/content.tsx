@@ -77,8 +77,8 @@ const content = {
       dates: "June 2023 - August 2023",
       deployed: true,
       featured: false,
-      url: "/dessydusichka.com",
-      github: "",
+      url: "/",
+      github: "https://github.com/ddusichka/portfolio",
       shortDescription:
         "A React portfolio highlighting my experience and projects.",
       longDescription:
