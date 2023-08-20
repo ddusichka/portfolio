@@ -30,7 +30,7 @@ const content = {
       deployed: false,
       featured: true,
       url: "",
-      github: "",
+      github: "https://github.com/ddusichka/concert-match",
       shortDescription:
         "A concert-finding web application for friends to find Ticketmaster events.",
       longDescription:
