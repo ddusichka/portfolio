@@ -25,7 +25,7 @@ const content = {
     {
       name: "Concert Match",
       path: "concert-match",
-      emoji: "💬",
+      emoji: "🎶",
       dates: "July 2023 - Present",
       deployed: false,
       featured: true,
@@ -584,8 +584,8 @@ const content = {
       linkText: "CS 1800 Course Page",
       linkURL: "https://course.ccs.neu.edu/cs1800f22/",
       bullets: [
-        "Hosting 4+ office hours weekly, answering student questions, and explaining topics in discrete mathematics",
-        "Grading homework assignments and exams, providing encouraging feedback for improvement",
+        "Hosted 4+ office hours weekly, answered student questions, and explained topics in discrete mathematics",
+        "Graded homework assignments and exams, provided encouraging feedback for improvement",
       ],
       showMore: false,
     },
