@@ -8,7 +8,7 @@ export default function Experience() {
       <div className="flex justify-between">
         <h1>Experience</h1>
         <button className="secondary-button text-xl">
-          <Link href="/Dessy_Dusichka_Resume.pdf" target="_blank">
+          <Link href="/Dessislava_Dusichka_Resume.pdf" target="_blank">
             Resume
           </Link>
         </button>
