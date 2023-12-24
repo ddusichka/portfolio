@@ -67,7 +67,7 @@ export default function Home() {
 
       <div className="flex flex-col tablet:flex-row justify-between gap-4">
         <div className="flex flex-col items-center">
-          <img src="london.jpeg" alt="London" className="object-cover w-full" />
+          <img src="london.png" alt="London" className="object-cover w-full" />
           <p className="text-center text-gray-600">Me in London, July 2022</p>
         </div>
         <div className="flex flex-col items-center">

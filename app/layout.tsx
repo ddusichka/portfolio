@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className="grid grid-rows-[auto,1fr,auto] min-h-screen">
           <Header />
           <div className="flex justify-center my-4 laptop:my-8">
-            <div className="w-[90%] laptop:w-[75%]">
+            <div className="w-[90%] laptop:w-[80%]">
               <main className="flex-grow">{children}</main>
             </div>
           </div>
