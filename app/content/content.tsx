@@ -532,7 +532,7 @@ const content = {
       company: "Blueport",
       location: "Boston, MA",
       image: "/blueport.png",
-      date: "Jan 2023 - Present",
+      date: "Jan 2023 - Dec 2023",
       linkText: "blueport.com",
       linkURL: "https://www.blueport.com/",
       bullets: [
