@@ -38,24 +38,24 @@ h5 {
 
 .main-button {
   border: 1px solid rgb(206, 206, 206);
-  border-radius: 12px;
+  border-radius: 6px;
   background-color: #81559b;
   color: #fffff2;
-  padding: 3px 15px;
+  padding: 5px 25px;
 }
 
 .secondary-button {
   border: 1px solid rgb(206, 206, 206);
-  border-radius: 12px;
+  border-radius: 6px;
   background-color: #ac3a4a;
   color: #fffff2;
-  padding: 3px 15px;
+  padding: 5px 25px;
 }
 
 .outline-button {
   border: 1px solid rgb(50, 50, 50);
-  border-radius: 12px;
-  padding: 3px 15px;
+  border-radius: 6px;
+  padding: 5px 25px;
 }
 
 .experience-details-open {
