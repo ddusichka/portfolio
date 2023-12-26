@@ -22,11 +22,15 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl tablet:text-3xl">Right now</h2>
-        <div className="mt-2 grid grid-rows-3 gap-4 laptop:grid-rows-1 laptop:grid-cols-3 laptop:gap-8">
+        <h2 className="text-2xl tablet:text-3xl">Currently:</h2>
+        <div className="mt-2 flex flex-col tablet:flex-row space-y-4 tablet:space-y-0 tablet:space-x-4">
           {content.experience.map((exp, index) => {
             if (exp.date.includes("Present")) {
-              return <ExperienceSnapshot {...exp} key={index} />;
+              return (
+                <div key={index} className="flex-1">
+                  <ExperienceSnapshot {...exp} key={index} />
+                </div>
+              );
             }
           })}
         </div>
