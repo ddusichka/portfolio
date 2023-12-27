@@ -25,18 +25,15 @@ export default function Home() {
       <br />
 
       <div className="SKILLS text-lg">
-        <h3 className="text-2xl mb-4">Languages and Frameworks</h3>
+        <h3 className="text-2xl mb-4">Technical skills</h3>
 
         {/* Mobile Layout */}
-        <div className="flex flex-row flex-wrap justify-between gap-2 tablet:hidden">
+        <div className="grid grid-cols-3 gap-2 tablet:hidden">
           {content.skills.concat(content.frameworks).map((s, index) => (
             <div className="flex flex-col items-center space-y-4" key={index}>
               <Skill skill={s.skill} image={s.image} />
             </div>
           ))}
-          <div className="flex flex-col items-center space-y-4 w-1/4">
-            {/* Spacer element */}
-          </div>
         </div>
 
         {/* Laptop Layout */}

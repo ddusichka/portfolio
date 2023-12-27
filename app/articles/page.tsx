@@ -10,9 +10,11 @@ export default function Articles() {
         science magazine.
       </p>
       <div className="grid grid-cols-1 gap-4 laptop:grid-cols-4 laptop:gap-6 my-5">
-        {content.articles.map((proj, index) => (
-          <ArticleCard {...proj} key={index} />
-        ))}
+        {content.articles
+          .sort((a, b) => b.id - a.id)
+          .map((proj, index) => (
+            <ArticleCard {...proj} key={index} />
+          ))}
       </div>
     </div>
   );

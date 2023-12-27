@@ -4,11 +4,14 @@ const content = {
   pages: ["about", "experience", "projects", "articles"],
   skills: [
     { skill: "Java", image: "java.png" },
-    { skill: "JavaScript", image: "javascript.png" },
-    { skill: "SQL", image: "sql.png" },
     { skill: "C#", image: "csharp.png" },
-    { skill: "TypeScript", image: "typescript.png" },
     { skill: "Python", image: "python.png" },
+    { skill: "Go", image: "go.png" },
+
+    { skill: "JavaScript", image: "javascript.png" },
+    { skill: "TypeScript", image: "typescript.png" },
+
+    { skill: "SQL", image: "sql.png" },
     { skill: "HTML/CSS", image: "htmlcss.png" },
   ],
   frameworks: [
@@ -18,6 +21,8 @@ const content = {
 
     { skill: "Firebase", image: "firebase.png" },
     { skill: "MongoDB", image: "mongo.png" },
+    { skill: "SQL Server", image: "mssqlserver.png" },
+
     { skill: "Git", image: "git.png" },
     { skill: "Docker", image: "docker.png" },
   ],
