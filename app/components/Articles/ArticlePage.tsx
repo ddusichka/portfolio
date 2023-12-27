@@ -15,9 +15,9 @@ const ArticlePage = (proj: {
     <div className="">
       <div className="flex flex-col tablet:flex-row">
         <div className="tablet:w-4/5 tablet:mr-6">
-          <h2 className="text-3xl font-bold">{proj.title}</h2>
-          <h2 className="text-2xl font-semibold mb-2">{proj.subtitle}</h2>
-          <p className="mb-4 text-lg">{proj.summary}</p>
+          <h2>{proj.title}</h2>
+          <h3>{proj.subtitle}</h3>
+          <p className="mt-2 mb-4 text-lg">{proj.summary}</p>
           <p className="text-gray-600 font-semibold text-lg">
             Written for NU Sci {proj.issue}, {proj.date}
           </p>

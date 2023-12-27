@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl tablet:text-3xl">Currently:</h2>
+        <h2 className="text-2xl tablet:text-3xl">Currently</h2>
         <div className="mt-2 flex flex-col tablet:flex-row space-y-4 tablet:space-y-0 tablet:space-x-4">
           {content.experience.map((exp, index) => {
             if (exp.date.includes("Present")) {

@@ -7,11 +7,9 @@ const content = {
     { skill: "C#", image: "csharp.png" },
     { skill: "Python", image: "python.png" },
     { skill: "Go", image: "go.png" },
-
+    { skill: "SQL", image: "sql.png" },
     { skill: "JavaScript", image: "javascript.png" },
     { skill: "TypeScript", image: "typescript.png" },
-
-    { skill: "SQL", image: "sql.png" },
     { skill: "HTML/CSS", image: "htmlcss.png" },
   ],
   frameworks: [
@@ -115,6 +113,7 @@ const content = {
             some of the articles I&apos;ve written for NU Sci on a new Articles
             page, and I&apos;ll continue to update the content.
           </p>
+          <p>Update: The articles page has been recently added!</p>
         </>
       ),
     },

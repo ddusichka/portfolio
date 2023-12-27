@@ -4,8 +4,8 @@ import content from "../content/content";
 
 export default function Home() {
   return (
-    <div>
-      <div className="ABOUT text-lg flex flex-col gap-2">
+    <div className="flex flex-col space-y-6">
+      <div className="flex flex-col gap-2 text-lg ">
         <h1 className="my-2">About Me</h1>
         <p>
           Hi! I&apos;m Dessy, a 3rd year student studying computer science and
@@ -24,9 +24,7 @@ export default function Home() {
         </p>
       </div>
 
-      <br />
-
-      <div className="SKILLS text-lg">
+      <div>
         <h3 className="text-2xl mb-4">Technical skills</h3>
 
         {/* Mobile Layout */}
@@ -54,34 +52,34 @@ export default function Home() {
         </div>
       </div>
 
-      <br />
-
-      <h3 className="text-2xl mb-4">Connect with me</h3>
-      <div className="flex gap-8">
-        <Icons color="purple" size="3em" />
+      <div>
+        <h3 className="text-2xl mb-4">Connect with me</h3>
+        <div className="flex gap-8">
+          <Icons color="purple" size="3em" />
+        </div>
       </div>
 
-      <br />
-      <br />
-
       <div className="flex flex-col tablet:flex-row justify-between gap-4">
-        <div className="flex flex-col items-center">
-          <img src="london.png" alt="London" className="object-cover w-full" />
-          <p className="text-center text-gray-600">Me in London, July 2022</p>
+        <div className={styles.imageDiv}>
+          <img src="london.png" alt="London" className={styles.image} />
+          <p className={styles.caption}>Me in London, July 2022</p>
         </div>
-        <div className="flex flex-col items-center">
-          <img src="ollie.png" alt="Ollie" className="object-cover w-full" />
-          <p className="text-center text-gray-600">My cat Ollie</p>
+        <div className={styles.imageDiv}>
+          <img src="ollie.png" alt="Ollie" className={styles.image} />
+          <p className={styles.caption}>My cat Ollie</p>
         </div>
-        <div className="flex flex-col items-center">
-          <img src="bg.jpeg" alt="Bulgaria" className="object-cover w-full" />
-          <p className="text-center text-gray-600">
+        <div className={styles.imageDiv}>
+          <img src="bg.jpeg" alt="Bulgaria" className={styles.image} />
+          <p className={styles.caption}>
             Velingrad, Bulgaria from my summer 2023 trip
           </p>
         </div>
       </div>
-
-      <br />
     </div>
   );
 }
+const styles = {
+  imageDiv: "flex flex-col items-center",
+  image: "object-cover w-full",
+  caption: "text-center text-gray-600",
+};
