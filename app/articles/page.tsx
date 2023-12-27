@@ -6,8 +6,8 @@ export default function Articles() {
     <div>
       <h1>Articles</h1>
       <p>
-        I'm currently a writer for NU Sci, Northeastern's student-run science
-        magazine.{" "}
+        I&apos;m currently a writer for NU Sci, Northeastern&apos;s student-run
+        science magazine.
       </p>
       <div className="grid grid-cols-1 gap-4 laptop:grid-cols-4 laptop:gap-6 my-5">
         {content.articles.map((proj, index) => (
