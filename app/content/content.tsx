@@ -535,7 +535,7 @@ const content = {
       date: "Jan 2024 - Present",
       linkText: "hubspot.com",
       linkURL: "https://www.hubspot.com/",
-      bullets: ["TODO"],
+      bullets: [],
       showMore: false,
     },
     {
@@ -546,7 +546,11 @@ const content = {
       date: "Mar 2023 - Present",
       linkText: "generatenu.com",
       linkURL: "https://generatenu.com/",
-      bullets: ["TODO"],
+      bullets: [
+        "Collaborated with developers and designers to build a gift recommendation platform for a real-world client",
+        "Implemented Figma mockups using React, TypeScript, and Tailwind, creating an aesthetic, intuitive UI",
+        "Assisted with architecting database schema, built and tested endpoints in Go for managing user and gift data",
+      ],
       showMore: false,
     },
     {
@@ -558,10 +562,10 @@ const content = {
       linkText: "blueport.com",
       linkURL: "https://www.blueport.com/",
       bullets: [
-        "Developing and refining C# microservice endpoints to power e-commerce sites",
-        "Creating tables and procedures in SQL Server and Postgres to effectively manage e-commerce data",
+        "Implementing and testing microservice endpoints in C# and Go to power e-commerce sites",
+        "Developing 30+ procedures and tables in SQL Server and Postgres for efficient data management",
         "Spearheading the company's tooling initiative by launching Retool development",
-        "Developing 8 internal and client-facing Retool applications using SQL and JavaScript",
+        "Developing 9 internal and client-facing Retool applications using SQL and JavaScript",
         "Documenting tool development processes, giving demos, and offering support to other developers",
       ],
       showMore: false,
