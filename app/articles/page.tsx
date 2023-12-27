@@ -1,9 +1,19 @@
-import Link from "next/link";
+import content from "../content/content";
+import ArticleCard from "../components/Articles/ArticleCard";
 
 export default function Articles() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Link href="/..">Home</Link>{" "}
-    </main>
+    <div>
+      <h1>Articles</h1>
+      <p>
+        I'm currently a writer for NU Sci, Northeastern's student-run science
+        magazine.{" "}
+      </p>
+      <div className="grid grid-cols-1 gap-4 laptop:grid-cols-4 laptop:gap-6 my-5">
+        {content.articles.map((proj, index) => (
+          <ArticleCard {...proj} key={index} />
+        ))}
+      </div>
+    </div>
   );
 }
