@@ -127,8 +127,7 @@ const content = {
       featured: true,
       url: "https://chatterbox-io.netlify.app/",
       github: "https://github.com/ddusichka/message-board",
-      shortDescription:
-        "A channel-based, real-time messaging app built with React and Firebase.",
+      shortDescription: "A channel-based, real-time web messaging app.",
       longDescription:
         "Chatterbox is a real-time messaging app similar to Slack, built with React and powered by Firebase. Users can connect effortlessly through channels by signing in anonymously, with Google, or with email and password. The user-friendly interface filters out inappropriate language, maintaining a positive environment.",
       cardPhoto: "/chatterbox.png",
@@ -559,6 +558,20 @@ const content = {
       showMore: false,
     },
     {
+      position: "Writer and Editor",
+      company: "NU Sci Magazine",
+      location: "Boston, MA",
+      image: "/nusci.png",
+      date: "Jan 2022 - Present",
+      linkText: "nuscimagazine.com",
+      linkURL: "https://nuscimagazine.com/",
+      bullets: [
+        "Writing 2 articles per semester on STEM topics for publication in Northeastern’s science magazine",
+        "Editing 8 articles per semester and providing constructive feedback to writers",
+      ],
+      showMore: false,
+    },
+    {
       position: "Software Development Co-op",
       company: "Blueport",
       location: "Boston, MA",
@@ -575,20 +588,6 @@ const content = {
       ],
       showMore: false,
       details: null,
-    },
-    {
-      position: "Writer and Editor",
-      company: "NU Sci Magazine",
-      location: "Boston, MA",
-      image: "/nusci.png",
-      date: "Jan 2022 - Present",
-      linkText: "nuscimagazine.com",
-      linkURL: "https://nuscimagazine.com/",
-      bullets: [
-        "Writing 2 articles per semester on STEM topics for publication in Northeastern’s science magazine",
-        "Editing 8 articles per semester and providing constructive feedback to writers",
-      ],
-      showMore: false,
     },
     {
       position: "Software Developer",
@@ -671,7 +670,7 @@ const content = {
       articlepdf: "/issue52.pdf",
     },
     {
-      title: "The Return of Monkeypox",
+      title: "The return of monkeypox",
       subtitle: "",
       issue: "Issue 53: Odyssey",
       id: 53,

@@ -2,10 +2,9 @@ import content from "./content/content";
 import TypingEffect from "./components/Home/TypingDescriptions";
 import ExperienceSnapshot from "./components/Experience/ExperienceSnapshot";
 import Link from "next/link";
-import ProjectFeature from "./components/Projects/ProjectFeature";
+import ProjectFeature from "./components/Projects/TextBasedProjectFeature";
 
 export default function Home() {
-  let featuredCounter = 0;
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col tablet:flex-row">
@@ -43,10 +42,9 @@ export default function Home() {
 
       <div>
         <h2 className="text-2xl tablet:text-3xl">Featured projects</h2>
-        <div className="mt-2 grid gap-4 laptop:gap-8">
+        <div className="mt-2 flex flex-col tablet:flex-row gap-4 laptop:gap-4">
           {content.projects.map((proj, index) => {
             if (proj.featured) {
-              featuredCounter++;
               return (
                 <div className="flex-1" key={index}>
                   <ProjectFeature
@@ -55,7 +53,7 @@ export default function Home() {
                     description={proj.shortDescription}
                     coverPhoto={proj.cardPhoto}
                     skills={proj.skills}
-                    index={featuredCounter}
+                    index={index}
                   />
                 </div>
               );
