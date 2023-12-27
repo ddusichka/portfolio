@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className="flex justify-end">
           <Link href="/experience">
-            <button className="outline-button mt-4">See all experiences</button>
+            <button className="main-button mt-4">See all experiences</button>
           </Link>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function Home() {
 
         <div className="flex justify-end">
           <Link href="/projects">
-            <button className="outline-button mt-4">See all projects</button>
+            <button className="main-button mt-4">See all projects</button>
           </Link>
         </div>
       </div>
