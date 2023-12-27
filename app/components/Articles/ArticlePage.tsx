@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { pdfjs, Document, Page } from "react-pdf";
 
 const ProjectPage = (proj: {
   title: string;
