@@ -6,12 +6,35 @@ import type { PDFDocumentProxy } from "pdfjs-dist";
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 
+// @ts-expect-error This does not exist outside of polyfill which this is doing
+if (typeof Promise.withResolvers === "undefined") {
+  if (window) {
+    // @ts-expect-error This does not exist outside of polyfill which this is doing
+    window.Promise.withResolvers = function () {
+      let resolve, reject;
+      const promise = new Promise((res, rej) => {
+        resolve = res;
+        reject = rej;
+      });
+      return { promise, resolve, reject };
+    };
+  } else {
+    // @ts-expect-error This does not exist outside of polyfill which this is doing
+    global.Promise.withResolvers = function () {
+      let resolve, reject;
+      const promise = new Promise((res, rej) => {
+        resolve = res;
+        reject = rej;
+      });
+      return { promise, resolve, reject };
+    };
+  }
+}
+
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
+  "pdfjs-dist/legacy/build/pdf.worker.min.mjs",
   import.meta.url
 ).toString();
-
-type PDFFile = string | File | null;
 
 const maxWidth = 800;
 const options = {
@@ -30,16 +53,6 @@ const ArticlePage = (proj: {
   articlepdf: string;
 }) => {
   const [numPages, setNumPages] = useState<number>();
-
-  // const onResize = useCallback<ResizeObserverCallback>((entries) => {
-  //   const [entry] = entries;
-
-  //   if (entry) {
-  //     setContainerWidth(entry.contentRect.width);
-  //   }
-  // }, []);
-
-  // useResizeObserver(containerRef, resizeObserverOptions, onResize);
 
   function onDocumentLoadSuccess({
     numPages: nextNumPages,
@@ -88,10 +101,6 @@ const ArticlePage = (proj: {
               />
             ))}
           </Document>
-          {/* <iframe
-          src={`${proj.articlepdf}/#toolbar=0&view=fitW`}
-          className="w-full tablet:w-full h-screen tablet:h-[700px]"
-        ></iframe> */}
         </div>
       </div>
     </div>
