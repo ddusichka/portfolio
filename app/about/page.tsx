@@ -8,19 +8,19 @@ export default function Home() {
       <div className="flex flex-col gap-2 text-lg ">
         <h1 className="my-2">About Me</h1>
         <p>
-          Hi! I&apos;m Dessy, a 3rd year student studying computer science and
-          biology at Northeastern University in Boston. I&apos;ll be starting as
-          a software engineering co-op at HubSpot in January and especially
-          enjoy backend development. I&apos;m passionate about engineering
-          efficient and user-friendly applications and am always looking to
-          expand my software toolkit and contribute to meaningful projects.
+          Hi! I&apos;m Dessy, a 4th year student studying computer science and
+          biology at Northeastern University in Boston. I recently completed a 5
+          month software engineering co-op at HubSpot and especially enjoy
+          backend development. I&apos;m passionate about engineering efficient
+          and user-friendly applications and am always looking to expand my
+          software toolkit and contribute to meaningful projects.
         </p>
         <p>
-          On campus, I&apos;m a developer for Generate, Northeastern&apos;s
-          student-led product development studio, and I also love to write and
-          edit for the university&apos;s science magazine, NU Sci. Outside of
-          that, I&apos;m interested in all kinds of puzzles, crocheting, and
-          yoga.
+          On campus, I&apos;m the Editor-in-Chief of NU Sci Magazine, the
+          university&apos;s student-run science magazine. I&apos;ve also been an
+          engineer for Generate, Northeastern&apos;s student-led product
+          development studio. Outside of that, I&apos;m interested in all kinds
+          of puzzles, crocheting, and yoga.
         </p>
       </div>
 

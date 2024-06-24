@@ -5,9 +5,9 @@ import ArticlePage from "@/app/components/Articles/ArticlePage";
 const Article = ({ params }: { params: { id: string } }) => {
   const article = content.articles.find((i) => i.id === parseInt(params.id));
 
-  // Check if the project is found before rendering ProjectPage
+  // Check if the article is found before rendering ArticlePage
   if (!article) {
-    return <div>Project not found</div>;
+    return <div>Article not found</div>;
   }
 
   return <ArticlePage {...article} />;
