@@ -3,9 +3,9 @@ import { Analytics } from "@vercel/analytics/react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
-import { Nunito } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
-const nunito = Nunito({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dessy Dusichka",
@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
+      <body className={dmSans.className}>
         <div className="grid grid-rows-[auto,1fr,auto] min-h-screen">
           <Header />
           <div className="flex justify-center my-4 laptop:my-8">

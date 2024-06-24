@@ -532,13 +532,18 @@ const content = {
   experience: [
     {
       position: "Software Engineering Co-op",
+      shortPosition: "SWE Co-op",
       company: "HubSpot",
       location: "Cambridge, MA",
       image: "/hubspot.svg",
       date: "Jan 2024 - Present",
       linkText: "hubspot.com",
       linkURL: "https://www.hubspot.com/",
-      bullets: [],
+      bullets: [
+        "Developing cron-based script scheduling API using Java, Dropwizard, and MySQL for triggering SQL scripts",
+        "Building React interface using TypeScript and implementing scope-based gating to protect sensitive data",
+        "Maintaining ETL ingestion jobs using internal APIs, S3 buckets, & Snowflake for high-volume BI needs",
+      ],
       showMore: false,
     },
     {
@@ -732,6 +737,28 @@ const content = {
         "This article explores how superstitions, such as pre-game rituals or reliance on good luck charms, often involve illogical causal relationships, creating an illusion of control and safety. Despite recognizing the limited logic, individuals tend to follow these beliefs, highlighting the human tendency to draw causation from coincidence and shedding light on the complex intersection of superstition and rationality.",
       cardImage: "/issue58cover.png",
       articlepdf: "/issue58.pdf",
+    },
+    {
+      title: "Poison dart frogs",
+      subtitle: "What doesn't kill you makes you stronger",
+      issue: "Issue 59: Fractal",
+      id: 59,
+      date: "Spring 2024",
+      summary:
+        "This article explores how poison dart frogs manage to be deadly to predators but immune to their own poisonous defenses. Scientists have discovered toxin-absorbing molecules called alkaloids that make them resistant, with the potential to treat poisoned humans in cases such as overdoses.",
+      cardImage: "/issue59cover.png",
+      articlepdf: "/issue59.pdf",
+    },
+    {
+      title: "Plants and the 'roots' of cognition",
+      subtitle: "",
+      issue: "Issue 60: Eclipse",
+      id: 60,
+      date: "Spring 2024",
+      summary:
+        "This article explores the phenomenon of plant intelligence which suggests that plants, despite lacking brains, exhibit forms of intelligence such as problem-solving, learning, and communication through bioelectricity and chemical signals. This emerging field, known as basal cognition, suggests that intelligence can exist in various forms across different organisms, challenging traditional views of cognition.",
+      cardImage: "/issue60cover.png",
+      articlepdf: "/issue60.pdf",
     },
   ],
 };

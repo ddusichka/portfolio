@@ -4,7 +4,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: "Nunito";
+  font-family: "DM Sans";
   background-color: #eee1f5;
   background-attachment: fixed;
   background-image: linear-gradient(135deg, #eee1f5 0%, #ccaddd 100%);

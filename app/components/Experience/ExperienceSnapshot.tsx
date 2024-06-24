@@ -4,6 +4,7 @@ import React from "react";
 
 const ExperienceSnapshot = (experience: {
   position: string;
+  shortPosition?: string;
   company: string;
   location: string;
   image: string;
@@ -16,11 +17,11 @@ const ExperienceSnapshot = (experience: {
 }) => {
   return (
     <Link href="/experience">
-      <div className="EXPERIENCE-SNAPSHOT flex bg-offwhite rounded-lg drop-shadow-md py-3 px-4">
+      <div className="EXPERIENCE-SNAPSHOT flex bg-offwhite rounded-lg drop-shadow-md py-3 px-4 h-full">
         <div className="flex-1 flex flex-col justify-center">
           <div className="font-bold text-lg tablet:text-xl pr-12 tablet:pr-4">
             <p className="whitespace-normal">
-              {experience.position}{" "}
+              {experience.shortPosition ?? experience.position}{" "}
               <span className="text-black font-normal pr-1">at</span>
               <span className="text-[#B21654] font-bold text-md tablet:text-xl">
                 {experience.company}
