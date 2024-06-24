@@ -16,8 +16,8 @@ export default function Articles() {
           NU Sci
         </a>
         , Northeastern&apos;s student-run science magazine. While managing the
-        magazine's editorial team, I also write 2 articles per semester. Here
-        are the articles I've written throughout my time with NU Sci!
+        magazine&apos;s editorial team, I also write 2 articles per semester.
+        Here are the articles I&apos;ve written throughout my time with NU Sci!
       </p>
 
       <div className="grid grid-cols-1 gap-4 laptop:grid-cols-4 laptop:gap-6 my-5">
