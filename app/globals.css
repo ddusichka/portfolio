@@ -43,6 +43,10 @@ h5 {
   background: #fffff2;
 }
 
+.bg-translucent-offwhite {
+  background: #fffff2dc;
+}
+
 .text-offwhite {
   color: #fffff2;
 }

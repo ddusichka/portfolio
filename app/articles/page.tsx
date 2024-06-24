@@ -6,7 +6,7 @@ export default function Articles() {
     <div>
       <h1>Articles</h1>
       <p>
-        I&apos;m currently a writer and an editor for{" "}
+        I&apos;m currently the Editor-in-Chief of{" "}
         <a
           className="font-bold text-blue-800"
           href="https://nuscimagazine.com/"
@@ -15,9 +15,9 @@ export default function Articles() {
         >
           NU Sci
         </a>
-        , Northeastern&apos;s student-run science magazine. I write 2 articles
-        per semester and work with other student writers to edit around 10
-        articles per semester. Here is my currently published work!
+        , Northeastern&apos;s student-run science magazine. While managing the
+        magazine's editorial team, I also write 2 articles per semester. Here
+        are the articles I've written throughout my time with NU Sci!
       </p>
 
       <div className="grid grid-cols-1 gap-4 laptop:grid-cols-4 laptop:gap-6 my-5">

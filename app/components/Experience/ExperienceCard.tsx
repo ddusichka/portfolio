@@ -22,6 +22,7 @@ const ExperienceCard = (experience: {
   const [open, setOpen] = useState(false);
   const [seeMore, setSeeMore] = useState(false);
 
+  const current = experience.date.indexOf("Present") !== -1;
   const toggleOpen = () => {
     setOpen((prevOpen) => !prevOpen);
   };
@@ -31,7 +32,11 @@ const ExperienceCard = (experience: {
   };
 
   return (
-    <div className="flex-col bg-offwhite rounded-lg drop-shadow-md py-3 px-4 ">
+    <div
+      className={`flex-col ${
+        current ? "bg-offwhite" : "bg-translucent-offwhite"
+      } rounded-lg drop-shadow-md py-3 px-4 `}
+    >
       <div
         className="cursor-pointer flex tablet:flex-row tablet:flex-wrap mobile:flex-col tablet:items-center items-start justify-between"
         onClick={toggleOpen}
@@ -52,6 +57,7 @@ const ExperienceCard = (experience: {
           <div className="flex gap-2">
             <p>{experience.location}</p>
             <div className="bg-gray-300 w-px h-5"></div>
+
             <div>{experience.date}</div>
           </div>
           <div className="mt-1 tablet:mt-0">

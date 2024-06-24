@@ -531,12 +531,40 @@ const content = {
   ],
   experience: [
     {
+      position: "Computer Science and Biology Student",
+      shortPosition: "CS + Bio Student",
+      company: "Northeastern University",
+      location: "Boston, MA",
+      image: "/northeastern.png",
+      date: "Sep 2021 - Present",
+      linkText: "northeastern.edu",
+      linkURL: "https://www.northeastern.edu/",
+      bullets: ["Pursuing a BS in Computer Science and Biology"],
+      showMore: false,
+    },
+    {
+      position: "Editor-in-Chief",
+      company: "NU Sci Magazine",
+      location: "Boston, MA",
+      image: "/nusci.png",
+      date: "Jan 2022 - Present",
+      linkText: "nuscimagazine.com",
+      linkURL: "https://nuscimagazine.com/",
+      bullets: [
+        "Shaping the creative direction of Northeastern's student-run science magazine",
+        "Leading a team of 17 editors and 50+ writers throughout two issue cycles per semester",
+        "Collaborating with the magazine's executive board to coordinate operations and magazine production",
+        "Writing two articles per semester and copy-editing 40+ articles per issue",
+      ],
+      showMore: false,
+    },
+    {
       position: "Software Engineering Co-op",
       shortPosition: "SWE Co-op",
       company: "HubSpot",
       location: "Cambridge, MA",
       image: "/hubspot.svg",
-      date: "Jan 2024 - Present",
+      date: "Jan 2024 - May 2024",
       linkText: "hubspot.com",
       linkURL: "https://www.hubspot.com/",
       bullets: [
@@ -551,7 +579,7 @@ const content = {
       company: "Generate",
       location: "Boston, MA",
       image: "/generate.svg",
-      date: "Mar 2023 - Present",
+      date: "Mar 2023 - April 2024",
       linkText: "generatenu.com",
       linkURL: "https://generatenu.com/",
       bullets: [
@@ -561,20 +589,7 @@ const content = {
       ],
       showMore: false,
     },
-    {
-      position: "Writer and Editor",
-      company: "NU Sci Magazine",
-      location: "Boston, MA",
-      image: "/nusci.png",
-      date: "Jan 2022 - Present",
-      linkText: "nuscimagazine.com",
-      linkURL: "https://nuscimagazine.com/",
-      bullets: [
-        "Writing 2 articles per semester on STEM topics for publication in Northeastern’s science magazine",
-        "Editing 8 articles per semester and providing constructive feedback to writers",
-      ],
-      showMore: false,
-    },
+
     {
       position: "Software Development Co-op",
       company: "Blueport",

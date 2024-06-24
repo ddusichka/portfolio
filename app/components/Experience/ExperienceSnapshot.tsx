@@ -23,13 +23,13 @@ const ExperienceSnapshot = (experience: {
             <p className="whitespace-normal">
               {experience.shortPosition ?? experience.position}{" "}
               <span className="text-black font-normal pr-1">at</span>
-              <span className="text-[#B21654] font-bold text-md tablet:text-xl">
-                {experience.company}
-              </span>
             </p>
+            <span className="text-[#B21654] font-bold text-md tablet:text-xl">
+              {experience.company}
+            </span>
           </div>
         </div>
-        <div className="flex-none">
+        <div className="flex items-center justify-center">
           <Image
             src={experience.image}
             alt={experience.company}
