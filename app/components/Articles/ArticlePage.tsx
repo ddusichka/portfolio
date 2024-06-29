@@ -17,13 +17,7 @@ const ArticlePage = (proj: {
 
   return (
     <div className="flex justify-center">
-      <div
-        className="w-full"
-        style={{
-          maxWidth: window.innerWidth >= 768 ? `${maxWidth}px` : "100%",
-        }}
-      >
-        {" "}
+      <div className="w-full max-w-[100%] tablet:max-w-[800px]">
         <div className="flex flex-col tablet:flex-row mb-4">
           <div className="tablet:w-4/5 tablet:mr-12">
             <h2>{proj.title}</h2>
@@ -39,17 +33,10 @@ const ArticlePage = (proj: {
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <object
-            data={`${proj.articlepdf}#toolbar=0`}
-            type="application/pdf"
-            width="100%"
-            height="600px"
-          >
-            {/* TODO: turn this into a prettier button */}
-            <p>
-              Link to <a href={proj.articlepdf}>article PDF</a>.
-            </p>
-          </object>
+          <iframe
+            src={`${proj.articlepdf}/#toolbar=0&view=fitW`}
+            className="w-full h-screen tablet:h-[700px]"
+          ></iframe>
         </div>
       </div>
     </div>
