@@ -1,46 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { Document, Page } from "react-pdf";
-import { pdfjs } from "react-pdf";
-import type { PDFDocumentProxy } from "pdfjs-dist";
-import "react-pdf/dist/Page/TextLayer.css";
-import "react-pdf/dist/Page/AnnotationLayer.css";
-
-// @ts-expect-error This does not exist outside of polyfill which this is doing
-if (typeof Promise.withResolvers === "undefined") {
-  if (window) {
-    // @ts-expect-error This does not exist outside of polyfill which this is doing
-    window.Promise.withResolvers = function () {
-      let resolve, reject;
-      const promise = new Promise((res, rej) => {
-        resolve = res;
-        reject = rej;
-      });
-      return { promise, resolve, reject };
-    };
-  } else {
-    // @ts-expect-error This does not exist outside of polyfill which this is doing
-    global.Promise.withResolvers = function () {
-      let resolve, reject;
-      const promise = new Promise((res, rej) => {
-        resolve = res;
-        reject = rej;
-      });
-      return { promise, resolve, reject };
-    };
-  }
-}
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/legacy/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
 
 const maxWidth = 800;
-const options = {
-  cMapUrl: "/cmaps/",
-  standardFontDataUrl: "/standard_fonts/",
-};
 
 const ArticlePage = (proj: {
   title: string;
@@ -53,12 +14,6 @@ const ArticlePage = (proj: {
   articlepdf: string;
 }) => {
   const [numPages, setNumPages] = useState<number>();
-
-  function onDocumentLoadSuccess({
-    numPages: nextNumPages,
-  }: PDFDocumentProxy): void {
-    setNumPages(nextNumPages);
-  }
 
   return (
     <div className="flex justify-center">
@@ -84,23 +39,17 @@ const ArticlePage = (proj: {
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <Document
-            file={proj.articlepdf}
-            onLoadSuccess={onDocumentLoadSuccess}
-            options={options}
+          <object
+            data={`${proj.articlepdf}#toolbar=0`}
+            type="application/pdf"
+            width="100%"
+            height="600px"
           >
-            {Array.from(new Array(numPages), (el, index) => (
-              <Page
-                key={`page_${index + 1}`}
-                pageNumber={index + 1}
-                width={
-                  window.screen.width
-                    ? Math.min(window.screen.width, maxWidth)
-                    : maxWidth
-                }
-              />
-            ))}
-          </Document>
+            {/* TODO: turn this into a prettier button */}
+            <p>
+              Link to <a href={proj.articlepdf}>article PDF</a>.
+            </p>
+          </object>
         </div>
       </div>
     </div>
