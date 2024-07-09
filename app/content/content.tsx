@@ -26,6 +26,68 @@ const content = {
   ],
   projects: [
     {
+      name: "Couplet",
+      path: "couplet",
+      emoji: "🎟️",
+      dates: "January 2024 - April 2024",
+      deployed: false,
+      featured: true,
+      url: "",
+      github: "https://github.com/GenerateNU/couplet",
+      shortDescription:
+        "A mobile dating app that connects people through shared interests in events.",
+      longDescription:
+        'Couplet is a dating app that matches users based on shared interest in local events. This allows people to connect over shared interests and experiences, rather than just superficially connecting over profile pictures. Users create profiles and then can "like" events they\'re interested in attending. Users can also "like" other users, and if there\'s a mutual match, they can chat and see events they\'re both interested in, making it easier to plan a first date.',
+      cardPhoto: "/coupletCover.png",
+      coverPhotos: [
+        "/coupletHome.png",
+        "/coupletEvent.png",
+        "/coupletEvents.png",
+      ],
+      skills: ["Go", "TypeScript", "React Native"],
+      details: (
+        <>
+          <div className="flex justify-between">
+            <div className="flex flex-col gap-2 mr-8">
+              <p>
+                This app was developed for real clients as part of Generate at
+                Northeastern, a student-led product development studio. I worked
+                with a team of 8 other engineers, as well as a team of
+                designers, to collaboratively build an initial version of this
+                app.
+              </p>
+              <p>
+                The engineering team began by building the backend in Go,
+                developing endpoints for user and event management. Once the
+                designers created Figma mockups, we began building the front-end
+                in React Native. I primarily worked on event-related
+                functionality, building screens that show local events and allow
+                users to react to them as shown in the screenshots above.
+              </p>
+              <p>
+                This was my first time working on mobile development and I
+                learned a lot about React Native and Expo! It was also great to
+                work alongside a team of designers and mutually provide feedback
+                to improve our product.
+              </p>
+            </div>
+            <img src={"/coupletTeam.png"} className="h-80" />
+            {/* <iframe
+              src="https://docs.google.com/presentation/d/e/2PACX-1vR8-5qGGcu8oBpTnWrf462Efjvabv7Hjvvg4-I8bs4YyXVkJdvjLLdjP27XiuLE_RU-zHwjnt_b2nlD/embed?start=true&loop=true&delayms=3000"
+              width="600"
+            ></iframe> */}
+          </div>
+        </>
+      ),
+      future: (
+        <>
+          {/* <p>
+            Since the team only had a semester to work on this project, 
+          </p> */}
+        </>
+      ),
+    },
+    {
       name: "Concert Match",
       path: "concert-match",
       emoji: "🎶",
@@ -39,7 +101,7 @@ const content = {
       longDescription:
         "A concert-finding web application for friends to find events from the Ticketmaster API. Users can swipe right on concerts that they would attend and left on ones they're not so interested in. Mutual matches will be identified so friends can keep track of what they're interested in (and can budget accordingly)!",
       cardPhoto: "/concerts.png",
-      coverPhoto: "/concertMatch.gif",
+      coverPhotos: ["/concertMatch.gif"],
       skills: ["MongoDB", "Express", "React"],
       details: (
         <>
@@ -123,14 +185,14 @@ const content = {
       emoji: "💬",
       dates: "January - May 2023",
       deployed: true,
-      featured: true,
+      featured: false,
       url: "https://chatterbox-io.netlify.app/",
       github: "https://github.com/ddusichka/message-board",
       shortDescription: "A channel-based, real-time web messaging app.",
       longDescription:
         "Chatterbox is a real-time messaging app similar to Slack, built with React and powered by Firebase. Users can connect effortlessly through channels by signing in anonymously, with Google, or with email and password. The user-friendly interface filters out inappropriate language, maintaining a positive environment.",
       cardPhoto: "/chatterbox.png",
-      coverPhoto: "/chatterbox.png",
+      coverPhotos: ["/chatterbox.png"],
       skills: ["React", "Firebase", "HTML/CSS/JS"],
       details: (
         <>
@@ -208,7 +270,7 @@ const content = {
       emoji: "❓",
       dates: "April 2023",
       deployed: false,
-      featured: true,
+      featured: false,
       url: "",
       github: "https://github.com/ddusichka/jeopardy-v1",
       shortDescription:
@@ -216,8 +278,7 @@ const content = {
       longDescription:
         "This is a multiplayer Jeopardy game that allows players to buzz in via their own devices and play in real-time. It was built using React and Firebase. It allows multiple teams to compete, log in via their mobile devices, and buzz in to answer questions. It also keeps track of scoring.",
       cardPhoto: "/jeopardyCover.png",
-      coverPhoto: "/jeopardy.png",
-
+      coverPhotos: ["/jeopardy.png"],
       skills: ["Firebase", "React", "HTML/CSS/JS"],
       details: (
         <>
@@ -285,7 +346,7 @@ const content = {
       longDescription:
         "Image processor capable of blurring, sharpening, flipping, and applying various color filters to user-uploaded images. User selects a file from their computer, applies various edits, and can save the resulting image. This was created for Northeastern University's CS3000: Object-Oriented Design.",
       cardPhoto: "/imageProcessor.png",
-      coverPhoto: "/ImageProcessor.gif",
+      coverPhotos: ["/ImageProcessor.gif"],
       skills: ["Java", "Java Swing", "MVC"],
       details: (
         <>
@@ -343,7 +404,7 @@ const content = {
        Valid moves consist of jumping a marble orthogonally over an adjacent marble into an empty hole two positions away,
         resulting in the removal of the jumped marble.`,
       cardPhoto: "/marbleSolitaire.png",
-      coverPhoto: "/vid.gif",
+      coverPhotos: ["/vid.gif"],
       skills: ["Java", "Java Swing"],
       details: (
         <>
@@ -401,7 +462,7 @@ const content = {
       longDescription:
         "This program generates random mazes for the user to solve manually. The user can also see solutions found via BFS (breadth-first search) or DFS (depth-first search) algorithms. This project was developed for Accelerated Fundamentals of Computer Science 2.",
       cardPhoto: "/maze.png",
-      coverPhoto: "/mazeAnimation.gif",
+      coverPhotos: ["/mazeAnimation.gif"],
 
       skills: ["Java"],
       details: (
@@ -467,8 +528,7 @@ const content = {
       longDescription:
         "Intelligently shrinks photos by removing the visually 'least interesting' seam. Uses content-aware image resizing algorithm to compress the image to its most important details; unlike cropping, entire parts of the image aren't lost. Created for Accelerated Fundamentals of Computer Science 2.",
       cardPhoto: "/seamCarving.png",
-      coverPhoto: "/SeamCarving.gif",
-
+      coverPhotos: ["/SeamCarving.gif"],
       skills: ["Java"],
       details: (
         <>

@@ -13,7 +13,7 @@ const ProjectPage = (proj: {
   shortDescription: string;
   longDescription: string;
   cardPhoto: string;
-  coverPhoto: string;
+  coverPhotos?: string[];
   skills: string[];
   details: React.ReactNode;
   future: React.ReactNode;
@@ -55,9 +55,20 @@ const ProjectPage = (proj: {
           </a>
         </div>
       </div>
-      {proj.coverPhoto != "" && (
-        <div className="mt-4">
-          <img src={proj.coverPhoto} alt={proj.name} />
+      {proj.coverPhotos && (
+        <div className="mt-4 flex flex-col tablet:flex-row justify-around gap-2">
+          {proj.coverPhotos.map((photo) => {
+            return (
+              <div key={photo} className={styles.imageDiv}>
+                <img
+                  key={photo}
+                  src={photo}
+                  alt={proj.name}
+                  className={styles.image}
+                />
+              </div>
+            );
+          })}
         </div>
       )}
 
@@ -67,7 +78,7 @@ const ProjectPage = (proj: {
       </div>
 
       <div className="mt-4 text-lg">
-        {proj.future != null && (
+        {proj.future && (
           <div>
             <h5 className="mb-2">💡 Future Ideas</h5>
             <div className="flex-col space-y-4">{proj.future}</div>
@@ -83,3 +94,8 @@ const ProjectPage = (proj: {
 };
 
 export default ProjectPage;
+
+const styles = {
+  imageDiv: "flex flex-col items-center",
+  image: "object-cover w-full max-h-[600px]",
+};
