@@ -100,8 +100,7 @@ const content = {
             This app was developed for a real client named Cait through Generate
             at Northeastern, a student-led product development studio. I worked
             with a team of 7 other engineers, as well as a team of designers, to
-            collaboratively build an initial version of this app. Cait
-            previously had a Wordpress
+            collaboratively build an initial version of this app.
           </p>
           <p>
             The engineering team began by building the backend in Go, developing
