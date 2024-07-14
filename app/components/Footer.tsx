@@ -7,7 +7,7 @@ const Footer = () => {
       <hr className="h-px my-2 bg-gray-400 border-0" />
       <div className="flex justify-between tablet:justify-normal text-lg pb-2">
         <p>
-          © 2023 | Built by
+          © 2024 | Built by
           <a href="mailto:dusichka.d@northeastern.edu" target="_blank">
             <span className="ml-1 font-bold text-[#81559b]">
               Dessy Dusichka
