@@ -7,11 +7,7 @@ const ProjectCard = (
     name: string;
     path: string;
     dates: string;
-    deployed: boolean;
-    url: string;
-    github: string;
     shortDescription: string;
-    longDescription: string;
     cardPhoto: string;
     skills: string[];
   },

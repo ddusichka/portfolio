@@ -9,14 +9,14 @@ const ProjectPage = (proj: {
   dates: string;
   deployed: boolean;
   url: string;
-  github: string;
+  github?: string;
   shortDescription: string;
   longDescription: string;
   cardPhoto: string;
   coverPhotos?: string[];
   skills: string[];
   details: React.ReactNode;
-  future: React.ReactNode;
+  future?: React.ReactNode;
 }) => {
   return (
     <div>
@@ -50,9 +50,13 @@ const ProjectPage = (proj: {
               </button>
             </a>
           )}
-          <a href={proj.github} target="_blank">
-            <button className="outline-button text-lg">See source code</button>
-          </a>
+          {proj.github && (
+            <a href={proj.github} target="_blank">
+              <button className="outline-button text-lg">
+                See source code
+              </button>
+            </a>
+          )}
         </div>
       </div>
       {proj.coverPhotos && (

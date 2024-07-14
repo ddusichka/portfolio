@@ -33,7 +33,6 @@ const content = {
       deployed: false,
       featured: true,
       url: "",
-      github: "https://github.com/GenerateNU/couplet",
       shortDescription:
         "A mobile dating app that connects people through shared interests in events.",
       longDescription:
@@ -79,13 +78,47 @@ const content = {
           </div>
         </>
       ),
-      future: (
+    },
+    {
+      name: "Caits Curates",
+      path: "caits-curates",
+      emoji: "🎁",
+      dates: "September 2023 - December 2023",
+      deployed: false,
+      featured: true,
+      url: "",
+      shortDescription:
+        "A gift suggestion website that allows curator Cait to recommend gifts to users.",
+      longDescription:
+        "Caits Curates aims to help users find the perfect gift for their loved ones. Users can answer a few questions about the recipient and the occasion, and Cait will provide a curated list of gift suggestions. Users can then easily purchase gift suggestions from the retailer's website.",
+      cardPhoto: "/caitsCover.png",
+      coverPhotos: ["/caits.png"],
+      skills: ["Go", "TypeScript", "React"],
+      details: (
         <>
-          {/* <p>
-            Since the team only had a semester to work on this project, 
-          </p> */}
+          <p>
+            This app was developed for a real client named Cait through Generate
+            at Northeastern, a student-led product development studio. I worked
+            with a team of 7 other engineers, as well as a team of designers, to
+            collaboratively build an initial version of this app. Cait
+            previously had a Wordpress
+          </p>
+          <p>
+            The engineering team began by building the backend in Go, developing
+            endpoints for user, gift, and request management. Once the designers
+            created Figma mockups, we began building the front-end using React
+            and Tailwind. I primarily worked on gift and request-related
+            functionality, including the gift response screen shown above.
+          </p>
+          <p>
+            This was my first project with Generate and gave me good experience
+            building an API in Go! It was also great to work alongside a team of
+            designers and learn about the process of building a brand and a
+            series of pages to complete the full product.
+          </p>
         </>
       ),
+      future: null,
     },
     {
       name: "Concert Match",
@@ -149,7 +182,6 @@ const content = {
       longDescription:
         "This site you're on right now is a platform to showcase my work. This is my first project using Next.js and my first project that emphasizes mobile-friendly design.",
       cardPhoto: "/portfolio.png",
-      coverPhoto: "",
       skills: ["Next.js", "React", "Tailwind"],
       details: (
         <>
@@ -279,7 +311,7 @@ const content = {
         "This is a multiplayer Jeopardy game that allows players to buzz in via their own devices and play in real-time. It was built using React and Firebase. It allows multiple teams to compete, log in via their mobile devices, and buzz in to answer questions. It also keeps track of scoring.",
       cardPhoto: "/jeopardyCover.png",
       coverPhotos: ["/jeopardy.png"],
-      skills: ["Firebase", "React", "HTML/CSS/JS"],
+      skills: ["React", "Firebase", "HTML/CSS/JS"],
       details: (
         <>
           <p>
@@ -589,6 +621,8 @@ const content = {
       ),
     },
   ],
+  // TODO: create functionality for multiple roles under same company
+
   experience: [
     {
       position: "Computer Science and Biology Student",
@@ -632,6 +666,7 @@ const content = {
         "Building React interface using TypeScript and implementing scope-based gating to protect sensitive data",
         "Maintaining ETL ingestion jobs using internal APIs, S3 buckets, & Snowflake for high-volume BI needs",
       ],
+      // TODO: remove showMore?
       showMore: false,
     },
     {
