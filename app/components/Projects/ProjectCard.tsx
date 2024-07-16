@@ -17,7 +17,9 @@ const ProjectCard = (
     <Link href={`/projects/${proj.path}`} key={key}>
       <div className="flex flex-col bg-offwhite rounded-lg p-4 h-full justify-between">
         <h1 className="text-xl mb-2">{proj.name}</h1>
-        <Image src={proj.cardPhoto} alt="project" width={300} height={200} />
+        <div className="flex justify-around">
+          <Image src={proj.cardPhoto} alt="project" width={300} height={200} />
+        </div>
         <div className="self-end">
           <p className="mt-2">{proj.shortDescription}</p>
           <div className="flex gap-2 mt-2">
