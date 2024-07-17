@@ -45,10 +45,10 @@ const content = {
           <p>
             We are currently in the very early stages of frontend development,
             but so far I&apos;ve been able to help decide on a tech stack, make
-            architectural decisions, and assist with initial brand design (which
-            has strengthened my Figma skills!). I&apos;m also writing tickets
-            and assisting engineers with development which feels both rewarding
-            and challenging.
+            architectural decisions, and assist with initial brand and site
+            design (which has strengthened my Figma skills!). I&apos;m also
+            writing tickets and assisting engineers with development which feels
+            both rewarding and challenging.
           </p>
           <p>
             This project is especially exciting because the site will hold the
