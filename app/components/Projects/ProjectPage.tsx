@@ -101,5 +101,5 @@ export default ProjectPage;
 
 const styles = {
   imageDiv: "flex flex-col items-center",
-  image: "object-cover w-full max-h-[600px]",
+  image: "object-cover w-full tablet:max-h-[600px]",
 };

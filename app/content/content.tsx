@@ -105,7 +105,7 @@ const content = {
       skills: ["Go", "TypeScript", "React Native"],
       details: (
         <>
-          <div className="flex justify-between">
+          <div className="tablet:flex justify-between">
             <div className="flex flex-col gap-2 mr-8">
               <p>
                 This app was developed for real clients as part of Generate at
