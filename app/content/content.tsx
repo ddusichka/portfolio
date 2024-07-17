@@ -199,29 +199,42 @@ const content = {
           <p>
             My friends and I love going to concerts, and I wanted to make a more
             fun way to decide which ones we should go to. I also wanted to build
-            my first app with separate well-designed front-end and back-end. I
+            my first app with a separate well-designed frontend and backend. I
             decided to challenge myself with this app by using MongoDB and
             Express for the first time.
           </p>
           <p>
-            <strong>This app is still in progress</strong> but currently
-            supports user login and authentication, as well as swiping
-            functionality for individual users to track what they&apos;re
-            interested in. The next step is adding in group functionality, which
-            I hope to complete by the end of August 2023.
+            Summer 2024 update: I built the initial version of this app largely
+            to learn Express, and I achieved that. I put this project on hold
+            during the school year, but after revisiting it a year later, I no
+            longer want a JavaScript backend, and instead want to learn Django
+            and get better at Python. I also no longer want to use MongoDB,
+            instead opting for Postgres. So, I&apos;m currently working on{" "}
+            <a
+              className="text-blue-900"
+              href="https://github.com/ddusichka/concert-match-python/tree/main"
+            >
+              the Python redesign
+            </a>{" "}
+            while adding some new features. I decided to also integrate the
+            Spotify API, so that I can match local concerts to artists in my
+            library. Part of my motivation is that I want to be motivated to go
+            to concerts for lesser-known artists that I might not ordinarily be
+            aware of or think to go to. I want the app to prioritize these
+            smaller artists, tell me what songs by them I&apos;ve liked, and
+            then encourage me to go.
           </p>
         </>
       ),
       future: (
         <>
           <p>
-            While there are still functionalities I need to get the base version
-            of this app completed, there are also some things I&apos;m thinking
-            of for a version 2 of this app. First, I think it would be cool to
-            integrate with Spotify&apos;s API and prioritize concerts with
-            artists that a user actually listens to. I also would like to dip my
-            toes into the field of AI and machine learning and develop an
-            algorithm to provide a better recommendation order.
+            The redesign still requires a good amount of work to complete the
+            base functionality. An additional nice-to-have would be the ability
+            to track concerts a user actually attended, and add
+            reviews/photos/setlists to serve as a digital concert scrapbook of
+            sorts. It would also be cool to find ways to use AI for a new,
+            smarter recommendation algorithm.
           </p>
         </>
       ),
