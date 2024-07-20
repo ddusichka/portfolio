@@ -204,6 +204,8 @@ const content = {
             <a
               className="text-blue-900"
               href="https://github.com/ddusichka/concert-match/tree/main"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               initially built this app using Express
             </a>{" "}
