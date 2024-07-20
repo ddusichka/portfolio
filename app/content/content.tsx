@@ -186,43 +186,48 @@ const content = {
       deployed: false,
       featured: true,
       url: "",
-      github: "https://github.com/ddusichka/concert-match",
+      github: "https://github.com/ddusichka/concert-match-python",
       shortDescription:
         "A concert-finding web application for friends to find Ticketmaster events.",
       longDescription:
-        "A concert-finding web application for friends to find events from the Ticketmaster API. Users can swipe right on concerts that they would attend and left on ones they're not so interested in. Mutual matches will be identified so friends can keep track of what they're interested in (and can budget accordingly)!",
-      cardPhoto: "/concerts.png",
-      coverPhotos: ["/concertMatch.gif"],
-      skills: ["MongoDB", "Express", "React"],
+        "An in-progress concert-finding web application for friends to find concerts by their favorite artists. Users can import their Spotify libraries and then find local matching concerts using the Ticketmaster API. Users can favorite concerts that they would attend and can also identify mutual matches with friends!",
+      cardPhoto: "/concertMatchCard.png",
+      coverPhotos: ["/concertMatchCards.png"],
+      skills: ["Python", "Django", "React"],
       details: (
         <>
           <p>
             My friends and I love going to concerts, and I wanted to make a more
             fun way to decide which ones we should go to. I also wanted to build
-            my first app with a separate well-designed frontend and backend. I
-            decided to challenge myself with this app by using MongoDB and
-            Express for the first time.
-          </p>
-          <p>
-            Summer 2024 update: I built the initial version of this app largely
-            to learn Express, and I achieved that. I put this project on hold
-            during the school year, but after revisiting it a year later, I no
-            longer want a JavaScript backend, and instead want to learn Django
-            and get better at Python. I also no longer want to use MongoDB,
-            instead opting for Postgres. So, I&apos;m currently working on{" "}
+            my first solo project with a separate well-designed frontend and
+            backend. I{" "}
             <a
               className="text-blue-900"
-              href="https://github.com/ddusichka/concert-match-python/tree/main"
+              href="https://github.com/ddusichka/concert-match/tree/main"
             >
-              the Python redesign
+              initially built this app using Express
             </a>{" "}
-            while adding some new features. I decided to also integrate the
-            Spotify API, so that I can match local concerts to artists in my
-            library. Part of my motivation is that I want to be motivated to go
-            to concerts for lesser-known artists that I might not ordinarily be
-            aware of or think to go to. I want the app to prioritize these
-            smaller artists, tell me what songs by them I&apos;ve liked, and
-            then encourage me to go.
+            so that I could learn the framework and improve my JavaScript. I put
+            it on hold during the school year, revisited it, and decided I
+            wanted to redesign it and add some core functionality. First, after
+            learning Express, I decided it was time to try a new framework,
+            namely Django. I also wanted to use Postgres insteads of MongoDB to
+            better take advantage of relationships between different entities.
+            Lastly, I wanted to make the Spotify integration a priority.
+          </p>
+          <p>
+            The redevelopment of this app is still in progress (and early), but
+            it currently supports event fetching via the Ticketmaster Discovery
+            API, as well as Spotify authentication and library fetching. Then,
+            overlapping artists within the user's library and the event lineup
+            are identified. The next steps are to implement user accounts, a
+            "favoriting" mechanism, and a more useful and aesthetic UI.
+          </p>
+          <p>
+            The goal is to expose myself to more concerts, especially to artists
+            with only a few saved songs in my library. I think it&apos;s awesome
+            to go to small concerts before artists blow up, so the goal is to
+            find more of these!
           </p>
         </>
       ),
