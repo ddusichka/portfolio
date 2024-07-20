@@ -192,7 +192,7 @@ const content = {
       longDescription:
         "An in-progress concert-finding web application for friends to find concerts by their favorite artists. Users can import their Spotify libraries and then find local matching concerts using the Ticketmaster API. Users can favorite concerts that they would attend and can also identify mutual matches with friends!",
       cardPhoto: "/concertMatchCard.png",
-      coverPhotos: ["/concertMatchCards.png"],
+      coverPhotos: ["/concertMatchNew.png"],
       skills: ["Python", "Django", "React"],
       details: (
         <>
