@@ -221,9 +221,10 @@ const content = {
             The redevelopment of this app is still in progress (and early), but
             it currently supports event fetching via the Ticketmaster Discovery
             API, as well as Spotify authentication and library fetching. Then,
-            overlapping artists within the user's library and the event lineup
-            are identified. The next steps are to implement user accounts, a
-            "favoriting" mechanism, and a more useful and aesthetic UI.
+            overlapping artists within the user&apos;s library and the event
+            lineup are identified. The next steps are to implement user
+            accounts, a &quot;favoriting&quot; mechanism, and a more useful and
+            aesthetic UI.
           </p>
           <p>
             The goal is to expose myself to more concerts, especially to artists
