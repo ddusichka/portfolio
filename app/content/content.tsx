@@ -26,65 +26,6 @@ const content = {
   ],
   projects: [
     {
-      name: "NU Sci Website",
-      path: "nu-sci",
-      emoji: "🧬",
-      dates: "June 2024 - Present",
-      deployed: false,
-      featured: false,
-      url: "",
-      shortDescription:
-        "A redesigned website for Northeastern's student-run science magazine, NU Sci.",
-      longDescription:
-        "NU Sci is Northeastern's student-run science magazine that publishes two print issues per semester and dozens of articles online. The current website, www.nuscimagazine.com, was built using Wordpress and is now outdated and difficult to navigate. This summer, I'm working with the magazine's software team to redesign the website to be more modern and user-friendly. We're building the site using Next.js and Tailwind CSS, and we're also implementing a CMS using a newly-built backend to allow the NU Sci team to easily update the site with new content.",
-      cardPhoto: "/nusciLogoOther.png",
-      coverPhotos: ["/nusciDesign.png"],
-      skills: ["React", "Next.js", "Figma"],
-      details: (
-        <div className="flex flex-col gap-4">
-          <p>
-            We are currently in the very early stages of frontend development,
-            but so far I&apos;ve been able to help decide on a tech stack, make
-            architectural decisions, and assist with initial brand and site
-            design (which has strengthened my Figma skills!). I&apos;m also
-            writing tickets and assisting engineers with development which feels
-            both rewarding and challenging.
-          </p>
-          <p>
-            This project is especially exciting because the site will hold the
-            work of hundreds of students over 15 years of the magazine&apos;s
-            history. As the new Editor-in-Chief, I&apos;m excited that the club
-            is working on revamping our digital presence and glad I can be part
-            of both the writing and software. I&apos;m also excited to be in a
-            leadership role and help guide the team through this project.
-          </p>
-          <p>
-            In addition to redesigning and rebuilding the external user-facing
-            content, we also plan to build internal functionality for NU Sci
-            staff to manage articles and issues. This will be a great
-            opportunity to learn about CMS development and user management and
-            help to improve existing club processes.
-          </p>
-          <p>
-            The first iteration of the new site is focusing on a few initial
-            features:
-            <ol>
-              <li>
-                1. Display information about NU Sci as a whole through the Home,
-                About, E-board, Editor, and Author pages.
-              </li>
-              <li>
-                2. Display published articles and issues for readers to view and
-                comment on.
-              </li>
-              <li>3. Allow users to log in and manage their profiles.</li>
-              <li>4. Allow admins to post and manage articles and issues.</li>
-            </ol>
-          </p>
-        </div>
-      ),
-    },
-    {
       name: "Couplet",
       path: "couplet",
       emoji: "🎟️",
@@ -716,6 +657,21 @@ const content = {
         "Pursuing a BS in Computer Science and Biology",
         "University Honors Program, GPA 3.97/4.0",
         "Courses: Algorithms and Data, Object-Oriented Design, Artificial Intelligence, Database Design, Foundations of Data Science, Accelerated Fundamentals of Computer Science I & II, Discrete Structures",
+      ],
+      showMore: false,
+    },
+    {
+      position: "Software Technical Lead",
+      shortPosition: "Software TL",
+      company: "Generate Product Development",
+      location: "Boston, MA",
+      image: "/generate_logo.jpeg",
+      date: "Aug 2024 - Present",
+      linkText: "generatenu.com",
+      linkURL: "https://generatenu.com/",
+      bullets: [
+        "Lead 6 engineers in engineering a cross-platform music review app; plan and lead weekly sprints",
+        "Conduct code reviews and provide mentorship, utilizing Go, TypeScript, React Native for feature development",
       ],
       showMore: false,
     },
