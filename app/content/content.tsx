@@ -680,7 +680,7 @@ const content = {
       company: "NU Sci Magazine",
       location: "Boston, MA",
       image: "/nusci.png",
-      date: "Jan 2022 - Present",
+      date: "May 2024 - Present",
       linkText: "nuscimagazine.com",
       linkURL: "https://nuscimagazine.com/",
       bullets: [
