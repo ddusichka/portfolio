@@ -3,6 +3,14 @@ import ExperienceCard from "../components/Experience/ExperienceCard";
 import content from "../content/content";
 
 export default function Experience() {
+  const academics = content.experience.filter((e) => e.category == "Academics");
+  const campusExperiences = content.experience.filter(
+    (e) => e.category == "Campus Experience"
+  );
+  const workExperiences = content.experience.filter(
+    (e) => e.category == "Work Experience"
+  );
+
   return (
     <div>
       <div className="flex justify-between">
@@ -14,10 +22,24 @@ export default function Experience() {
         </button>
       </div>
       <div className="mt-4 space-y-4">
-        {content.experience.map((exp, index) => (
+        {academics.map((exp, index) => (
+          <ExperienceCard {...exp} key={index} />
+        ))}
+
+        <h3 className={styles.header}>Work Experience</h3>
+        {workExperiences.map((exp, index) => (
+          <ExperienceCard {...exp} key={index} />
+        ))}
+
+        <h3 className={styles.header}>Campus Experience</h3>
+        {campusExperiences.map((exp, index) => (
           <ExperienceCard {...exp} key={index} />
         ))}
       </div>
     </div>
   );
 }
+
+const styles = {
+  header: "",
+};
