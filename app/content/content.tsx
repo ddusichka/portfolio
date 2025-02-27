@@ -935,6 +935,28 @@ const content = {
       cardImage: "/issue60cover.png",
       articlepdf: "/issue60.pdf",
     },
+    {
+      title: "To dine or to (Door)Dash?",
+      subtitle: "",
+      issue: "Issue 61: Cascade",
+      id: 61,
+      date: "Fall 2024",
+      summary:
+        "This article discusses the rise of food delivery apps like DoorDash and their reverberating effects. These include health effects, but also touches on economic impacts and overall behavior changes as a result of a more sedentary, tech-powered lifestyle.",
+      cardImage: "/issue61cover.png",
+      articlepdf: "/issue61.pdf",
+    },
+    {
+      title: 'Opinion: Changing the "tech bro" status quo',
+      subtitle: "",
+      issue: "Issue 62: Void",
+      id: 62,
+      date: "Fall 2024",
+      summary:
+        "This opinion piece discusses the male-dominated tech industry and its impacts on female engineers and technical leadership. It explores the origins of this trend and discusses it in the context of today's leading technology figures and companies, ultimately offering potential solutions for a more gender-balanced workforce.",
+      cardImage: "/issue62cover.png",
+      articlepdf: "/issue62.pdf",
+    },
   ],
 };
 
