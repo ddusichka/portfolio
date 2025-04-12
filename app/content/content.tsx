@@ -43,7 +43,7 @@ const content = {
       details: (
         <>
           <div className="tablet:flex justify-between">
-            <div className="flex flex-col gap-8 mr-8 w-3/5">
+            <div className="flex flex-col gap-8 mr-8">
               <p>
                 This app was developed for a real client as part of Generate at
                 Northeastern, a student-led product development studio. As one
@@ -61,16 +61,15 @@ const content = {
                 front-end using React, Next.js, Tailwind, and the shadcn
                 component library.
               </p>
-              <p>
-                This was my first time learning about the carbon accounting
-                space and making a data-focused app that revolves around
-                visualizations. It was very rewarding to work on this project
-                with my team and complete all of the features that we set out to
-                accomplish.
-              </p>
             </div>
-            <img src={"/areniusTeam.jpg"} className=" w-2/5" />
+            <img src={"/areniusTeam.jpg"} className="w-2/5 h-[350px]" />
           </div>
+          <p>
+            This was my first time learning about the carbon accounting space
+            and making a data-focused app that revolves around visualizations.
+            It was very rewarding to work on this project with my team and
+            complete all of the features that we set out to accomplish.
+          </p>
         </>
       ),
     },
