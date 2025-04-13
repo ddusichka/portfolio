@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 
-interface Project {
+export interface Project {
   name: string;
   path: string;
   emoji: string;
@@ -171,17 +171,17 @@ export const projects: Project[] = [
     ),
   },
   {
-    name: "Caits Curates",
+    name: "Cait's Curates",
     path: "caits-curates",
     emoji: "🎁",
     dates: "September 2023 - December 2023",
     deployed: false,
-    featured: true,
+    featured: false,
     url: "",
     shortDescription:
       "A gift suggestion website that allows curator Cait to recommend gifts to users.",
     longDescription:
-      "Caits Curates aims to help users find the perfect gift for their loved ones. Users can answer a few questions about the recipient and the occasion, and Cait will provide a curated list of gift suggestions. Users can then easily purchase gift suggestions from the retailer's website.",
+      "Cait's Curates aims to help users find the perfect gift for their loved ones. Users can answer a few questions about the recipient and the occasion, and Cait will provide a curated list of gift suggestions. Users can then easily purchase gift suggestions from the retailer's website.",
     cardPhoto: "/caitsCover.png",
     coverPhotos: ["/caits.png"],
     skills: ["Go", "TypeScript", "React"],

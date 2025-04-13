@@ -54,14 +54,7 @@ export default function Home() {
             if (proj.featured) {
               return (
                 <div className="flex-1" key={index}>
-                  <ProjectFeature
-                    name={proj.name}
-                    path={proj.path}
-                    description={proj.shortDescription}
-                    coverPhoto={proj.cardPhoto}
-                    skills={proj.skills}
-                    index={index}
-                  />
+                  <ProjectFeature project={proj} />
                 </div>
               );
             }

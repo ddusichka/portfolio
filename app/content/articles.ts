@@ -130,4 +130,15 @@ export const articles = [
     cardImage: "/issue62cover.png",
     articlepdf: "/issue62.pdf",
   },
+  {
+    title: "Getting Pretty Thirsty",
+    subtitle: "ChatGPT's hidden water footprint",
+    issue: "Issue 63: Enigma",
+    id: 63,
+    date: "Spring 2025",
+    summary:
+      "This piece discusses the impact of AI on our water supply. Data centers require a lot of electrivity to run, much of which is water-generated, and they require cooling to prevent overheating. This article discusses the growing water demands and ways to mitigate them in the face of our expanding AI usage.",
+    cardImage: "/issue63cover.png",
+    articlepdf: "/issue63.pdf",
+  },
 ];

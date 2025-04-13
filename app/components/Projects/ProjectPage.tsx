@@ -1,23 +1,9 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { Project } from "@/app/content/projects";
 
-const ProjectPage = (proj: {
-  name: string;
-  emoji: string;
-  path: string;
-  dates: string;
-  deployed: boolean;
-  url: string;
-  github?: string;
-  shortDescription: string;
-  longDescription: string;
-  cardPhoto: string;
-  coverPhotos?: string[];
-  skills: string[];
-  details: React.ReactNode;
-  future?: React.ReactNode;
-}) => {
+const ProjectPage = (proj: Project) => {
   return (
     <div>
       <div className="laptop:flex laptop:justify-between ">

@@ -32,7 +32,7 @@ const ProjectFeature: React.FC<ProjectProps> = ({
         <div className="flex-1 ml-4 text-lg">
           <h1 className="text-xl tablet:text-3xl my-2">{name}</h1>
           <p className="text-lg tablet:text-xl my-6">{description}</p>
-          <div className="flex gap-2 mt-6">
+          <div className="flex gap-4 mt-6 flex-wrap">
             {skills.map((s) => (
               <p className="bg-slate-200 px-2 laptop:px-4 rounded-md" key={s}>
                 {s}
