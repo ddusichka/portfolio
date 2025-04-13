@@ -2,6 +2,7 @@ import content from "./content/content";
 import TypingEffect from "./components/Home/TypingDescriptions";
 import ExperienceSnapshot from "./components/Experience/ExperienceSnapshot";
 import Link from "next/link";
+import Image from "next/image";
 import ProjectFeature from "./components/Projects/TextBasedProjectFeature";
 
 export default function Home() {
@@ -15,8 +16,14 @@ export default function Home() {
           <h3 className="text-3xl tablet:text-4xl">student, developer, and </h3>
           <TypingEffect />
         </div>
-        <div className="w-full tablet:w-1/2 flex items-end justify-end">
-          <img src={"/Layer1.png"} alt="Banner" className="max-w-full" />
+        <div className="w-full tablet:w-1/2 flex justify-center tablet:justify-end">
+          <Image
+            src={"/profile.png"}
+            alt="Banner"
+            className="max-w-full"
+            width={300}
+            height={300}
+          />
         </div>
       </div>
 

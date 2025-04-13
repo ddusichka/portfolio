@@ -5,13 +5,13 @@ import { AiOutlineClose } from "react-icons/ai";
 import Icons from "./Icons";
 import content from "../content/content";
 
-const Sidebar = ({
+export default function Sidebar({
   isOpen,
   handleNav,
 }: {
   isOpen: boolean;
   handleNav: () => void;
-}) => {
+}) {
   return (
     <div
       id="sidebar"
@@ -64,6 +64,4 @@ const Sidebar = ({
       </div>
     </div>
   );
-};
-
-export default Sidebar;
+}
