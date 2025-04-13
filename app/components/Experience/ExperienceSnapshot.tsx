@@ -17,7 +17,7 @@ const ExperienceSnapshot = (experience: {
 }) => {
   return (
     <Link href="/experience">
-      <div className="EXPERIENCE-SNAPSHOT flex bg-offwhite rounded-lg drop-shadow-md py-3 px-4 h-full">
+      <div className="flex bg-offwhite rounded-lg drop-shadow-md py-3 px-4 h-full hover:scale-[1.05] transition-transform duration-200 ease-in-out hover:bg-gray-100">
         <div className="flex-1 flex flex-col justify-center">
           <div className="font-bold text-lg tablet:text-xl pr-12 tablet:pr-4">
             <p className="whitespace-normal">
