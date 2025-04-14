@@ -3,33 +3,33 @@
 import { useState, useEffect } from "react";
 import content from "../content/content";
 import { motion } from "framer-motion";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { PiNewspaper, PiPencilLine } from "react-icons/pi";
-import { Article, Editorial } from "../content/articles";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
+import {
+  Article,
+  ArticleCategory,
+  categoryColors,
+  Editorial,
+} from "../content/articles";
 import ArticleCard from "../components/Articles/ArticleCard";
 import Link from "next/link";
 
 export default function Articles(): JSX.Element {
   const [articles, setArticles] = useState<Article[]>(content.articles);
   const [editorials, setEditorials] = useState<Editorial[]>([]);
+  const [selectedCategory, setSelectedCategory] =
+    useState<ArticleCategory | null>(null);
 
   useEffect(() => {
     // Sort articles by ID (newest first)
-    const sortedArticles = [...content.articles].sort((a, b) => b.id - a.id);
+    let sortedArticles = [...content.articles].sort((a, b) => b.id - a.id);
+    if (selectedCategory) {
+      sortedArticles = sortedArticles.filter(
+        (article) =>
+          article.category === selectedCategory || selectedCategory === null
+      );
+    }
     setArticles(sortedArticles);
-
-    // Sort editorials if they exist
-    const contentEditorials = content.editorials || [];
-    const sortedEditorials = [...contentEditorials]
-      .sort((a, b) => b.id - a.id)
-      .map((editorial) => ({
-        ...editorial,
-        issue: editorial.theme || "Unknown Issue",
-        summary: editorial.excerpt || "No summary available",
-        cardImage: editorial.coverImage || "/images/editorial-placeholder.jpg",
-      }));
-    setEditorials(sortedEditorials);
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -39,7 +39,7 @@ export default function Articles(): JSX.Element {
         transition={{ duration: 0.5 }}
         className="mb-8"
       >
-        <h1 className="text-4xl font-bold mb-4 text-gray-800">Publications</h1>
+        <h1 className="text-4xl font-bold mb-4 text-gray-800">Articles</h1>
         <p className="text-lg text-gray-600">
           I&apos;m currently the Editor-in-Chief of{" "}
           <Link
@@ -57,7 +57,7 @@ export default function Articles(): JSX.Element {
       </motion.div>
 
       <Tabs defaultValue="articles" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 mb-8">
+        {/* <TabsList className="grid w-full grid-cols-2 mb-8">
           <TabsTrigger value="articles" className="flex items-center gap-2">
             <PiPencilLine className="h-5 w-5" />
             <span>Articles</span>
@@ -66,7 +66,7 @@ export default function Articles(): JSX.Element {
             <PiNewspaper className="h-5 w-5" />
             <span>Letters from the Editor</span>
           </TabsTrigger>
-        </TabsList>
+        </TabsList> */}
 
         <TabsContent value="articles" className="mt-0">
           {/* Articles Grid */}
@@ -78,6 +78,32 @@ export default function Articles(): JSX.Element {
             <h2 className="text-2xl font-bold mb-6 text-gray-800">
               Published Articles
             </h2>
+            {/* Category filters */}
+            <div className="flex flex-wrap gap-4 mb-6">
+              {selectedCategory && (
+                <div
+                  onClick={() => setSelectedCategory(null)}
+                  className="cursor-pointer items-center px-3 py-1 rounded-full font-medium bg-gray-200 text-gray-800 bg-opacity-50"
+                >
+                  View all
+                </div>
+              )}
+              {Object.keys(ArticleCategory).map((category) => (
+                <div
+                  key={category}
+                  onClick={() =>
+                    setSelectedCategory(category as ArticleCategory)
+                  }
+                  className={`cursor-pointer items-center px-3 py-1 rounded-full font-medium ${
+                    categoryColors[category as ArticleCategory]
+                  } ${
+                    category == selectedCategory && "border-black border"
+                  } bg-opacity-70 text-black`}
+                >
+                  {category}
+                </div>
+              ))}
+            </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {articles.map((article, index) => (
                 <motion.div

@@ -11,18 +11,18 @@ export interface Article {
 }
 
 export enum ArticleCategory {
-  Ecology = "Ecology",
   Technology = "Technology",
-  Psychology = "Psychology",
+  Ecology = "Ecology",
   Health = "Health",
+  Psychology = "Psychology",
   Engineering = "Engineering",
 }
 
 export const categoryColors: Record<ArticleCategory, string> = {
-  [ArticleCategory.Ecology]: "bg-green-200",
   [ArticleCategory.Technology]: "bg-blue-200",
-  [ArticleCategory.Psychology]: "bg-purple-200",
+  [ArticleCategory.Ecology]: "bg-green-200",
   [ArticleCategory.Health]: "bg-red-200",
+  [ArticleCategory.Psychology]: "bg-purple-300",
   [ArticleCategory.Engineering]: "bg-orange-200",
 };
 
