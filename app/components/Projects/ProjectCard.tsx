@@ -24,7 +24,10 @@ const ProjectCard = (
           <p className="mt-2">{proj.shortDescription}</p>
           <div className="flex gap-2 mt-2">
             {proj.skills.map((s) => (
-              <p className="bg-slate-200 px-2 laptop:px-4 rounded-md" key={s}>
+              <p
+                className="bg-slate-200 px-2 laptop:px-4 rounded-md text-sm py-[2px]"
+                key={s}
+              >
                 {s}
               </p>
             ))}
