@@ -57,7 +57,7 @@ export const experience = [
     location: "Boston, MA",
     category: "Campus Experience",
     image: "/khoury.png",
-    date: "Sep 2024 - Present",
+    date: "Sep 2024 - April 2025",
     linkText: "catalog.northeastern.edu",
     linkURL: "https://catalog.northeastern.edu/course-descriptions/cs/",
     bullets: [

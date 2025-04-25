@@ -94,11 +94,11 @@ export default function Articles(): JSX.Element {
                   onClick={() =>
                     setSelectedCategory(category as ArticleCategory)
                   }
-                  className={`cursor-pointer items-center px-3 py-1 rounded-full font-medium ${
+                  className={`cursor-pointer items-center px-3 py-1 rounded-md font-medium ${
                     categoryColors[category as ArticleCategory]
                   } ${
                     category == selectedCategory && "border-black border"
-                  } bg-opacity-70 text-black`}
+                  } text-black`}
                 >
                   {category}
                 </div>
@@ -180,10 +180,6 @@ export default function Articles(): JSX.Element {
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     Sample Letter from the Editor
                   </h3>
-                  <p className="text-gray-600 mb-4">
-                    This section will display your letters from the editor once
-                    they are added to your content.
-                  </p>
                   <div className="mt-6">
                     <img
                       src="/images/editor-letter-sample.jpg"

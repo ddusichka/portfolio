@@ -1,8 +1,11 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import content from "./content/content";
 import TypingEffect from "./components/Home/TypingDescriptions";
 import ExperienceSnapshot from "./components/Experience/ExperienceSnapshot";
-import Link from "next/link";
-import Image from "next/image";
 import ProjectFeature from "./components/Projects/TextBasedProjectFeature";
 
 export default function Home() {
@@ -33,11 +36,18 @@ export default function Home() {
           {content.experience.map((exp, index) => {
             if (exp.date.includes("Present")) {
               return (
-                <div key={index} className="flex-1">
-                  <ExperienceSnapshot {...exp} key={index} />
-                </div>
+                <motion.div
+                  key={index}
+                  className="flex-1"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.6, duration: 0.4 }}
+                >
+                  <ExperienceSnapshot {...exp} />
+                </motion.div>
               );
             }
+            return null; // Add this to prevent implicit return of undefined
           })}
         </div>
         <div className="flex justify-end">

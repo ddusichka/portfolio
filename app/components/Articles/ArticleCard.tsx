@@ -16,20 +16,20 @@ const ArticleCard = (article: Article) => {
       />
       <div className="p-4 laptop:p-8 flex flex-col">
         <div className="flex justify-between">
-          <h3 className="font-bold text-md laptop:text-2xl text-gray-900 group-hover:text-purple-700 transition-colors duration-300 mb-2">
+          <h3 className="font-bold text-md laptop:text-2xl text-gray-900 transition-colors duration-300 mb-2">
             {article.title}
             {article.subtitle ? `: ${article.subtitle}` : ""}
           </h3>
         </div>
         <div className="flex flex-col tablet:flex-row justify-start tablet:justify-between text-sm tablet:text-md gap-2 tablet:gap-4 laptop:py-2 mb-2 tablet:mb-4">
           <div className="flex justify-between gap-4 items-center">
-            <span className="items-center px-3 py-1 rounded-full font-medium bg-purple-100 text-purple-800">
+            <span className="items-center px-3 py-1 rounded-md font-bold bg-gray-200 text-purple-800">
               {article.issue}
             </span>
             <span className=" text-gray-500">{article.date}</span>
           </div>
           <p
-            className={`w-fit px-4 py-1 rounded-full font-medium ${
+            className={`w-fit px-3 py-1 rounded-md font-medium ${
               categoryColors[article.category]
             } text-black`}
           >
@@ -39,7 +39,7 @@ const ArticleCard = (article: Article) => {
         <p className="line-clamp-4">{article.summary}</p>
         <Link
           href={`/articles/${article.id}`}
-          className="text-sm mt-4 laptop:mt-auto font-medium text-purple-600 hover:text-purple-900 transition-colors duration-300"
+          className="text-sm mt-4 laptop:mt-auto font-medium text-purple-600 transition-colors duration-300"
         >
           <Button>Read Online</Button>
         </Link>
