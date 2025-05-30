@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import content from "../content/content";
 import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Article, ArticleCategory, categoryColors } from "../content/articles";
+import { Article, ArticleCategory, categoryEmojis } from "../content/articles";
 import ArticleCard from "../components/Articles/ArticleCard";
 import Link from "next/link";
 
@@ -12,6 +12,9 @@ export default function Articles(): JSX.Element {
   const [articles, setArticles] = useState<Article[]>(content.articles);
   const [selectedCategory, setSelectedCategory] =
     useState<ArticleCategory | null>(null);
+
+  console.log("object keys: ");
+  console.log(Object.keys(ArticleCategory));
 
   useEffect(() => {
     // Sort articles by ID (newest first)
@@ -46,8 +49,8 @@ export default function Articles(): JSX.Element {
           </Link>
           , Northeastern&apos;s student-run science magazine. While managing the
           magazine&apos;s editorial team through the production of 4 print
-          magazines, I also wrote an article and a "Letter from the Editor" for
-          each issue.
+          magazines, I also wrote an article and a &quot;Letter from the
+          Editor&quot; for each issue.
         </p>
       </motion.div>
 
@@ -87,13 +90,16 @@ export default function Articles(): JSX.Element {
                   onClick={() =>
                     setSelectedCategory(category as ArticleCategory)
                   }
-                  className={`cursor-pointer items-center px-3 py-1 rounded-md font-medium ${
-                    categoryColors[category as ArticleCategory]
-                  } ${
-                    category == selectedCategory && "border-black border"
-                  } text-black`}
+                  className={`cursor-pointer flex space-x-2 items-center px-3 py-1 rounded-md font-medium  border border-gray-400
+
+                    ${
+                      category == selectedCategory
+                        ? "border-black bg-[#81559B] text-white"
+                        : "bg-gray-100"
+                    } text-black`}
                 >
-                  {category}
+                  <p>{category}</p>
+                  <p> {categoryEmojis[category as ArticleCategory]}</p>
                 </div>
               ))}
             </div>
@@ -123,7 +129,7 @@ export default function Articles(): JSX.Element {
             </h2>
             <div className="flex w-full space-x-6">
               {content.editorials.map((editorial, index) => (
-                <Link href={`/editorials/${editorial.id}`}>
+                <Link key={index} href={`/editorials/${editorial.id}`}>
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}

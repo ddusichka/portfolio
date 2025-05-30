@@ -9,8 +9,8 @@ const EditorialPage = (editorial: Editorial) => {
         Issue {editorial.id}: {editorial.theme}
       </p>
       <div className="flex flex-col space-y-4 my-8 text-lg text-justify">
-        {editorial.content.map((paragraph) => (
-          <p>{paragraph}</p>
+        {editorial.content.map((paragraph, idx) => (
+          <p key={idx}>{paragraph}</p>
         ))}
       </div>
     </div>
