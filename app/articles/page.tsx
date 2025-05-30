@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Article, ArticleCategory, categoryEmojis } from "../content/articles";
 import ArticleCard from "../components/Articles/ArticleCard";
 import Link from "next/link";
+import { IoNewspaperOutline } from "react-icons/io5";
 
 export default function Articles(): JSX.Element {
   const [articles, setArticles] = useState<Article[]>(content.articles);
@@ -127,7 +128,7 @@ export default function Articles(): JSX.Element {
             <h2 className="text-2xl font-bold mb-6 text-gray-800">
               Letters from the Editor
             </h2>
-            <div className="flex w-full space-x-6">
+            <div className="flex flex-col tablet:flex-row w-full space-y-4 tablet:space-y-0 tablet:space-x-6">
               {content.editorials.map((editorial, index) => (
                 <Link key={index} href={`/editorials/${editorial.id}`}>
                   <motion.div
@@ -137,23 +138,30 @@ export default function Articles(): JSX.Element {
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                     className="bg-white cursor-pointer rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
                   >
-                    <div className="">
+                    <div>
                       <img src={editorial.coverImage} alt={`${editorial.id}`} />
                       <div className="p-6">
-                        <div className="uppercase tracking-wide text-sm text-purple-600 font-semibold mb-2">
+                        <div className="tracking-wide text-sm font-semibold mb-2">
                           Issue {editorial.id}: {editorial.theme}
                         </div>
 
                         <div className="flex justify-between">
-                          <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                          <span
+                            className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800 ${
+                              editorial.date == "Fall 2024"
+                                ? "bg-yellow-100"
+                                : "bg-pink-100"
+                            }`}
+                          >
                             {editorial.date}
                           </span>
-                          <a
+                          <IoNewspaperOutline size="1.5em" />
+                          {/* <a
                             href={`/editorials/${editorial.id}`}
                             className="text-sm font-medium text-purple-600 hover:text-purple-900 transition-colors duration-300"
                           >
                             Read →
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>

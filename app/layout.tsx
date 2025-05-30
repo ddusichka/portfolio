@@ -3,9 +3,25 @@ import { Analytics } from "@vercel/analytics/react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Montserrat, Noto_Sans } from "next/font/google";
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
+const dm = DM_Sans({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+});
+
+const noto = Noto_Sans({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-noto",
+});
+
+const montserrat = Montserrat({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
   title: "Dessy Dusichka",
@@ -24,8 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>
-        <div className="grid grid-rows-[auto,1fr,auto] min-h-screen">
+      <body
+        className={`${montserrat.variable} ${noto.variable} ${dm.variable} antialiased`}
+      >
+        <div className="grid grid-rows-[auto,1fr,auto] min-h-screen font-dmSans">
           <Header />
           <div className="flex justify-center my-4 laptop:my-8">
             <div className="w-[90%] laptop:w-[80%]">

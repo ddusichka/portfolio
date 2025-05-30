@@ -211,7 +211,7 @@ export interface Editorial {
   coverImage: string;
   date: string;
   content: string[];
-  pdf?: string;
+  pdf: string;
 }
 export const editorials: Editorial[] = [
   {
