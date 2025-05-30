@@ -182,38 +182,84 @@ export const articles: Article[] = [
     cardImage: "/issue63cover.png",
     articlepdf: "/issue63.pdf",
   },
+  {
+    title: "Nautical networking",
+    subtitle: "Undersea fiber-optic cables",
+    issue: "Issue 64: Harmony",
+    id: 64,
+    date: "Spring 2025",
+    category: ArticleCategory.Technology,
+    // TODO: update this summary
+    summary:
+      "This piece discusses the existence and importance of physical cables in the ocean that support our global networking. This vital infrastructure supports instant communication and financial transactions, and faces threats.",
+    cardImage: "/issue64cover.png",
+    articlepdf: "/issue64.pdf",
+  },
 ];
 
 export interface Editorial {
-  title: string;
-  subtitle?: string;
-  issue: string;
   id: number;
+  theme: string;
+  coverImage: string;
   date: string;
-  summary: string;
-  cardImage: string;
-  articlepdf?: string;
+  content: string[];
+  pdf?: string;
 }
-export const editorials = [
+export const editorials: Editorial[] = [
+  {
+    id: 64,
+    theme: "Harmony",
+    coverImage: "/issue64cover.png",
+    date: "Spring 2025",
+    pdf: "/64lfte.pdf",
+    content: [
+      "It’s nearly impossible to go a day without interacting with someone — a roommate, professor, barista, stranger on the train, or creator on the internet. Our lives are woven together through countless small moments, reminders that we aren’t just individuals, but parts of a larger whole. These parts are not necessarily symmetrical, and that’s the beauty of harmony.",
+      "Science mirrors this principle, and no single discipline holds all the answers. A biologist, a chemist, and a physicist will each define “life” differently, but their combined perspectives create a more comprehensive understanding of the world. Some of the most groundbreaking discoveries emerge from this intellectual harmony, forging new fields like physical chemistry and astrobiology.",
+      "Just as science thrives on collaboration, so does society. When one group suffers, the effects ripple outward. We see this in our interconnected economy, our political alliances, and our individual capacity for empathy. In times of uncertainty, division can feel inevitable — but progress depends on recognizing what unites us. Lasting solutions will emerge not from opposition but from collaboration, where we listen, find common ground, and build something greater together. In difficult times, returning to shared truths can help steady ourselves. Science is no exception. Communicating science clearly, honestly, and thoughtfully is not just an academic exercise; it’s a way to remain grounded, build bridges, and ensure that knowledge continues to benefit everyone.",
+      "This issue explores harmony in its many forms. We investigate gravitational waves and extraterrestrial life. We explore the intersection of science and politics amidst a new U.S. administration. We dive into musical harmony, uncovering how the brain interprets music from rock anthems to classic pop earworms. We also examine new bioengineering methods, from engineered blood vessels to 3D-printed organs. And, we look to nature, studying harmony within animal communities and the broader relationship between climate change and our natural world.",
+      "For my final issue as editor-in-chief, I want to thank our writers, editors, designers, and photographers for bringing this magazine to life. I am also deeply grateful to our e-board, outreach, social media, and web teams — the supportive threads holding this magazine together. NU Sci has been a home for me, a space where collaboration and curiosity flourish. I hope this issue reflects the beautiful harmony within the scientific community at Northeastern and beyond.",
+    ],
+  },
   {
     id: 63,
     theme: "Enigma",
-    title: "Finding Meaning in Mystery",
-    coverImage: "/images/issues/issue63-cover.jpg",
-    link: "https://nuscimagazine.com/letter-from-editor-enigma",
-    date: "Spring 2024",
-    excerpt:
-      "In this letter, I explore how the pursuit of knowledge often begins with embracing the enigmas that surround us, and how science thrives on curiosity about the unknown.",
-    pdfLink: "/pdfs/letter-enigma.pdf", // Optional
+    coverImage: "/issue63cover.png",
+    date: "Spring 2025",
+    pdf: "/63lfte.pdf",
+    content: [
+      "I love solving jigsaw puzzles, but I have one golden rule — I can’t look at the picture on the box. My friends tease me for taking the longer path, but to me, it’s more satisfying to navigate on my own, testing pieces (and making mistakes) until they eventually fit. This way, you can’t see the result from the beginning. Instead, you work piece by piece until you finally see the bigger picture.",
+      "Science works the same way. There’s no guide or answer key — no “picture” to follow. It’s a series of unknowns waiting to be connected. These enigmas give us something to work towards, rewarding us with “aha moments” that eventually lead to new questions.",
+      "Take black holes, for example. Scientists have had evidence of their existence for over a century, but capturing an image of one seemed impossible. Black holes swallow light, making them invisible. But researchers persevered, developing the Event Horizon Telescope to aggregate data from observatories worldwide. Finally, in 2019, they revealed the first-ever image of a black hole, turning a long-standing enigma into a groundbreaking discovery. And still, we’ve only scratched the surface of black holes and their secrets, giving us new avenues for further research.",
+      "This issue of NU Sci uncovers enigmas all around us. We ask if sibling birth order impacts personality, and examine discoveries relating to gut health and molecular aging. We look at cultural phenomena like parasocialism and nepotism alongside neurological processes like memory sorting. We investigate whether or not animals have morals, explore possible treatments for ALS, and even discuss the potential existence of a new planet.",
+      "Thank you to our writers, editors, designers, and photographers for contributing their creativity and passion. I also thank our e-board members and the software, social media, and outreach teams working hard to make this possible. I hope these pages help you untangle enigmas in science and beyond, but more importantly, give you the confidence to persist in the face of unknown answers.",
+    ],
   },
   {
     id: 62,
     theme: "Void",
-    title: "Exploring Empty Spaces",
-    coverImage: "/images/issues/issue62-cover.jpg",
-    link: "https://nuscimagazine.com/letter-from-editor-void",
-    date: "Winter 2023",
-    excerpt:
-      "This letter discusses how empty spaces - from quantum vacuums to the gaps in our knowledge - are not truly empty but full of potential and opportunity for discovery.",
+    coverImage: "/issue62cover.png",
+    date: "Fall 2024",
+    pdf: "/62lfte.pdf",
+    content: [
+      "I love solving jigsaw puzzles, but I have one golden rule — I can’t look at the picture on the box. My friends tease me for taking the longer path, but to me, it’s more satisfying to navigate on my own, testing pieces (and making mistakes) until they eventually fit. This way, you can’t see the result from the beginning. Instead, you work piece by piece until you finally see the bigger picture.",
+      "Science works the same way. There’s no guide or answer key — no “picture” to follow. It’s a series of unknowns waiting to be connected. These enigmas give us something to work towards, rewarding us with “aha moments” that eventually lead to new questions.",
+      "Take black holes, for example. Scientists have had evidence of their existence for over a century, but capturing an image of one seemed impossible. Black holes swallow light, making them invisible. But researchers persevered, developing the Event Horizon Telescope to aggregate data from observatories worldwide. Finally, in 2019, they revealed the first-ever image of a black hole, turning a long-standing enigma into a groundbreaking discovery. And still, we’ve only scratched the surface of black holes and their secrets, giving us new avenues for further research.",
+      "This issue of NU Sci uncovers enigmas all around us. We ask if sibling birth order impacts personality, and examine discoveries relating to gut health and molecular aging. We look at cultural phenomena like parasocialism and nepotism alongside neurological processes like memory sorting. We investigate whether or not animals have morals, explore possible treatments for ALS, and even discuss the potential existence of a new planet.",
+      "Thank you to our writers, editors, designers, and photographers for contributing their creativity and passion. I also thank our e-board members and the software, social media, and outreach teams working hard to make this possible. I hope these pages help you untangle enigmas in science and beyond, but more importantly, give you the confidence to persist in the face of unknown answers.",
+    ],
+  },
+  {
+    id: 61,
+    theme: "Cascade",
+    coverImage: "/issue61cover.png",
+    date: "Fall 2024",
+    pdf: "/61lfte.pdf",
+    content: [
+      "I love solving jigsaw puzzles, but I have one golden rule — I can’t look at the picture on the box. My friends tease me for taking the longer path, but to me, it’s more satisfying to navigate on my own, testing pieces (and making mistakes) until they eventually fit. This way, you can’t see the result from the beginning. Instead, you work piece by piece until you finally see the bigger picture.",
+      "Science works the same way. There’s no guide or answer key — no “picture” to follow. It’s a series of unknowns waiting to be connected. These enigmas give us something to work towards, rewarding us with “aha moments” that eventually lead to new questions.",
+      "Take black holes, for example. Scientists have had evidence of their existence for over a century, but capturing an image of one seemed impossible. Black holes swallow light, making them invisible. But researchers persevered, developing the Event Horizon Telescope to aggregate data from observatories worldwide. Finally, in 2019, they revealed the first-ever image of a black hole, turning a long-standing enigma into a groundbreaking discovery. And still, we’ve only scratched the surface of black holes and their secrets, giving us new avenues for further research.",
+      "This issue of NU Sci uncovers enigmas all around us. We ask if sibling birth order impacts personality, and examine discoveries relating to gut health and molecular aging. We look at cultural phenomena like parasocialism and nepotism alongside neurological processes like memory sorting. We investigate whether or not animals have morals, explore possible treatments for ALS, and even discuss the potential existence of a new planet.",
+      "Thank you to our writers, editors, designers, and photographers for contributing their creativity and passion. I also thank our e-board members and the software, social media, and outreach teams working hard to make this possible. I hope these pages help you untangle enigmas in science and beyond, but more importantly, give you the confidence to persist in the face of unknown answers.",
+    ],
   },
 ];
