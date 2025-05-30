@@ -7,6 +7,7 @@ import content from "./content/content";
 import TypingEffect from "./components/Home/TypingDescriptions";
 import ExperienceSnapshot from "./components/Experience/ExperienceSnapshot";
 import ProjectFeature from "./components/Projects/TextBasedProjectFeature";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -31,10 +32,10 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl tablet:text-3xl">Currently</h2>
+        <h2 className="text-2xl tablet:text-3xl">Recently</h2>
         <div className="mt-2 flex flex-col tablet:flex-row space-y-4 tablet:space-y-0 tablet:space-x-4">
           {content.experience.map((exp, index) => {
-            if (exp.date.includes("Present")) {
+            if (exp.category != "Education" && exp.date.includes("2025")) {
               return (
                 <motion.div
                   key={index}
@@ -52,7 +53,9 @@ export default function Home() {
         </div>
         <div className="flex justify-end">
           <Link href="/experience">
-            <button className="main-button mt-4">See all experiences</button>
+            <Button className="text-xl mt-4 px-6 py-6">
+              See all experiences
+            </Button>
           </Link>
         </div>
       </div>

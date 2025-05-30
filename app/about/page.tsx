@@ -1,6 +1,8 @@
 import Icons from "../components/Icons";
 import Skill from "../components/About/Skill";
 import content from "../content/content";
+import Link from "next/link";
+import Hyperlink from "../components/Articles/Hyperlink";
 
 export default function Home() {
   return (
@@ -8,19 +10,27 @@ export default function Home() {
       <div className="flex flex-col gap-2 text-lg ">
         <h1 className="my-2">About Me</h1>
         <p>
-          Hi! I&apos;m Dessy, a 4th year student studying computer science and
-          biology at Northeastern University in Boston. I recently completed a 5
-          month software engineering co-op at HubSpot and especially enjoy
-          backend development. I&apos;m passionate about engineering efficient
-          and user-friendly applications and am always looking to expand my
-          software toolkit and contribute to meaningful projects.
+          Hi! I&apos;m Dessy, a recent Northeastern University graduate with a
+          Bachelor of Science in Computer Science and Biology. I&apos;m
+          currently a backend software engineer at HubSpot in Cambridge,
+          Massachusetts. I&apos;m passionate about engineering efficient and
+          user-friendly applications and am always looking to expand my software
+          toolkit and contribute to meaningful projects.
         </p>
         <p>
-          On campus, I&apos;m the Editor-in-Chief of NU Sci Magazine, the
-          university&apos;s student-run science magazine. I&apos;ve also been an
-          engineer for Generate, Northeastern&apos;s student-led product
-          development studio. Outside of that, I&apos;m interested in all kinds
-          of puzzles, crocheting, and yoga.
+          At Northeastern, I was the Editor-in-Chief of NU Sci Magazine, the
+          university&apos;s student-run science magazine. Science communication
+          is a huge passion of mine, and you can check out my writing{" "}
+          <Hyperlink text="here!" href="/articles" /> I was also an engineer and
+          tech lead at Generate, Northeastern&apos;s student-led product
+          development studio, where I worked on 4 mobile and web applications
+          for clients. More about these applications and my other personal
+          projects can be found here!
+          <Hyperlink text="here!" href="/projects" />
+        </p>
+        <p>
+          Outside of that, I&apos;m interested in all kinds of puzzles,
+          crocheting, and yoga.
         </p>
       </div>
 

@@ -6,6 +6,7 @@ import {
 } from "react-icons/md";
 import { AiOutlineLink } from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/image";
 
 const ExperienceCard = (experience: {
   position: string;
@@ -42,7 +43,13 @@ const ExperienceCard = (experience: {
         onClick={toggleOpen}
       >
         <div className="flex-1 flex flex-col justify-center">
-          <div className="font-bold text-md tablet:text-lg pr-2">
+          <div className="font-bold text-md tablet:text-lg pr-2 flex space-x-4">
+            <Image
+              width={30}
+              height={30}
+              src={experience.image}
+              alt={experience.image}
+            />
             <p className="whitespace-normal">
               {experience.position}{" "}
               <span className="text-black font-normal pr-1">at</span>

@@ -63,7 +63,7 @@ export default function Header() {
 const styles = {
   headerContainer: "w-full h-20 shadow-xl z-[100]",
   headerContent:
-    "flex justify-between items-center w-full h-full px-6 laptop:px-10 bg-[#81559B]",
+    "flex justify-between items-center w-full h-full px-6 laptop:px-10 bg-[#4b1261]",
   logoContainer: "LOGO-NAME flex items-center",
   logoText: "text-offwhite text-2xl ml-4",
   navList: "hidden tablet:flex",

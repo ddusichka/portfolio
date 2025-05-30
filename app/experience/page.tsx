@@ -3,7 +3,7 @@ import ExperienceCard from "../components/Experience/ExperienceCard";
 import content from "../content/content";
 
 export default function Experience() {
-  const academics = content.experience.filter((e) => e.category == "Academics");
+  const academics = content.experience.filter((e) => e.category == "Education");
   const campusExperiences = content.experience.filter(
     (e) => e.category == "Campus Experience"
   );
@@ -15,13 +15,14 @@ export default function Experience() {
     <div>
       <div className="flex justify-between">
         <h1>Experience</h1>
-        <button className="secondary-button text-xl">
+        <button className="rounded-md text-white px-4 bg-[#5e1f35] text-xl">
           <Link href="/Dessislava_Dusichka_Resume.pdf" target="_blank">
             Resume
           </Link>
         </button>
       </div>
       <div className="mt-4 space-y-4">
+        <h3 className={styles.header}>Education</h3>
         {academics.map((exp, index) => (
           <ExperienceCard {...exp} key={index} />
         ))}

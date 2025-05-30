@@ -1,13 +1,20 @@
 "use client";
-import React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { Article, categoryColors } from "@/app/content/articles";
+import { Button } from "@/components/ui/button";
 
 const ArticlePage = (article: Article) => {
+  const [plaintext, setPlaintext] = useState(false);
+
+  const togglePlaintext = () => {
+    setPlaintext((prev) => !prev);
+  };
+
   return (
     <div className="flex justify-center">
       <div className="w-full max-w-[100%] tablet:max-w-[800px]">
-        <div className="flex flex-col tablet:flex-row mb-4">
+        <div className="flex flex-col tablet:flex-row">
           <div className="tablet:w-4/5 tablet:mr-12">
             <h2>{article.title}</h2>
             <h3>{article.subtitle}</h3>
@@ -39,10 +46,22 @@ const ArticlePage = (article: Article) => {
             />
           </div>
         </div>
+        {/* <div className="flex justify-end mb-4">
+          <Button
+            className="justify-self-end"
+            variant="outline"
+            onClick={() => togglePlaintext()}
+          >
+            View as {plaintext ? "PDF" : "Plaintext"}
+          </Button>
+        </div> */}
+
+        {plaintext && article.plaintext}
 
         <div className="flex flex-col items-center">
           <iframe
-            src={`${article.articlepdf}/#toolbar=0&view=fitW`}
+            style={{ display: plaintext ? "none" : "block" }}
+            src={`${article.articlepdf}/#embedded=true&toolbar=0&view=fitW`}
             className="w-full h-screen tablet:h-[700px]"
           ></iframe>
         </div>

@@ -57,14 +57,6 @@ h5 {
   padding: 5px 25px;
 }
 
-.secondary-button {
-  border: 1px solid rgb(206, 206, 206);
-  border-radius: 6px;
-  background-color: #ac3a4a;
-  color: #fffff2;
-  padding: 5px 25px;
-}
-
 .outline-button {
   border: 1px solid rgb(50, 50, 50);
   border-radius: 6px;
@@ -115,9 +107,9 @@ h5 {
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
+    --primary: 282 54% 23%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
+    --secondary: 339 50% 25%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
