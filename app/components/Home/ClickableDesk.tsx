@@ -518,7 +518,16 @@ const ClickableDesk: React.FC = () => {
       </g>
 
       {/* Books */}
-      <g id="books">
+      <g
+        id="books"
+        onClick={() => router.push("/experience")}
+        style={{ cursor: "pointer" }}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") router.push("/experience");
+        }}
+      >
         <path
           d="M200.017 289.927L131.007 326.547L28.1481 263.9L97.1382 227.269L200.017 289.927Z"
           fill="#BA68C8"
