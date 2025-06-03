@@ -1,11 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import content from "../content/content";
+import { useState, useEffect, type JSX } from "react";
+import content from "../../content/content";
 import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Article, ArticleCategory, categoryEmojis } from "../content/articles";
-import ArticleCard from "../components/Articles/ArticleCard";
+import {
+  Article,
+  ArticleCategory,
+  categoryEmojis,
+} from "../../content/articles";
+import ArticleCard from "../../components/Articles/ArticleCard";
 import Link from "next/link";
 import { IoNewspaperOutline } from "react-icons/io5";
 
