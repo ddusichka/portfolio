@@ -8,7 +8,6 @@ import TypingEffect from "./components/Home/TypingDescriptions";
 import ExperienceSnapshot from "./components/Experience/ExperienceSnapshot";
 import ProjectFeature from "./components/Projects/TextBasedProjectFeature";
 import { Button } from "@/components/ui/button";
-import ClickableDesk from "./components/Home/ClickableDesk";
 
 export default function Home() {
   return (
@@ -86,7 +85,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <ClickableDesk />
+        {/* <ClickableDesk /> */}
       </div>
     </div>
   );
