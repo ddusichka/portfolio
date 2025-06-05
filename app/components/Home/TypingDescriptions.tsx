@@ -48,7 +48,7 @@ const TypingEffect = () => {
     }
   }, [displayedDescriptionIndex, typingCompleted, descriptions]);
   return (
-    <div className="rotating-word flex items-center text-3xl tablet:text-4xl space-x-2">
+    <div className="rotating-word flex text-3xl tablet:text-4xl space-x-2">
       <p>{displayedDescription}</p>
       <p className="emoji">{descriptions[displayedDescriptionIndex].emoji}</p>
     </div>

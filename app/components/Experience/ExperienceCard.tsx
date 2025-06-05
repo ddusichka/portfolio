@@ -44,12 +44,14 @@ const ExperienceCard = (experience: {
       >
         <div className="flex-1 flex flex-col justify-center">
           <div className="font-bold text-md tablet:text-lg pr-2 flex space-x-4">
-            <Image
-              width={30}
-              height={30}
-              src={experience.image}
-              alt={experience.image}
-            />
+            <div className="flex items-center">
+              <Image
+                width={30}
+                height={30}
+                src={experience.image}
+                alt={experience.image}
+              />
+            </div>
             <p className="whitespace-normal">
               {experience.position}{" "}
               <span className="text-black font-normal pr-1">at</span>
