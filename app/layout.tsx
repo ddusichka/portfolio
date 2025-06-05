@@ -44,7 +44,6 @@ export default function RootLayout({
         className={`${montserrat.variable} ${noto.variable} ${dm.variable} antialiased`}
       >
         <div className="grid grid-rows-[auto,1fr,auto] min-h-screen font-dmSans">
-          <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>

@@ -22,7 +22,7 @@ export default function Footer() {
 
 const styles = {
   container: "ml-4",
-  divider: "h-px my-2 bg-gray-400 border-0",
+  divider: "h-px mb-2 bg-gray-400 border-0",
   content: "flex justify-between tablet:justify-normal text-lg pb-2",
   link: "ml-1 font-bold text-[#81559b]",
   iconsContainer:

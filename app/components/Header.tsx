@@ -33,7 +33,7 @@ export default function Header() {
         <Link href="/">
           <div className={styles.logoContainer}>
             <Image
-              src="/logo.png"
+              src="/profile.png"
               height={50}
               width={50}
               alt="logo"
