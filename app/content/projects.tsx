@@ -27,7 +27,7 @@ export const projects: Project[] = [
     dates: "January 2025 - April 2025",
     deployed: false,
     featured: true,
-    url: "",
+    github: "https://github.com/GenerateNU/arenius",
     shortDescription:
       "A carbon-accounting platform to empower small-to-medium sized businesses to track, manage, and reduce their carbon footprint.",
     longDescription:
@@ -74,10 +74,10 @@ export const projects: Project[] = [
     name: "Platnm",
     path: "platnm",
     emoji: "🎶",
-    dates: "January 2025 - April 2025",
+    dates: "August 2024 - December 2024",
     deployed: false,
     featured: true,
-    url: "https://github.com/GenerateNU/platnm",
+    github: "https://github.com/GenerateNU/platnm",
     shortDescription:
       "A one-stop shop for musical discourse, providing a space for users to rate, review, and discuss music",
     longDescription:
@@ -103,7 +103,7 @@ export const projects: Project[] = [
               and efficient mobile application.
             </p>
           </div>
-          <div className="flex justify-between gap-8 mr-8 ">
+          <div className="tablet:flex justify-between gap-8 tablet:mr-8">
             <div className="flex flex-col gap-4 mb-4">
               <p>
                 The engineering team began by designing a relational database
@@ -124,8 +124,7 @@ export const projects: Project[] = [
                 idea that I personally would love to use.
               </p>
             </div>
-
-            <img src={"/platnmTeam.jpeg"} className="w-2/5" />
+            <img src={"/platnmTeam.jpeg"} className="tablet:w-2/5" />
           </div>
         </div>
       </>
