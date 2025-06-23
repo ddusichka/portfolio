@@ -120,8 +120,8 @@ export const projects: Project[] = [
                 definitely found many areas for improvement at the end (namely
                 our schema, which had way too many tables, and our frontend
                 design, which had duplication everywhere). However, our final
-                product was an MVP we were all proud of, and it's an app idea
-                that I personally would love to use.
+                product was an MVP we were all proud of, and it&apos;s an app
+                idea that I personally would love to use.
               </p>
             </div>
 
