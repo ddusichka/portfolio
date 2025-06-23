@@ -11,51 +11,14 @@ const ClickableDesk: React.FC = () => {
     router.push("/projects");
   };
 
-  // useEffect(() => {
-  //   const scrollContainer = scrollRef.current;
-  //   if (!scrollContainer) return;
-
-  //   const isMobile = window.matchMedia("(max-width: 768px)").matches;
-  //   if (!isMobile) return;
-
-  //   let direction = 1; // 1 = forward, -1 = backward
-  //   let animationFrame: number;
-
-  //   const scroll = () => {
-  //     if (!scrollContainer) return;
-
-  //     scrollContainer.scrollLeft += direction * 0.5; // scroll speed
-
-  //     const maxScroll =
-  //       scrollContainer.scrollWidth - scrollContainer.clientWidth;
-
-  //     if (
-  //       scrollContainer.scrollLeft >= maxScroll ||
-  //       scrollContainer.scrollLeft <= 0
-  //     ) {
-  //       direction *= -1; // reverse direction
-  //     }
-
-  //     animationFrame = requestAnimationFrame(scroll);
-  //   };
-
-  //   animationFrame = requestAnimationFrame(scroll);
-
-  //   return () => cancelAnimationFrame(animationFrame);
-  // }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="mb-8 w-full"
     >
-      <div
-        ref={scrollRef}
-        className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide"
-      >
-        <div className="w-[850px] h-[400px] tablet:w-[1337px] tablet:h-[604px]">
+      <div className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide px-4">
+        <div className="w-[850px] h-[450px] tablet:w-[1337px] tablet:h-[604px]">
           <svg
             viewBox="0 0 1337 604"
             fill="none"
