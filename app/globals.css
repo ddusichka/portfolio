@@ -78,6 +78,14 @@ h5 {
   animation: typingEffect 1s steps(100, end), blinkingCursor 0.5s infinite;
 }
 
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 .emoji {
   font-size: 0.8em;
   margin-left: 5px;
