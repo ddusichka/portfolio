@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col space-y-6">
       <div className="flex flex-col gap-2 text-lg ">
         <h1 className="my-2">About Me</h1>
-        <div className="tablet:flex tablet:space-x-12">
+        <div className="flex flex-col space-y-3 tablet:flex-row tablet:space-x-12 tablet:space-y-0">
           <div className="flex flex-col space-y-6 tablet:w-2/3">
             <p>
               Hi! I&apos;m Dessy, a recent Northeastern University graduate with
@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-1/3">
+          <div className="tablet:w-1/3">
             <Image src={grad} alt="Graduation" />
           </div>
         </div>
