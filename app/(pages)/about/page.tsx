@@ -28,7 +28,7 @@ export default function Home() {
               engineer and tech lead at Generate, Northeastern&apos;s
               student-led product development studio, where I worked on 4 mobile
               and web applications for clients. More about these applications
-              and my other personal projects can be found here!
+              and my other personal projects can be found
               <Hyperlink text="here!" href="/projects" />
             </p>
             <p>
